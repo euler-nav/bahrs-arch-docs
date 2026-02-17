@@ -7,6 +7,7 @@ var struct_s_imu_measurement =
     [ "fSpecificForceY_", "struct_s_imu_measurement.html#a2e873280b4c48aec6cc1eecb8099d870", null ],
     [ "fSpecificForceZ_", "struct_s_imu_measurement.html#ae5440cf14a343fdc180fa6ae4c3fb2e4", null ],
     [ "fTemperature_", "struct_s_imu_measurement.html#af3ab056d8c55afebd0cda21f7ccd7236", null ],
-    [ "uTimestampUs_", "struct_s_imu_measurement.html#aec40b2874d09a57efb8c7c8a5cc1f33e", null ],
-    [ "uValid_", "struct_s_imu_measurement.html#a708f49c42b75e68d1a27ebd37295ba2c", null ]
+    [ "uImuValid_", "struct_s_imu_measurement.html#a9552f9b8d3ec8d287dd4b338937d7630", null ],
+    [ "uTemperatureValid_", "struct_s_imu_measurement.html#a696da7ac72a9be0c9a769465855f7a56", null ],
+    [ "uTimestampUs_", "struct_s_imu_measurement.html#aec40b2874d09a57efb8c7c8a5cc1f33e", null ]
 ];

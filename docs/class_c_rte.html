@@ -111,6 +111,8 @@ $(document).ready(function(){initNavTree('class_c_rte.html',''); initResizable()
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_rte-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CRte Class Reference</div></div>
@@ -120,17 +122,17 @@ $(document).ready(function(){initNavTree('class_c_rte.html',''); initResizable()
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab3a5d6f11b7f39ba19500759af83e57b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57b">EPortIds</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba78164d5f880d02a96a8a3dce8fbf6895">eScha63TInput</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baf8e2fc0033c6b0346fd4003874130838">eBmp384Input</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba1078b427a9b5f9cab330a090fb5c7613">eMmc5983Input</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bae9608ff537f64173a39143a613e69845">eBmm150Input1</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8a78184df17eff898587477ee44fc329">eImuInput1</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babd8260809b12f7c6ac7fdee38e880d2e">ePressureInput1</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badb3a66b2e504e1693a923827c8cffed6">eMagnetometerInput1</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba32411b65bb4cf5076e2bf9dd6146f86a">eMagnetometerInput2</a>
 , <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba32925b17de6e5cbf88d60f397fd83f40">eBmm150Input2</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba84afa9c7bf607e7ed59ace9519606f6e">eIcm20789BaroInput1</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba3924bc0d67b9acc63e9e6ba88844bf2d">eIcm20789BaroInput2</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab29fc063f306d74c2b805ad2e458a256">eIcm20789ImuInput1</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8038a048b8436494e59f41f70f87290f">eMagnetometerInput3</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafa0bc8e4a7e1af6cf762832135758fb9">ePressureInput2</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba388c1a97617a23e9429999107f8c6055">ePressureInput3</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab856e5d05d6ab346ce04840d4b23bd4d">eImuInput2</a>
 , <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baa2246e7763e6a3e3d3431d17646468a7">eIcm20789ImuInput2</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba09073f37e1db254d9a14d22607f7a87d">eImuInput3</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba1c0a18f280d4a7ccc3e45fef3ca72c16">eSyncPulseTime</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba7c893e68b87f50adf074635e78bd9d48">eImuOutput</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba94b6f64c64013e00c555844afae8121c">eCompensatedMagnetometerData</a>
@@ -142,36 +144,58 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafe1f4d60ddd3820b6ab8f53af8e67ae0">eSafePressureData2</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba9c648d5fc570d9280eeb66e63421ac95">eSafePressureData3</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba0fb9ba4193704afbc40f6b582622947e">eSafeImuData1</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bac814455a1299b49e3dcfb5010697aadb">eSafeImuData2</a>
-, <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba024c7878fa3a901040463eead197c43c">eSafeImuData3</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba5ef3f145ce3e30c1a5687b7bb39aaeb0">eBahrsFilterOutput1</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babeb27813df9fd03b97411631f7f2ba58">eBahrsFilterOutput2</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb">eBahrsFilterOutput3</a>
 , <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babf88b7f6dd418a8b0fa21c799c35aa9a">eVehicleAttitude1</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb">eBahrsFilterOutput3</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babf88b7f6dd418a8b0fa21c799c35aa9a">eVehicleAttitude1</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba725bf69b367070e4dd7999cc48014c8e">eVehicleAttitude2</a>
 , <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba17c17a8ab5e51cf8b5b199cd3cf785cd">eVehicleAttitude3</a>
-, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba06e5957cd0f926522be0e7b284ec058d">eSafeVehicleAttitude</a>
 , <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baf0d89a8d06df9558f6d064516e7e2f33">eSafeVerticalChannelData</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba06e5957cd0f926522be0e7b284ec058d">eSafeVehicleAttitude</a>
+, <a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baf0d89a8d06df9558f6d064516e7e2f33">eSafeVerticalChannelData</a>
 <br />
  }</td></tr>
 <tr class="separator:ab3a5d6f11b7f39ba19500759af83e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401eb6c9e2e1e38c1faf8d94eae7de95"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95">ERunnableIds</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95ac755153be5e641cf4748e990da4eaf3b">eInvalid</a> = 0U
-, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a38c3ab7f7a293503e41cb898465d85f0">eRunnableBahrsFilterSetImuInput</a>
-, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a9330c99b6477de5be89461f5edddcf78">eRunnableBahrsFilterSetPressureInput</a>
-, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a83bd789e060105463ece2495f98ebe51">eRunnableBahrsFilterStep</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95abb9b745a27d7480a43ebf0c6b4d3693b">eRunnableBahrsFilterStep1</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a7ddc1b14900d40cdf1d4af50bbf57c7c">eRunnableBahrsFilterStep2</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a549401cc2e7d9f1d1bbf8b5618b6ce2b">eRunnableBahrsFilterStep3</a>
 , <br />
-&#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a922afffdec32a098a20b88516332ac12">eRunnableBahrsFilterSetMagnetometerInput</a>
+&#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a4902fc499261033e8d9c75cc5014b985">eRunnableBahrsFilterSetImuInput1</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95adbba160414aef99e37fd80f152bf4504">eRunnableBahrsFilterSetImuInput2</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95aea602cfcc4434aee1608f79d2464c882">eRunnableBahrsFilterSetImuInput3</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95aa9c72c20984070dddb4613c55ba43701">eRunnableBahrsFilterSetPressureInput1</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a2805578986848e5611d4c42b0ee0ac75">eRunnableBahrsFilterSetPressureInput2</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95ae96ad5cda893e384b2ac451638876c34">eRunnableBahrsFilterSetPressureInput3</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95ab8b20b35809a29b42f0080b9e8864417">eRunnableMagneticHeadingFilterStep1</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a41dedb90793ac16d45143db4211fd1c1">eRunnableMagneticHeadingFilterStep2</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a373c0b5a3c4b9dd784d07b01a66db97c">eRunnableMagneticHeadingFilterStep3</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a4f6487d65eacb77bd3ea067a5ab4cb25">eRunnableMagneticHeadingFilterSetAttitude1</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a4d8cb918ee057073737f459fc0119d35">eRunnableMagneticHeadingFilterSetAttitude2</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a3b13e861c445a98d9c139d054e791a18">eRunnableMagneticHeadingFilterSetAttitude3</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a4d61ff6a87034fb68b6baf3c9c8b8454">eRunnableImuMonitorRun</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95ab7ca741732702da210437d7b2d9c8932">eRunnableBarometerMonitorRun</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a71ac9d244ddd7132d8ed60c3213b85fd">eRunnableAttitudeMonitorRun</a>
+, <a class="el" href="class_c_rte.html#a401eb6c9e2e1e38c1faf8d94eae7de95a6e3c8df350f1acaa905904a04d0b453b">eRunnableVerticalChannelMonitorRun</a>
 <br />
  }</td></tr>
 <tr class="separator:a401eb6c9e2e1e38c1faf8d94eae7de95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9ca6ef8ee844175c522ff738a5b3595d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a9ca6ef8ee844175c522ff738a5b3595d">CRte</a> (<a class="el" href="class_c_rte.html">CRte</a> &amp;)=delete</td></tr>
+<tr class="separator:a9ca6ef8ee844175c522ff738a5b3595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd215285c2d1161969cb4afdf2a029c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a3dd215285c2d1161969cb4afdf2a029c">CRte</a> (<a class="el" href="class_c_rte.html">CRte</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a3dd215285c2d1161969cb4afdf2a029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7535e0238195fa99774c17c223e290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rte.html">CRte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a6f7535e0238195fa99774c17c223e290">operator=</a> (const <a class="el" href="class_c_rte.html">CRte</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:a6f7535e0238195fa99774c17c223e290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f7673e06050ef502c7e113bab3776c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rte.html">CRte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a12f7673e06050ef502c7e113bab3776c">operator=</a> (<a class="el" href="class_c_rte.html">CRte</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:a12f7673e06050ef502c7e113bab3776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6dcf94e90010e8a14c030131c1b146f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#af6dcf94e90010e8a14c030131c1b146f">Init</a> ()</td></tr>
 <tr class="separator:af6dcf94e90010e8a14c030131c1b146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -179,6 +203,68 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3600dd6a94b0d9d71e6bc153f70e6394"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rte.html">CRte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a3600dd6a94b0d9d71e6bc153f70e6394">GetInstance</a> ()</td></tr>
 <tr class="separator:a3600dd6a94b0d9d71e6bc153f70e6394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a35375af2d52f28a15c6c4049836afd3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a35375af2d52f28a15c6c4049836afd3c">CRte</a> ()</td></tr>
+<tr class="separator:a35375af2d52f28a15c6c4049836afd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4bdc49e78b4366db8143512545e531"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aec4bdc49e78b4366db8143512545e531">~CRte</a> ()=default</td></tr>
+<tr class="separator:aec4bdc49e78b4366db8143512545e531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a607dbe7f41e64d1c7dfd7423b7788355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8a78184df17eff898587477ee44fc329">EPortIds::eImuInput1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a607dbe7f41e64d1c7dfd7423b7788355">oPortImuInput1_</a></td></tr>
+<tr class="separator:a607dbe7f41e64d1c7dfd7423b7788355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a16fc0580cb24ee991fb2392da4ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babd8260809b12f7c6ac7fdee38e880d2e">EPortIds::ePressureInput1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a01a16fc0580cb24ee991fb2392da4ff8">oPortPressureInput1_</a></td></tr>
+<tr class="separator:a01a16fc0580cb24ee991fb2392da4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e370dc8a99171c0d369774ff81f59b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badb3a66b2e504e1693a923827c8cffed6">EPortIds::eMagnetometerInput1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a2e370dc8a99171c0d369774ff81f59b0">oPortMagnetometerInput1_</a></td></tr>
+<tr class="separator:a2e370dc8a99171c0d369774ff81f59b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416df076dbe86d4931052502d46ee365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba32411b65bb4cf5076e2bf9dd6146f86a">EPortIds::eMagnetometerInput2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a416df076dbe86d4931052502d46ee365">oPortMagnetometerInput2_</a></td></tr>
+<tr class="separator:a416df076dbe86d4931052502d46ee365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1216f630120cb7f73f522c543a29b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8038a048b8436494e59f41f70f87290f">EPortIds::eMagnetometerInput3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#ac1216f630120cb7f73f522c543a29b2b">oPortMagnetometerInput3_</a></td></tr>
+<tr class="separator:ac1216f630120cb7f73f522c543a29b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e530442b8334359a76d528e0980098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafa0bc8e4a7e1af6cf762832135758fb9">EPortIds::ePressureInput2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aa4e530442b8334359a76d528e0980098">oPortPressureInput2_</a></td></tr>
+<tr class="separator:aa4e530442b8334359a76d528e0980098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463c1ee4ff535b1641a8d773debef1c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba388c1a97617a23e9429999107f8c6055">EPortIds::ePressureInput3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a463c1ee4ff535b1641a8d773debef1c2">oPortPressureInput3_</a></td></tr>
+<tr class="separator:a463c1ee4ff535b1641a8d773debef1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad10607ea0c2198d0b103c39f130d486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab856e5d05d6ab346ce04840d4b23bd4d">EPortIds::eImuInput2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aad10607ea0c2198d0b103c39f130d486">oPortImuInput2_</a></td></tr>
+<tr class="separator:aad10607ea0c2198d0b103c39f130d486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb0afd56a28fdbf09a005b3b6687edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba09073f37e1db254d9a14d22607f7a87d">EPortIds::eImuInput3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a5bb0afd56a28fdbf09a005b3b6687edf">oPortImuInput3_</a></td></tr>
+<tr class="separator:a5bb0afd56a28fdbf09a005b3b6687edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8ad12f60b81e1eafcf479da77473ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_time_of_sync_pulse.html">STimeOfSyncPulse</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba1c0a18f280d4a7ccc3e45fef3ca72c16">EPortIds::eSyncPulseTime</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aed8ad12f60b81e1eafcf479da77473ff">oPortSyncPulseTime_</a></td></tr>
+<tr class="separator:aed8ad12f60b81e1eafcf479da77473ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4a8dabf411edde57b39205045320d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba7c893e68b87f50adf074635e78bd9d48">EPortIds::eImuOutput</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aae4a8dabf411edde57b39205045320d6">oPortImuOutput_</a></td></tr>
+<tr class="separator:aae4a8dabf411edde57b39205045320d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634c5ee1c6f8637f16a349782e43be4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba94b6f64c64013e00c555844afae8121c">EPortIds::eCompensatedMagnetometerData</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a634c5ee1c6f8637f16a349782e43be4d">oPortCompensatedMagnetometerData_</a></td></tr>
+<tr class="separator:a634c5ee1c6f8637f16a349782e43be4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a315e73301772f4257c39250b1fb76c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_heading.html">SMagneticHeading</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba2b203c3a048a272c07f6affa0291860a">EPortIds::eMagneticHeading</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a5a315e73301772f4257c39250b1fb76c">oPortMagneticHeading_</a></td></tr>
+<tr class="separator:a5a315e73301772f4257c39250b1fb76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2911842c96c84419428cc30dda403787"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba5ed01d61f5c22b6a08d291fc4b2adf65">EPortIds::eCompensatedMagnetometerDataInVehicleFrame</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a2911842c96c84419428cc30dda403787">oPortCompensatedMagnetometerDataInVehicleFrame_</a></td></tr>
+<tr class="separator:a2911842c96c84419428cc30dda403787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37717f50fc3cfec317d283beb82267ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="class_c_imu_data_after_monitor.html">CImuDataAfterMonitor</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab1a14cd78c5012535cc523df15f3981a">EPortIds::eImuDataAfterMonitor</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a37717f50fc3cfec317d283beb82267ea">oPortImuDataAfterMonitor_</a></td></tr>
+<tr class="separator:a37717f50fc3cfec317d283beb82267ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61567528c65798f5ab7aafad5fdc0b23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baa91ca5b715e833587cff43143e9051d7">EPortIds::eSafePressureData1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a61567528c65798f5ab7aafad5fdc0b23">oPortSafePressureData1_</a></td></tr>
+<tr class="separator:a61567528c65798f5ab7aafad5fdc0b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa855b3070d084010a16b6a76718f5bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafe1f4d60ddd3820b6ab8f53af8e67ae0">EPortIds::eSafePressureData2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aaa855b3070d084010a16b6a76718f5bb">oPortSafePressureData2_</a></td></tr>
+<tr class="separator:aaa855b3070d084010a16b6a76718f5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c04ea28a2e9e5d837ec3a47344b3a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba9c648d5fc570d9280eeb66e63421ac95">EPortIds::eSafePressureData3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a37c04ea28a2e9e5d837ec3a47344b3a1">oPortSafePressureData3_</a></td></tr>
+<tr class="separator:a37c04ea28a2e9e5d837ec3a47344b3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9a48b8336db26cddb4b201f32e4387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba5ef3f145ce3e30c1a5687b7bb39aaeb0">EPortIds::eBahrsFilterOutput1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#abd9a48b8336db26cddb4b201f32e4387">oPortBahrsFilterOutput1_</a></td></tr>
+<tr class="separator:abd9a48b8336db26cddb4b201f32e4387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73556a7f286ca610424b47bf6c41898c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babeb27813df9fd03b97411631f7f2ba58">EPortIds::eBahrsFilterOutput2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a73556a7f286ca610424b47bf6c41898c">oPortBahrsFilterOutput2_</a></td></tr>
+<tr class="separator:a73556a7f286ca610424b47bf6c41898c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c336bf2f6a67889e2263d12cff6ee23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb">EPortIds::eBahrsFilterOutput3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a5c336bf2f6a67889e2263d12cff6ee23">oPortBahrsFilterOutput3_</a></td></tr>
+<tr class="separator:a5c336bf2f6a67889e2263d12cff6ee23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb9e403622bda6ee33373aff0bcc3a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babf88b7f6dd418a8b0fa21c799c35aa9a">EPortIds::eVehicleAttitude1</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#accb9e403622bda6ee33373aff0bcc3a5">oPortVehicleAttitude1_</a></td></tr>
+<tr class="separator:accb9e403622bda6ee33373aff0bcc3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399b4d82c17f4199531019ab0f018b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba725bf69b367070e4dd7999cc48014c8e">EPortIds::eVehicleAttitude2</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a399b4d82c17f4199531019ab0f018b9b">oPortVehicleAttitude2_</a></td></tr>
+<tr class="separator:a399b4d82c17f4199531019ab0f018b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa178580a9deb819e9aa0950e6d93b48a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba17c17a8ab5e51cf8b5b199cd3cf785cd">EPortIds::eVehicleAttitude3</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#aa178580a9deb819e9aa0950e6d93b48a">oPortVehicleAttitude3_</a></td></tr>
+<tr class="separator:aa178580a9deb819e9aa0950e6d93b48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6069497579a0f5fa361a9d40575f8bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_safe_attitude_data.html">SSafeAttitudeData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba06e5957cd0f926522be0e7b284ec058d">EPortIds::eSafeVehicleAttitude</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#ae6069497579a0f5fa361a9d40575f8bd">oPortSafeVehicleAttitude_</a></td></tr>
+<tr class="separator:ae6069497579a0f5fa361a9d40575f8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e4a7ab9d2eb9c35fa01e84fa2af9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt; <a class="el" href="struct_s_safe_vertical_channel_data.html">SSafeVerticalChannelData</a>, static_cast&lt; uint8_t &gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baf0d89a8d06df9558f6d064516e7e2f33">EPortIds::eSafeVerticalChannelData</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rte.html#a40e4a7ab9d2eb9c35fa01e84fa2af9d4">oPortSafeVerticalChannelData_</a></td></tr>
+<tr class="separator:a40e4a7ab9d2eb9c35fa01e84fa2af9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -240,15 +326,15 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba78164d5f880d02a96a8a3dce8fbf6895" name="ab3a5d6f11b7f39ba19500759af83e57ba78164d5f880d02a96a8a3dce8fbf6895"></a>eScha63TInput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57baf8e2fc0033c6b0346fd4003874130838" name="ab3a5d6f11b7f39ba19500759af83e57baf8e2fc0033c6b0346fd4003874130838"></a>eBmp384Input&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba1078b427a9b5f9cab330a090fb5c7613" name="ab3a5d6f11b7f39ba19500759af83e57ba1078b427a9b5f9cab330a090fb5c7613"></a>eMmc5983Input&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bae9608ff537f64173a39143a613e69845" name="ab3a5d6f11b7f39ba19500759af83e57bae9608ff537f64173a39143a613e69845"></a>eBmm150Input1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba32925b17de6e5cbf88d60f397fd83f40" name="ab3a5d6f11b7f39ba19500759af83e57ba32925b17de6e5cbf88d60f397fd83f40"></a>eBmm150Input2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba84afa9c7bf607e7ed59ace9519606f6e" name="ab3a5d6f11b7f39ba19500759af83e57ba84afa9c7bf607e7ed59ace9519606f6e"></a>eIcm20789BaroInput1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba3924bc0d67b9acc63e9e6ba88844bf2d" name="ab3a5d6f11b7f39ba19500759af83e57ba3924bc0d67b9acc63e9e6ba88844bf2d"></a>eIcm20789BaroInput2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bab29fc063f306d74c2b805ad2e458a256" name="ab3a5d6f11b7f39ba19500759af83e57bab29fc063f306d74c2b805ad2e458a256"></a>eIcm20789ImuInput1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57baa2246e7763e6a3e3d3431d17646468a7" name="ab3a5d6f11b7f39ba19500759af83e57baa2246e7763e6a3e3d3431d17646468a7"></a>eIcm20789ImuInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba8a78184df17eff898587477ee44fc329" name="ab3a5d6f11b7f39ba19500759af83e57ba8a78184df17eff898587477ee44fc329"></a>eImuInput1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57babd8260809b12f7c6ac7fdee38e880d2e" name="ab3a5d6f11b7f39ba19500759af83e57babd8260809b12f7c6ac7fdee38e880d2e"></a>ePressureInput1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57badb3a66b2e504e1693a923827c8cffed6" name="ab3a5d6f11b7f39ba19500759af83e57badb3a66b2e504e1693a923827c8cffed6"></a>eMagnetometerInput1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba32411b65bb4cf5076e2bf9dd6146f86a" name="ab3a5d6f11b7f39ba19500759af83e57ba32411b65bb4cf5076e2bf9dd6146f86a"></a>eMagnetometerInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba8038a048b8436494e59f41f70f87290f" name="ab3a5d6f11b7f39ba19500759af83e57ba8038a048b8436494e59f41f70f87290f"></a>eMagnetometerInput3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bafa0bc8e4a7e1af6cf762832135758fb9" name="ab3a5d6f11b7f39ba19500759af83e57bafa0bc8e4a7e1af6cf762832135758fb9"></a>ePressureInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba388c1a97617a23e9429999107f8c6055" name="ab3a5d6f11b7f39ba19500759af83e57ba388c1a97617a23e9429999107f8c6055"></a>ePressureInput3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bab856e5d05d6ab346ce04840d4b23bd4d" name="ab3a5d6f11b7f39ba19500759af83e57bab856e5d05d6ab346ce04840d4b23bd4d"></a>eImuInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba09073f37e1db254d9a14d22607f7a87d" name="ab3a5d6f11b7f39ba19500759af83e57ba09073f37e1db254d9a14d22607f7a87d"></a>eImuInput3&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba1c0a18f280d4a7ccc3e45fef3ca72c16" name="ab3a5d6f11b7f39ba19500759af83e57ba1c0a18f280d4a7ccc3e45fef3ca72c16"></a>eSyncPulseTime&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba7c893e68b87f50adf074635e78bd9d48" name="ab3a5d6f11b7f39ba19500759af83e57ba7c893e68b87f50adf074635e78bd9d48"></a>eImuOutput&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba94b6f64c64013e00c555844afae8121c" name="ab3a5d6f11b7f39ba19500759af83e57ba94b6f64c64013e00c555844afae8121c"></a>eCompensatedMagnetometerData&#160;</td><td class="fielddoc"></td></tr>
@@ -258,9 +344,6 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57baa91ca5b715e833587cff43143e9051d7" name="ab3a5d6f11b7f39ba19500759af83e57baa91ca5b715e833587cff43143e9051d7"></a>eSafePressureData1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bafe1f4d60ddd3820b6ab8f53af8e67ae0" name="ab3a5d6f11b7f39ba19500759af83e57bafe1f4d60ddd3820b6ab8f53af8e67ae0"></a>eSafePressureData2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba9c648d5fc570d9280eeb66e63421ac95" name="ab3a5d6f11b7f39ba19500759af83e57ba9c648d5fc570d9280eeb66e63421ac95"></a>eSafePressureData3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba0fb9ba4193704afbc40f6b582622947e" name="ab3a5d6f11b7f39ba19500759af83e57ba0fb9ba4193704afbc40f6b582622947e"></a>eSafeImuData1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57bac814455a1299b49e3dcfb5010697aadb" name="ab3a5d6f11b7f39ba19500759af83e57bac814455a1299b49e3dcfb5010697aadb"></a>eSafeImuData2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba024c7878fa3a901040463eead197c43c" name="ab3a5d6f11b7f39ba19500759af83e57ba024c7878fa3a901040463eead197c43c"></a>eSafeImuData3&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57ba5ef3f145ce3e30c1a5687b7bb39aaeb0" name="ab3a5d6f11b7f39ba19500759af83e57ba5ef3f145ce3e30c1a5687b7bb39aaeb0"></a>eBahrsFilterOutput1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57babeb27813df9fd03b97411631f7f2ba58" name="ab3a5d6f11b7f39ba19500759af83e57babeb27813df9fd03b97411631f7f2ba58"></a>eBahrsFilterOutput2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb" name="ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb"></a>eBahrsFilterOutput3&#160;</td><td class="fielddoc"></td></tr>
@@ -294,11 +377,130 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95ac755153be5e641cf4748e990da4eaf3b" name="a401eb6c9e2e1e38c1faf8d94eae7de95ac755153be5e641cf4748e990da4eaf3b"></a>eInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a38c3ab7f7a293503e41cb898465d85f0" name="a401eb6c9e2e1e38c1faf8d94eae7de95a38c3ab7f7a293503e41cb898465d85f0"></a>eRunnableBahrsFilterSetImuInput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a9330c99b6477de5be89461f5edddcf78" name="a401eb6c9e2e1e38c1faf8d94eae7de95a9330c99b6477de5be89461f5edddcf78"></a>eRunnableBahrsFilterSetPressureInput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a83bd789e060105463ece2495f98ebe51" name="a401eb6c9e2e1e38c1faf8d94eae7de95a83bd789e060105463ece2495f98ebe51"></a>eRunnableBahrsFilterStep&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a922afffdec32a098a20b88516332ac12" name="a401eb6c9e2e1e38c1faf8d94eae7de95a922afffdec32a098a20b88516332ac12"></a>eRunnableBahrsFilterSetMagnetometerInput&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95abb9b745a27d7480a43ebf0c6b4d3693b" name="a401eb6c9e2e1e38c1faf8d94eae7de95abb9b745a27d7480a43ebf0c6b4d3693b"></a>eRunnableBahrsFilterStep1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a7ddc1b14900d40cdf1d4af50bbf57c7c" name="a401eb6c9e2e1e38c1faf8d94eae7de95a7ddc1b14900d40cdf1d4af50bbf57c7c"></a>eRunnableBahrsFilterStep2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a549401cc2e7d9f1d1bbf8b5618b6ce2b" name="a401eb6c9e2e1e38c1faf8d94eae7de95a549401cc2e7d9f1d1bbf8b5618b6ce2b"></a>eRunnableBahrsFilterStep3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a4902fc499261033e8d9c75cc5014b985" name="a401eb6c9e2e1e38c1faf8d94eae7de95a4902fc499261033e8d9c75cc5014b985"></a>eRunnableBahrsFilterSetImuInput1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95adbba160414aef99e37fd80f152bf4504" name="a401eb6c9e2e1e38c1faf8d94eae7de95adbba160414aef99e37fd80f152bf4504"></a>eRunnableBahrsFilterSetImuInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95aea602cfcc4434aee1608f79d2464c882" name="a401eb6c9e2e1e38c1faf8d94eae7de95aea602cfcc4434aee1608f79d2464c882"></a>eRunnableBahrsFilterSetImuInput3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95aa9c72c20984070dddb4613c55ba43701" name="a401eb6c9e2e1e38c1faf8d94eae7de95aa9c72c20984070dddb4613c55ba43701"></a>eRunnableBahrsFilterSetPressureInput1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a2805578986848e5611d4c42b0ee0ac75" name="a401eb6c9e2e1e38c1faf8d94eae7de95a2805578986848e5611d4c42b0ee0ac75"></a>eRunnableBahrsFilterSetPressureInput2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95ae96ad5cda893e384b2ac451638876c34" name="a401eb6c9e2e1e38c1faf8d94eae7de95ae96ad5cda893e384b2ac451638876c34"></a>eRunnableBahrsFilterSetPressureInput3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95ab8b20b35809a29b42f0080b9e8864417" name="a401eb6c9e2e1e38c1faf8d94eae7de95ab8b20b35809a29b42f0080b9e8864417"></a>eRunnableMagneticHeadingFilterStep1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a41dedb90793ac16d45143db4211fd1c1" name="a401eb6c9e2e1e38c1faf8d94eae7de95a41dedb90793ac16d45143db4211fd1c1"></a>eRunnableMagneticHeadingFilterStep2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a373c0b5a3c4b9dd784d07b01a66db97c" name="a401eb6c9e2e1e38c1faf8d94eae7de95a373c0b5a3c4b9dd784d07b01a66db97c"></a>eRunnableMagneticHeadingFilterStep3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a4f6487d65eacb77bd3ea067a5ab4cb25" name="a401eb6c9e2e1e38c1faf8d94eae7de95a4f6487d65eacb77bd3ea067a5ab4cb25"></a>eRunnableMagneticHeadingFilterSetAttitude1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a4d8cb918ee057073737f459fc0119d35" name="a401eb6c9e2e1e38c1faf8d94eae7de95a4d8cb918ee057073737f459fc0119d35"></a>eRunnableMagneticHeadingFilterSetAttitude2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a3b13e861c445a98d9c139d054e791a18" name="a401eb6c9e2e1e38c1faf8d94eae7de95a3b13e861c445a98d9c139d054e791a18"></a>eRunnableMagneticHeadingFilterSetAttitude3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a4d61ff6a87034fb68b6baf3c9c8b8454" name="a401eb6c9e2e1e38c1faf8d94eae7de95a4d61ff6a87034fb68b6baf3c9c8b8454"></a>eRunnableImuMonitorRun&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95ab7ca741732702da210437d7b2d9c8932" name="a401eb6c9e2e1e38c1faf8d94eae7de95ab7ca741732702da210437d7b2d9c8932"></a>eRunnableBarometerMonitorRun&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a71ac9d244ddd7132d8ed60c3213b85fd" name="a401eb6c9e2e1e38c1faf8d94eae7de95a71ac9d244ddd7132d8ed60c3213b85fd"></a>eRunnableAttitudeMonitorRun&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401eb6c9e2e1e38c1faf8d94eae7de95a6e3c8df350f1acaa905904a04d0b453b" name="a401eb6c9e2e1e38c1faf8d94eae7de95a6e3c8df350f1acaa905904a04d0b453b"></a>eRunnableVerticalChannelMonitorRun&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9ca6ef8ee844175c522ff738a5b3595d" name="a9ca6ef8ee844175c522ff738a5b3595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca6ef8ee844175c522ff738a5b3595d">&#9670;&#160;</a></span>CRte() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRte::CRte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rte.html">CRte</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dd215285c2d1161969cb4afdf2a029c" name="a3dd215285c2d1161969cb4afdf2a029c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd215285c2d1161969cb4afdf2a029c">&#9670;&#160;</a></span>CRte() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRte::CRte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rte.html">CRte</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35375af2d52f28a15c6c4049836afd3c" name="a35375af2d52f28a15c6c4049836afd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35375af2d52f28a15c6c4049836afd3c">&#9670;&#160;</a></span>CRte() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRte::CRte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The default constructor. Called only by the <a class="el" href="class_c_rte.html#a3600dd6a94b0d9d71e6bc153f70e6394">CRte::GetInstance()</a>. </p>
+
+</div>
+</div>
+<a id="aec4bdc49e78b4366db8143512545e531" name="aec4bdc49e78b4366db8143512545e531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4bdc49e78b4366db8143512545e531">&#9670;&#160;</a></span>~CRte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRte::~CRte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -344,6 +546,58 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize the RTE. Creates and initializes all the member objects. </p>
+
+</div>
+</div>
+<a id="a6f7535e0238195fa99774c17c223e290" name="a6f7535e0238195fa99774c17c223e290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7535e0238195fa99774c17c223e290">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rte.html">CRte</a> &amp; CRte::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rte.html">CRte</a> &amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12f7673e06050ef502c7e113bab3776c" name="a12f7673e06050ef502c7e113bab3776c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f7673e06050ef502c7e113bab3776c">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rte.html">CRte</a> &amp; CRte::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rte.html">CRte</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -716,6 +970,579 @@ Friends</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abd9a48b8336db26cddb4b201f32e4387" name="abd9a48b8336db26cddb4b201f32e4387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9a48b8336db26cddb4b201f32e4387">&#9670;&#160;</a></span>oPortBahrsFilterOutput1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba5ef3f145ce3e30c1a5687b7bb39aaeb0">EPortIds::eBahrsFilterOutput1</a>)&gt; CRte::oPortBahrsFilterOutput1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73556a7f286ca610424b47bf6c41898c" name="a73556a7f286ca610424b47bf6c41898c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73556a7f286ca610424b47bf6c41898c">&#9670;&#160;</a></span>oPortBahrsFilterOutput2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babeb27813df9fd03b97411631f7f2ba58">EPortIds::eBahrsFilterOutput2</a>)&gt; CRte::oPortBahrsFilterOutput2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c336bf2f6a67889e2263d12cff6ee23" name="a5c336bf2f6a67889e2263d12cff6ee23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c336bf2f6a67889e2263d12cff6ee23">&#9670;&#160;</a></span>oPortBahrsFilterOutput3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badfe58e4c46fb8b70b5ee5da2b98d9fbb">EPortIds::eBahrsFilterOutput3</a>)&gt; CRte::oPortBahrsFilterOutput3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a634c5ee1c6f8637f16a349782e43be4d" name="a634c5ee1c6f8637f16a349782e43be4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634c5ee1c6f8637f16a349782e43be4d">&#9670;&#160;</a></span>oPortCompensatedMagnetometerData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba94b6f64c64013e00c555844afae8121c">EPortIds::eCompensatedMagnetometerData</a>)&gt; CRte::oPortCompensatedMagnetometerData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2911842c96c84419428cc30dda403787" name="a2911842c96c84419428cc30dda403787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2911842c96c84419428cc30dda403787">&#9670;&#160;</a></span>oPortCompensatedMagnetometerDataInVehicleFrame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba5ed01d61f5c22b6a08d291fc4b2adf65">EPortIds::eCompensatedMagnetometerDataInVehicleFrame</a>)&gt; CRte::oPortCompensatedMagnetometerDataInVehicleFrame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37717f50fc3cfec317d283beb82267ea" name="a37717f50fc3cfec317d283beb82267ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37717f50fc3cfec317d283beb82267ea">&#9670;&#160;</a></span>oPortImuDataAfterMonitor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="class_c_imu_data_after_monitor.html">CImuDataAfterMonitor</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab1a14cd78c5012535cc523df15f3981a">EPortIds::eImuDataAfterMonitor</a>)&gt; CRte::oPortImuDataAfterMonitor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a607dbe7f41e64d1c7dfd7423b7788355" name="a607dbe7f41e64d1c7dfd7423b7788355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607dbe7f41e64d1c7dfd7423b7788355">&#9670;&#160;</a></span>oPortImuInput1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8a78184df17eff898587477ee44fc329">EPortIds::eImuInput1</a>)&gt; CRte::oPortImuInput1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad10607ea0c2198d0b103c39f130d486" name="aad10607ea0c2198d0b103c39f130d486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad10607ea0c2198d0b103c39f130d486">&#9670;&#160;</a></span>oPortImuInput2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bab856e5d05d6ab346ce04840d4b23bd4d">EPortIds::eImuInput2</a>)&gt; CRte::oPortImuInput2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bb0afd56a28fdbf09a005b3b6687edf" name="a5bb0afd56a28fdbf09a005b3b6687edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bb0afd56a28fdbf09a005b3b6687edf">&#9670;&#160;</a></span>oPortImuInput3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba09073f37e1db254d9a14d22607f7a87d">EPortIds::eImuInput3</a>)&gt; CRte::oPortImuInput3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae4a8dabf411edde57b39205045320d6" name="aae4a8dabf411edde57b39205045320d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4a8dabf411edde57b39205045320d6">&#9670;&#160;</a></span>oPortImuOutput_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba7c893e68b87f50adf074635e78bd9d48">EPortIds::eImuOutput</a>)&gt; CRte::oPortImuOutput_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a315e73301772f4257c39250b1fb76c" name="a5a315e73301772f4257c39250b1fb76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a315e73301772f4257c39250b1fb76c">&#9670;&#160;</a></span>oPortMagneticHeading_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_heading.html">SMagneticHeading</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba2b203c3a048a272c07f6affa0291860a">EPortIds::eMagneticHeading</a>)&gt; CRte::oPortMagneticHeading_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e370dc8a99171c0d369774ff81f59b0" name="a2e370dc8a99171c0d369774ff81f59b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e370dc8a99171c0d369774ff81f59b0">&#9670;&#160;</a></span>oPortMagnetometerInput1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57badb3a66b2e504e1693a923827c8cffed6">EPortIds::eMagnetometerInput1</a>)&gt; CRte::oPortMagnetometerInput1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a416df076dbe86d4931052502d46ee365" name="a416df076dbe86d4931052502d46ee365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416df076dbe86d4931052502d46ee365">&#9670;&#160;</a></span>oPortMagnetometerInput2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba32411b65bb4cf5076e2bf9dd6146f86a">EPortIds::eMagnetometerInput2</a>)&gt; CRte::oPortMagnetometerInput2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1216f630120cb7f73f522c543a29b2b" name="ac1216f630120cb7f73f522c543a29b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1216f630120cb7f73f522c543a29b2b">&#9670;&#160;</a></span>oPortMagnetometerInput3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_magnetic_measurement.html">SMagneticMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba8038a048b8436494e59f41f70f87290f">EPortIds::eMagnetometerInput3</a>)&gt; CRte::oPortMagnetometerInput3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01a16fc0580cb24ee991fb2392da4ff8" name="a01a16fc0580cb24ee991fb2392da4ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a16fc0580cb24ee991fb2392da4ff8">&#9670;&#160;</a></span>oPortPressureInput1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babd8260809b12f7c6ac7fdee38e880d2e">EPortIds::ePressureInput1</a>)&gt; CRte::oPortPressureInput1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4e530442b8334359a76d528e0980098" name="aa4e530442b8334359a76d528e0980098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e530442b8334359a76d528e0980098">&#9670;&#160;</a></span>oPortPressureInput2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafa0bc8e4a7e1af6cf762832135758fb9">EPortIds::ePressureInput2</a>)&gt; CRte::oPortPressureInput2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a463c1ee4ff535b1641a8d773debef1c2" name="a463c1ee4ff535b1641a8d773debef1c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463c1ee4ff535b1641a8d773debef1c2">&#9670;&#160;</a></span>oPortPressureInput3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba388c1a97617a23e9429999107f8c6055">EPortIds::ePressureInput3</a>)&gt; CRte::oPortPressureInput3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61567528c65798f5ab7aafad5fdc0b23" name="a61567528c65798f5ab7aafad5fdc0b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61567528c65798f5ab7aafad5fdc0b23">&#9670;&#160;</a></span>oPortSafePressureData1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baa91ca5b715e833587cff43143e9051d7">EPortIds::eSafePressureData1</a>)&gt; CRte::oPortSafePressureData1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa855b3070d084010a16b6a76718f5bb" name="aaa855b3070d084010a16b6a76718f5bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa855b3070d084010a16b6a76718f5bb">&#9670;&#160;</a></span>oPortSafePressureData2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57bafe1f4d60ddd3820b6ab8f53af8e67ae0">EPortIds::eSafePressureData2</a>)&gt; CRte::oPortSafePressureData2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37c04ea28a2e9e5d837ec3a47344b3a1" name="a37c04ea28a2e9e5d837ec3a47344b3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c04ea28a2e9e5d837ec3a47344b3a1">&#9670;&#160;</a></span>oPortSafePressureData3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba9c648d5fc570d9280eeb66e63421ac95">EPortIds::eSafePressureData3</a>)&gt; CRte::oPortSafePressureData3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6069497579a0f5fa361a9d40575f8bd" name="ae6069497579a0f5fa361a9d40575f8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6069497579a0f5fa361a9d40575f8bd">&#9670;&#160;</a></span>oPortSafeVehicleAttitude_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_safe_attitude_data.html">SSafeAttitudeData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba06e5957cd0f926522be0e7b284ec058d">EPortIds::eSafeVehicleAttitude</a>)&gt; CRte::oPortSafeVehicleAttitude_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40e4a7ab9d2eb9c35fa01e84fa2af9d4" name="a40e4a7ab9d2eb9c35fa01e84fa2af9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e4a7ab9d2eb9c35fa01e84fa2af9d4">&#9670;&#160;</a></span>oPortSafeVerticalChannelData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_safe_vertical_channel_data.html">SSafeVerticalChannelData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57baf0d89a8d06df9558f6d064516e7e2f33">EPortIds::eSafeVerticalChannelData</a>)&gt; CRte::oPortSafeVerticalChannelData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed8ad12f60b81e1eafcf479da77473ff" name="aed8ad12f60b81e1eafcf479da77473ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8ad12f60b81e1eafcf479da77473ff">&#9670;&#160;</a></span>oPortSyncPulseTime_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_time_of_sync_pulse.html">STimeOfSyncPulse</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba1c0a18f280d4a7ccc3e45fef3ca72c16">EPortIds::eSyncPulseTime</a>)&gt; CRte::oPortSyncPulseTime_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accb9e403622bda6ee33373aff0bcc3a5" name="accb9e403622bda6ee33373aff0bcc3a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb9e403622bda6ee33373aff0bcc3a5">&#9670;&#160;</a></span>oPortVehicleAttitude1_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57babf88b7f6dd418a8b0fa21c799c35aa9a">EPortIds::eVehicleAttitude1</a>)&gt; CRte::oPortVehicleAttitude1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399b4d82c17f4199531019ab0f018b9b" name="a399b4d82c17f4199531019ab0f018b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399b4d82c17f4199531019ab0f018b9b">&#9670;&#160;</a></span>oPortVehicleAttitude2_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba725bf69b367070e4dd7999cc48014c8e">EPortIds::eVehicleAttitude2</a>)&gt; CRte::oPortVehicleAttitude2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa178580a9deb819e9aa0950e6d93b48a" name="aa178580a9deb819e9aa0950e6d93b48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa178580a9deb819e9aa0950e6d93b48a">&#9670;&#160;</a></span>oPortVehicleAttitude3_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_software_component_port.html">CSoftwareComponentPort</a>&lt;<a class="el" href="struct_s_attitude_data.html">SAttitudeData</a>, static_cast&lt;uint8_t&gt;(<a class="el" href="class_c_rte.html#ab3a5d6f11b7f39ba19500759af83e57ba17c17a8ab5e51cf8b5b199cd3cf785cd">EPortIds::eVehicleAttitude3</a>)&gt; CRte::oPortVehicleAttitude3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

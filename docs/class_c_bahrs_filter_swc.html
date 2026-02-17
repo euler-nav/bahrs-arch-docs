@@ -109,6 +109,10 @@ $(document).ready(function(){initNavTree('class_c_bahrs_filter_swc.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_bahrs_filter_swc-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CBahrsFilterSwc Class Reference</div></div>
@@ -126,6 +130,10 @@ Inheritance diagram for CBahrsFilterSwc:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5ebf08ca7e7f688cf85c8088de10fdfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a5ebf08ca7e7f688cf85c8088de10fdfb">Init</a> () override</td></tr>
+<tr class="separator:a5ebf08ca7e7f688cf85c8088de10fdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74a05639e08f2a43ad207539e57ecba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#aa74a05639e08f2a43ad207539e57ecba">IsInitialized</a> () override</td></tr>
+<tr class="separator:aa74a05639e08f2a43ad207539e57ecba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e4a4835edddbb68c62165812903a8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a09e4a4835edddbb68c62165812903a8d">SetImuInput</a> ()</td></tr>
 <tr class="memdesc:a09e4a4835edddbb68c62165812903a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper around CBahrs::SetInput(). Has mutex protection.  <br /></td></tr>
 <tr class="separator:a09e4a4835edddbb68c62165812903a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,10 +144,68 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6fb8b94490e8a95249a570f5a6a8e69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper arounf CBahrs::Step().  <br /></td></tr>
 <tr class="separator:a6fb8b94490e8a95249a570f5a6a8e69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_software_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_software_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_software_component.html">CSoftwareComponent&lt; CBahrsFilterSwc, 3U &gt;</a></td></tr>
+<tr class="memitem:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a9b9a310d314be9f7966d4ff7491dd3c4">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;)=delete</td></tr>
+<tr class="separator:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a1ffcc4521f7e2308fb65cd01b63cc963">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a923aaf474ba39912e1871430708d77b9">operator=</a> (const <a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#aa4a6ed5126419bc6cf1e8c1b622751e1">operator=</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">Init</a> ()=0</td></tr>
 <tr class="separator:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">IsInitialized</a> ()=0</td></tr>
 <tr class="separator:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aafddf434d7c3ad0b4d44682df4894d79"><td class="memItemLeft" align="right" valign="top">typedef StaticSemaphore_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#aafddf434d7c3ad0b4d44682df4894d79">osStaticMutexDef_t</a></td></tr>
+<tr class="separator:aafddf434d7c3ad0b4d44682df4894d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a716c709ac24861eb2fb2cbdc1f3fc59d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a716c709ac24861eb2fb2cbdc1f3fc59d">CBahrsFilterSwc</a> (<a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;)=delete</td></tr>
+<tr class="separator:a716c709ac24861eb2fb2cbdc1f3fc59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67447dcd27d84b6c8af87813cf4a75ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a67447dcd27d84b6c8af87813cf4a75ce">CBahrsFilterSwc</a> (<a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a67447dcd27d84b6c8af87813cf4a75ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6515101ab17f069b40224126b5f22b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a6515101ab17f069b40224126b5f22b42">operator=</a> (const <a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:a6515101ab17f069b40224126b5f22b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c079cd65ea2ec347b89d959d47bca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#aa4c079cd65ea2ec347b89d959d47bca0">operator=</a> (<a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:aa4c079cd65ea2ec347b89d959d47bca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed1a8798824a7e586d58b79c47e2b2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a7ed1a8798824a7e586d58b79c47e2b2e">CBahrsFilterSwc</a> (uint32_t uInstanceIndex)</td></tr>
+<tr class="memdesc:a7ed1a8798824a7e586d58b79c47e2b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor creates a mutex for shared BAHRS filter data.  <br /></td></tr>
+<tr class="separator:a7ed1a8798824a7e586d58b79c47e2b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0c3e91854da93ef20d35968ed10189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#acf0c3e91854da93ef20d35968ed10189">~CBahrsFilterSwc</a> ()=default</td></tr>
+<tr class="separator:acf0c3e91854da93ef20d35968ed10189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1328e1f37b64f5277ed9fa5772a0f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#abd1328e1f37b64f5277ed9fa5772a0f4">readImuDataPort</a> (<a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a> &amp;orImuData, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> &amp;erSensorId) const</td></tr>
+<tr class="memdesc:abd1328e1f37b64f5277ed9fa5772a0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read IMU data from input port. Selects input port based on SWC instance index.  <br /></td></tr>
+<tr class="separator:abd1328e1f37b64f5277ed9fa5772a0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46ea321f98a2907851317065e878384"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#af46ea321f98a2907851317065e878384">readPressureDataPort</a> (<a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a> &amp;orPressureData, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> &amp;erSensorId) const</td></tr>
+<tr class="memdesc:af46ea321f98a2907851317065e878384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read pressure data from input port. Selects input port based on SWC instance index.  <br /></td></tr>
+<tr class="separator:af46ea321f98a2907851317065e878384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1ce7bc93fde309015cab3f99050dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a3d1ce7bc93fde309015cab3f99050dd5">writeOutputToPort</a> (const <a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a> &amp;korFilterOutput) const</td></tr>
+<tr class="memdesc:a3d1ce7bc93fde309015cab3f99050dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write BAHRS filter output to RTE port. Selects output port based on SWC instance index.  <br /></td></tr>
+<tr class="separator:a3d1ce7bc93fde309015cab3f99050dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a70321e3708823a7bee642736f2692d0c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a70321e3708823a7bee642736f2692d0c">getInstanceImpl</a> (unsigned uInstanceIndex)</td></tr>
+<tr class="separator:a70321e3708823a7bee642736f2692d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8d9c29524b677519cc81b1ef13f05fc2"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a8d9c29524b677519cc81b1ef13f05fc2">kuInstanceIndex_</a></td></tr>
+<tr class="memdesc:a8d9c29524b677519cc81b1ef13f05fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the component instance.  <br /></td></tr>
+<tr class="separator:a8d9c29524b677519cc81b1ef13f05fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891413745c3cba29366123dfba1d60cf"><td class="memItemLeft" align="right" valign="top">osMutexId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a891413745c3cba29366123dfba1d60cf">pMutexHandle_</a></td></tr>
+<tr class="memdesc:a891413745c3cba29366123dfba1d60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex handle.  <br /></td></tr>
+<tr class="separator:a891413745c3cba29366123dfba1d60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84538fd1624659c4d0d76bdf10299ed9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_bahrs_filter_swc.html#aafddf434d7c3ad0b4d44682df4894d79">osStaticMutexDef_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a84538fd1624659c4d0d76bdf10299ed9">sMutexControlBlock_</a></td></tr>
+<tr class="memdesc:a84538fd1624659c4d0d76bdf10299ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory reserved for the mutex control block.  <br /></td></tr>
+<tr class="separator:a84538fd1624659c4d0d76bdf10299ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381b2a0dfec0ba9e575006542417223c"><td class="memItemLeft" align="right" valign="top">const osMutexAttr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bahrs_filter_swc.html#a381b2a0dfec0ba9e575006542417223c">sMutexAttributes_</a> { NULL, 0, &amp;<a class="el" href="class_c_bahrs_filter_swc.html#a84538fd1624659c4d0d76bdf10299ed9">sMutexControlBlock_</a>, sizeof(<a class="el" href="class_c_bahrs_filter_swc.html#a84538fd1624659c4d0d76bdf10299ed9">sMutexControlBlock_</a>) }</td></tr>
+<tr class="memdesc:a381b2a0dfec0ba9e575006542417223c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure with mutex attributes required for creation.  <br /></td></tr>
+<tr class="separator:a381b2a0dfec0ba9e575006542417223c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -160,7 +226,367 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0b74e621a83bfb2ee8cd523cf6a3b93e inherit pro_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a0b74e621a83bfb2ee8cd523cf6a3b93e">~CSoftwareComponent</a> ()=default</td></tr>
 <tr class="separator:a0b74e621a83bfb2ee8cd523cf6a3b93e inherit pro_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aafddf434d7c3ad0b4d44682df4894d79" name="aafddf434d7c3ad0b4d44682df4894d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafddf434d7c3ad0b4d44682df4894d79">&#9670;&#160;</a></span>osStaticMutexDef_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef StaticSemaphore_t <a class="el" href="class_c_bahrs_filter_swc.html#aafddf434d7c3ad0b4d44682df4894d79">CBahrsFilterSwc::osStaticMutexDef_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The typedef copied from a CMSIS_OS header. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a716c709ac24861eb2fb2cbdc1f3fc59d" name="a716c709ac24861eb2fb2cbdc1f3fc59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716c709ac24861eb2fb2cbdc1f3fc59d">&#9670;&#160;</a></span>CBahrsFilterSwc() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CBahrsFilterSwc::CBahrsFilterSwc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67447dcd27d84b6c8af87813cf4a75ce" name="a67447dcd27d84b6c8af87813cf4a75ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67447dcd27d84b6c8af87813cf4a75ce">&#9670;&#160;</a></span>CBahrsFilterSwc() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CBahrsFilterSwc::CBahrsFilterSwc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ed1a8798824a7e586d58b79c47e2b2e" name="a7ed1a8798824a7e586d58b79c47e2b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed1a8798824a7e586d58b79c47e2b2e">&#9670;&#160;</a></span>CBahrsFilterSwc() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CBahrsFilterSwc::CBahrsFilterSwc </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uInstanceIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The constructor creates a mutex for shared BAHRS filter data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uInstanceIndex</td><td>Instance index of the software component. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf0c3e91854da93ef20d35968ed10189" name="acf0c3e91854da93ef20d35968ed10189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0c3e91854da93ef20d35968ed10189">&#9670;&#160;</a></span>~CBahrsFilterSwc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CBahrsFilterSwc::~CBahrsFilterSwc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a70321e3708823a7bee642736f2692d0c" name="a70321e3708823a7bee642736f2692d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70321e3708823a7bee642736f2692d0c">&#9670;&#160;</a></span>getInstanceImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp; CBahrsFilterSwc::getInstanceImpl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>uInstanceIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ebf08ca7e7f688cf85c8088de10fdfb" name="a5ebf08ca7e7f688cf85c8088de10fdfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ebf08ca7e7f688cf85c8088de10fdfb">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CBahrsFilterSwc::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the software component. </p>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">CSoftwareComponent&lt; CBahrsFilterSwc, 3U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aa74a05639e08f2a43ad207539e57ecba" name="aa74a05639e08f2a43ad207539e57ecba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74a05639e08f2a43ad207539e57ecba">&#9670;&#160;</a></span>IsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CBahrsFilterSwc::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get initialization status of the software component. </p><dl class="section return"><dt>Returns</dt><dd>True &ndash; the component is initialized, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">CSoftwareComponent&lt; CBahrsFilterSwc, 3U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aa4c079cd65ea2ec347b89d959d47bca0" name="aa4c079cd65ea2ec347b89d959d47bca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c079cd65ea2ec347b89d959d47bca0">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp; CBahrsFilterSwc::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6515101ab17f069b40224126b5f22b42" name="a6515101ab17f069b40224126b5f22b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6515101ab17f069b40224126b5f22b42">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp; CBahrsFilterSwc::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_bahrs_filter_swc.html">CBahrsFilterSwc</a> &amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd1328e1f37b64f5277ed9fa5772a0f4" name="abd1328e1f37b64f5277ed9fa5772a0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1328e1f37b64f5277ed9fa5772a0f4">&#9670;&#160;</a></span>readImuDataPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CBahrsFilterSwc::readImuDataPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_imu_measurement.html">SImuMeasurement</a> &amp;&#160;</td>
+          <td class="paramname"><em>orImuData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> &amp;&#160;</td>
+          <td class="paramname"><em>erSensorId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read IMU data from input port. Selects input port based on SWC instance index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orImuData</td><td>Reference to IMU data object to be populated. </td></tr>
+    <tr><td class="paramname">erSensorId</td><td>ID of the sensor used as input source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af46ea321f98a2907851317065e878384" name="af46ea321f98a2907851317065e878384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46ea321f98a2907851317065e878384">&#9670;&#160;</a></span>readPressureDataPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CBahrsFilterSwc::readPressureDataPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_barometer_measurement.html">SBarometerMeasurement</a> &amp;&#160;</td>
+          <td class="paramname"><em>orPressureData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> &amp;&#160;</td>
+          <td class="paramname"><em>erSensorId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read pressure data from input port. Selects input port based on SWC instance index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orPressureData</td><td>Reference to pressure data object to be populated. </td></tr>
+    <tr><td class="paramname">erSensorId</td><td>ID of the sensor used as input source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a09e4a4835edddbb68c62165812903a8d" name="a09e4a4835edddbb68c62165812903a8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09e4a4835edddbb68c62165812903a8d">&#9670;&#160;</a></span>SetImuInput()</h2>
 
@@ -225,6 +651,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d1ce7bc93fde309015cab3f99050dd5" name="a3d1ce7bc93fde309015cab3f99050dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1ce7bc93fde309015cab3f99050dd5">&#9670;&#160;</a></span>writeOutputToPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CBahrsFilterSwc::writeOutputToPort </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_bahrs_filter_output.html">CBahrsFilterOutput</a> &amp;&#160;</td>
+          <td class="paramname"><em>korFilterOutput</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write BAHRS filter output to RTE port. Selects output port based on SWC instance index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">korFilterOutput</td><td>Filter output data to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="acdd1ff6cd9288fb20f4a486da48d1afb" name="acdd1ff6cd9288fb20f4a486da48d1afb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdd1ff6cd9288fb20f4a486da48d1afb">&#9670;&#160;</a></span>CSoftwareComponent&lt; CBahrsFilterSwc, 3U &gt;</h2>
@@ -245,6 +705,103 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8d9c29524b677519cc81b1ef13f05fc2" name="a8d9c29524b677519cc81b1ef13f05fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9c29524b677519cc81b1ef13f05fc2">&#9670;&#160;</a></span>kuInstanceIndex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t CBahrsFilterSwc::kuInstanceIndex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Index of the component instance. </p>
+
+</div>
+</div>
+<a id="a891413745c3cba29366123dfba1d60cf" name="a891413745c3cba29366123dfba1d60cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891413745c3cba29366123dfba1d60cf">&#9670;&#160;</a></span>pMutexHandle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osMutexId_t CBahrsFilterSwc::pMutexHandle_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mutex handle. </p>
+
+</div>
+</div>
+<a id="a381b2a0dfec0ba9e575006542417223c" name="a381b2a0dfec0ba9e575006542417223c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381b2a0dfec0ba9e575006542417223c">&#9670;&#160;</a></span>sMutexAttributes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const osMutexAttr_t CBahrsFilterSwc::sMutexAttributes_ { NULL, 0, &amp;<a class="el" href="class_c_bahrs_filter_swc.html#a84538fd1624659c4d0d76bdf10299ed9">sMutexControlBlock_</a>, sizeof(<a class="el" href="class_c_bahrs_filter_swc.html#a84538fd1624659c4d0d76bdf10299ed9">sMutexControlBlock_</a>) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A structure with mutex attributes required for creation. </p>
+
+</div>
+</div>
+<a id="a84538fd1624659c4d0d76bdf10299ed9" name="a84538fd1624659c4d0d76bdf10299ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84538fd1624659c4d0d76bdf10299ed9">&#9670;&#160;</a></span>sMutexControlBlock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_bahrs_filter_swc.html#aafddf434d7c3ad0b4d44682df4894d79">osStaticMutexDef_t</a> CBahrsFilterSwc::sMutexControlBlock_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Memory reserved for the mutex control block. </p>
 
 </div>
 </div>

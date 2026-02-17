@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('class_c_serial_protocol.html',''); ini
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_c_serial_protocol-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CSerialProtocol Class Reference</div></div>
@@ -128,6 +127,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_serial_protocol_1_1_s_accuracy_data_message.html">SAccuracyDataMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigation data accuracy message.  <a href="struct_c_serial_protocol_1_1_s_accuracy_data_message.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_serial_protocol_1_1_s_hardware_version_data.html">SHardwareVersionData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload of the "Hardware version" message.  <a href="struct_c_serial_protocol_1_1_s_hardware_version_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_serial_protocol_1_1_s_hardware_version_message.html">SHardwareVersionMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_serial_protocol_1_1_s_inertial_data.html">SInertialData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inertial data message payload.  <a href="struct_c_serial_protocol_1_1_s_inertial_data.html#details">More...</a><br /></td></tr>
@@ -200,19 +204,25 @@ Public Types</h2></td></tr>
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a0fe39211df978c55e70ec88f2daa2565">eTimeOfSyncPulse</a> = 0x06
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a918564c7d6e89da016d3962fba2c5aa6">eSoftwareVersion</a> = 0x0F
 , <br />
-&#160;&#160;<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a74559aeff5083564705643f5a2663d90">eDebugEventWriteToPort</a> = 0xC0
+&#160;&#160;<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277ae087f9a47c9a1e4e2dd1db1f568a11e8">eHardwareVersion</a> = 0x1F
+, <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a74559aeff5083564705643f5a2663d90">eDebugEventWriteToPort</a> = 0xC0
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277aeca86c773014411553d1d287e8d66501">eDebugEventRunnableCall</a> = 0xC1
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a563fe14d0e6abd24f84dd5da3893cad9">eTypeOpenDiagnostic</a> = 0xF0
-, <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a115822dc10e668c61184729edf0cb3d9">eTypeCloseDiagnostic</a> = 0xF1
 , <br />
-&#160;&#160;<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a6e3a997636548b8c873b86ec3f049658">eTypeReadNVMPage</a> = 0xF2
+&#160;&#160;<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a115822dc10e668c61184729edf0cb3d9">eTypeCloseDiagnostic</a> = 0xF1
+, <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a6e3a997636548b8c873b86ec3f049658">eTypeReadNVMPage</a> = 0xF2
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a4d8c76918fdd3c90792bf925d96eb12d">eTypeNVMPageData</a> = 0xF3
 , <a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a9b0d765bdaa470abe452e0bb0d4eb1de">eTypeAccept</a> = 0xFF
 <br />
  }</td></tr>
 <tr class="separator:ab121f5b36b08ce7aec5008c43699b277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6fe1be35b7ac5b6cef7cb42bb231dc"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a0b6fe1be35b7ac5b6cef7cb42bb231dc">CrcType_t</a></td></tr>
-<tr class="separator:a0b6fe1be35b7ac5b6cef7cb42bb231dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e579a2efc7ef45941a2769aea066fd5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5">ESignalHealthInfo</a> : uint8_t { <a class="el" href="class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5a2fdd41f3c9d616a8388fa048e17fb1c5">eUnavailable</a> = 0U
+, <a class="el" href="class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5ad2632d4c4c47601d0639e0d2fbe223f8">eSafe</a>
+, <a class="el" href="class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5ac46cd5f7cfbb86ee4e6e58de6c3037ef">eIntegrityRisk</a>
+ }</td></tr>
+<tr class="separator:a9e579a2efc7ef45941a2769aea066fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8d3dd88aae9ceaed3a00f1e2597127"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a3c8d3dd88aae9ceaed3a00f1e2597127">CrcType_t</a> = uint32_t</td></tr>
+<tr class="separator:a3c8d3dd88aae9ceaed3a00f1e2597127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -220,33 +230,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5056963c92775b50a9d00a9f880334bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9284a66590ceed3890f168270e5c8427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a9284a66590ceed3890f168270e5c8427">~CSerialProtocol</a> ()=default</td></tr>
 <tr class="separator:a9284a66590ceed3890f168270e5c8427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37276100f487d8f5d2da232053349c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_inertial_data_message.html">SInertialDataMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a37276100f487d8f5d2da232053349c67">BuildInertialDataMessage</a> (const <a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a> &amp;korImuData)</td></tr>
-<tr class="memdesc:a37276100f487d8f5d2da232053349c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build inertial data message from IMU measurements.  <br /></td></tr>
-<tr class="separator:a37276100f487d8f5d2da232053349c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5ec58cb855e8d1eb7ebf59984778e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_inertial_data_message.html">STimeOfInertialDataMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#abd5ec58cb855e8d1eb7ebf59984778e2">BuildTimeOfInertialDataMessage</a> (const <a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a> &amp;korImuData)</td></tr>
-<tr class="memdesc:abd5ec58cb855e8d1eb7ebf59984778e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the "Time of inertial data message" from IMU measurements.  <br /></td></tr>
-<tr class="separator:abd5ec58cb855e8d1eb7ebf59984778e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3626dcd0680664343b64e629c19dc29c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_navigation_data_message.html">SNavigationDataMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a3626dcd0680664343b64e629c19dc29c">BuildNavigationDataMessage</a> (const <a class="el" href="struct_s_vertical_channel_data.html">SVerticalChannelData</a> &amp;korVerticalChannelData, const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;korVehicleAttitude, const <a class="el" href="struct_s_magnetic_heading.html">SMagneticHeading</a> &amp;korMagneticHeading)</td></tr>
-<tr class="memdesc:a3626dcd0680664343b64e629c19dc29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build navigation data message.  <br /></td></tr>
-<tr class="separator:a3626dcd0680664343b64e629c19dc29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929353a8a586088cbc7da489bd015e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_navigation_data_message.html">STimeOfNavigationDataMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a929353a8a586088cbc7da489bd015e90">BuildTimeOfNavigationDataMessage</a> (const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;korVehicleAttitude)</td></tr>
-<tr class="memdesc:a929353a8a586088cbc7da489bd015e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build time of navigation data message.  <br /></td></tr>
-<tr class="separator:a929353a8a586088cbc7da489bd015e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13e4877408abb5bdd0d3a0bf338406c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_accuracy_data_message.html">SAccuracyDataMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#ad13e4877408abb5bdd0d3a0bf338406c">BuildAccuracyDataMessage</a> (const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;korVehicleAttitude)</td></tr>
-<tr class="memdesc:ad13e4877408abb5bdd0d3a0bf338406c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build navigation data accuracy message.  <br /></td></tr>
-<tr class="separator:ad13e4877408abb5bdd0d3a0bf338406c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7290bff9226a3cc28853a9d02a178495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_latest_sync_pulse_message.html">STimeOfLatestSyncPulseMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a7290bff9226a3cc28853a9d02a178495">BuildTimeOfLatestSyncPulseMessage</a> (uint64_t uTimestamp)</td></tr>
-<tr class="memdesc:a7290bff9226a3cc28853a9d02a178495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build time of the latest sync pulse message.  <br /></td></tr>
-<tr class="separator:a7290bff9226a3cc28853a9d02a178495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b59dc5f4089d538be66e8477c692929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_serial_protocol_1_1_s_software_version_message.html">SSoftwareVersionMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a2b59dc5f4089d538be66e8477c692929">BuildSoftwareVersionMessage</a> ()</td></tr>
-<tr class="memdesc:a2b59dc5f4089d538be66e8477c692929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the software version message.  <br /></td></tr>
-<tr class="separator:a2b59dc5f4089d538be66e8477c692929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a103feda1c33d1542fd9639fe88a356ac"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a103feda1c33d1542fd9639fe88a356ac">CalculateCrc</a> (uint32_t *pData, uint32_t uNumberOfWords_)</td></tr>
-<tr class="memdesc:a103feda1c33d1542fd9639fe88a356ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate CRC.  <br /></td></tr>
-<tr class="separator:a103feda1c33d1542fd9639fe88a356ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -256,7 +239,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a885e5582155c941f2f4ad42a454907bc"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a885e5582155c941f2f4ad42a454907bc">uMarker2_</a> { 0x45 }</td></tr>
 <tr class="memdesc:a885e5582155c941f2f4ad42a454907bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync char 2, symbol 'E'.  <br /></td></tr>
 <tr class="separator:a885e5582155c941f2f4ad42a454907bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d09961f161fcafd700448983636d95"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a01d09961f161fcafd700448983636d95">uVersion_</a> { 2U }</td></tr>
+<tr class="memitem:a01d09961f161fcafd700448983636d95"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a01d09961f161fcafd700448983636d95">uVersion_</a> { 3U }</td></tr>
 <tr class="memdesc:a01d09961f161fcafd700448983636d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protocol version.  <br /></td></tr>
 <tr class="separator:a01d09961f161fcafd700448983636d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a307138f17dab20432b4ab36b53e62"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a92a307138f17dab20432b4ab36b53e62">skfMaxHeight_</a> { 10000.0F }</td></tr>
@@ -273,10 +256,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9885f46794e186adaec9717b3cb56723"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723">skfMaxSpecificForce_</a> { CGeoConstants::skfGravity * 5.0F }</td></tr>
 <tr class="memdesc:a9885f46794e186adaec9717b3cb56723"><td class="mdescLeft">&#160;</td><td class="mdescRight">+-5 [g] in [m/s^2]  <br /></td></tr>
 <tr class="separator:a9885f46794e186adaec9717b3cb56723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d67a302e56847052c0bbd9b9bcb8bc"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#aa4d67a302e56847052c0bbd9b9bcb8bc">skfSpecificForceScale_</a> { <a class="el" href="class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723">skfMaxSpecificForce_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max() - 1) }</td></tr>
+<tr class="memitem:aa4d67a302e56847052c0bbd9b9bcb8bc"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#aa4d67a302e56847052c0bbd9b9bcb8bc">skfSpecificForceScale_</a> { <a class="el" href="class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723">skfMaxSpecificForce_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max()) }</td></tr>
 <tr class="memdesc:aa4d67a302e56847052c0bbd9b9bcb8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer to float, +-5g range.  <br /></td></tr>
 <tr class="separator:aa4d67a302e56847052c0bbd9b9bcb8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab101c9e3dc3f885cba81a7a441aab597"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#ab101c9e3dc3f885cba81a7a441aab597">skfAngularRateScale_</a> { <a class="el" href="class_c_serial_protocol.html#adbcbae0d209994a4315aea9692c05989">skfMaxAngularRate_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max() - 1) }</td></tr>
+<tr class="memitem:ab101c9e3dc3f885cba81a7a441aab597"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#ab101c9e3dc3f885cba81a7a441aab597">skfAngularRateScale_</a> { <a class="el" href="class_c_serial_protocol.html#adbcbae0d209994a4315aea9692c05989">skfMaxAngularRate_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max()) }</td></tr>
 <tr class="memdesc:ab101c9e3dc3f885cba81a7a441aab597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer to float, +-300 deg/s range.  <br /></td></tr>
 <tr class="separator:ab101c9e3dc3f885cba81a7a441aab597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687fe393d494ce87d9272eb18a7259e3"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_serial_protocol.html#a687fe393d494ce87d9272eb18a7259e3">skfHeightScale_</a> { 0.16784924F }</td></tr>
@@ -295,14 +278,14 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class that describes and implements the BAHRS serial protocol. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0b6fe1be35b7ac5b6cef7cb42bb231dc" name="a0b6fe1be35b7ac5b6cef7cb42bb231dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6fe1be35b7ac5b6cef7cb42bb231dc">&#9670;&#160;</a></span>CrcType_t</h2>
+<a id="a3c8d3dd88aae9ceaed3a00f1e2597127" name="a3c8d3dd88aae9ceaed3a00f1e2597127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8d3dd88aae9ceaed3a00f1e2597127">&#9670;&#160;</a></span>CrcType_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint32_t <a class="el" href="class_c_serial_protocol.html#a0b6fe1be35b7ac5b6cef7cb42bb231dc">CSerialProtocol::CrcType_t</a></td>
+          <td class="memname">using <a class="el" href="class_c_serial_protocol.html#a3c8d3dd88aae9ceaed3a00f1e2597127">CSerialProtocol::CrcType_t</a> =  uint32_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,6 +329,8 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ab121f5b36b08ce7aec5008c43699b277a918564c7d6e89da016d3962fba2c5aa6" name="ab121f5b36b08ce7aec5008c43699b277a918564c7d6e89da016d3962fba2c5aa6"></a>eSoftwareVersion&#160;</td><td class="fielddoc"><p>"Software version" message </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ab121f5b36b08ce7aec5008c43699b277ae087f9a47c9a1e4e2dd1db1f568a11e8" name="ab121f5b36b08ce7aec5008c43699b277ae087f9a47c9a1e4e2dd1db1f568a11e8"></a>eHardwareVersion&#160;</td><td class="fielddoc"><p>"Hardware version" message </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ab121f5b36b08ce7aec5008c43699b277a74559aeff5083564705643f5a2663d90" name="ab121f5b36b08ce7aec5008c43699b277a74559aeff5083564705643f5a2663d90"></a>eDebugEventWriteToPort&#160;</td><td class="fielddoc"><p>Debug information: SWC port data. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab121f5b36b08ce7aec5008c43699b277aeca86c773014411553d1d287e8d66501" name="ab121f5b36b08ce7aec5008c43699b277aeca86c773014411553d1d287e8d66501"></a>eDebugEventRunnableCall&#160;</td><td class="fielddoc"><p>Debug information: SWC API call. </p>
@@ -360,6 +345,33 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ab121f5b36b08ce7aec5008c43699b277a9b0d765bdaa470abe452e0bb0d4eb1de" name="ab121f5b36b08ce7aec5008c43699b277a9b0d765bdaa470abe452e0bb0d4eb1de"></a>eTypeAccept&#160;</td><td class="fielddoc"><p>Acknowledgment of diagnostics message reception. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9e579a2efc7ef45941a2769aea066fd5" name="a9e579a2efc7ef45941a2769aea066fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e579a2efc7ef45941a2769aea066fd5">&#9670;&#160;</a></span>ESignalHealthInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5">CSerialProtocol::ESignalHealthInfo</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e579a2efc7ef45941a2769aea066fd5a2fdd41f3c9d616a8388fa048e17fb1c5" name="a9e579a2efc7ef45941a2769aea066fd5a2fdd41f3c9d616a8388fa048e17fb1c5"></a>eUnavailable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e579a2efc7ef45941a2769aea066fd5ad2632d4c4c47601d0639e0d2fbe223f8" name="a9e579a2efc7ef45941a2769aea066fd5ad2632d4c4c47601d0639e0d2fbe223f8"></a>eSafe&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e579a2efc7ef45941a2769aea066fd5ac46cd5f7cfbb86ee4e6e58de6c3037ef" name="a9e579a2efc7ef45941a2769aea066fd5ac46cd5f7cfbb86ee4e6e58de6c3037ef"></a>eIntegrityRisk&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -415,253 +427,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad13e4877408abb5bdd0d3a0bf338406c" name="ad13e4877408abb5bdd0d3a0bf338406c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13e4877408abb5bdd0d3a0bf338406c">&#9670;&#160;</a></span>BuildAccuracyDataMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_accuracy_data_message.html">CSerialProtocol::SAccuracyDataMessage</a> CSerialProtocol::BuildAccuracyDataMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korVehicleAttitude</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build navigation data accuracy message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">korVehicleAttitude</td><td>Reference to vehicle attitude data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Accuracy data message. </dd></dl>
-
-</div>
-</div>
-<a id="a37276100f487d8f5d2da232053349c67" name="a37276100f487d8f5d2da232053349c67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37276100f487d8f5d2da232053349c67">&#9670;&#160;</a></span>BuildInertialDataMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_inertial_data_message.html">CSerialProtocol::SInertialDataMessage</a> CSerialProtocol::BuildInertialDataMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korImuData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build inertial data message from IMU measurements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">korImuData</td><td>Reference to IMU data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Inertial data message struct. </dd></dl>
-
-</div>
-</div>
-<a id="a3626dcd0680664343b64e629c19dc29c" name="a3626dcd0680664343b64e629c19dc29c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3626dcd0680664343b64e629c19dc29c">&#9670;&#160;</a></span>BuildNavigationDataMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_navigation_data_message.html">CSerialProtocol::SNavigationDataMessage</a> CSerialProtocol::BuildNavigationDataMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_s_vertical_channel_data.html">SVerticalChannelData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korVerticalChannelData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korVehicleAttitude</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_s_magnetic_heading.html">SMagneticHeading</a> &amp;&#160;</td>
-          <td class="paramname"><em>korMagneticHeading</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build navigation data message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">korVerticalChannelData</td><td>Reference to vertical channel data. </td></tr>
-    <tr><td class="paramname">korVehicleAttitude</td><td>Reference to vehicle attitude data. </td></tr>
-    <tr><td class="paramname">korMagneticHeading</td><td>Reference to the estimated magnetic heading data compensated for installation alignment </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Navigation data message struct. </dd></dl>
-
-</div>
-</div>
-<a id="a2b59dc5f4089d538be66e8477c692929" name="a2b59dc5f4089d538be66e8477c692929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b59dc5f4089d538be66e8477c692929">&#9670;&#160;</a></span>BuildSoftwareVersionMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_software_version_message.html">CSerialProtocol::SSoftwareVersionMessage</a> CSerialProtocol::BuildSoftwareVersionMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build the software version message. </p>
-<dl class="section return"><dt>Returns</dt><dd>The software version message struct. </dd></dl>
-
-</div>
-</div>
-<a id="abd5ec58cb855e8d1eb7ebf59984778e2" name="abd5ec58cb855e8d1eb7ebf59984778e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5ec58cb855e8d1eb7ebf59984778e2">&#9670;&#160;</a></span>BuildTimeOfInertialDataMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_inertial_data_message.html">CSerialProtocol::STimeOfInertialDataMessage</a> CSerialProtocol::BuildTimeOfInertialDataMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_s_output_imu_data.html">SOutputImuData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korImuData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build the "Time of inertial data message" from IMU measurements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">korImuData</td><td>Reference to IMU measurement. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>"Time of inertial data message" struct. </dd></dl>
-
-</div>
-</div>
-<a id="a7290bff9226a3cc28853a9d02a178495" name="a7290bff9226a3cc28853a9d02a178495"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7290bff9226a3cc28853a9d02a178495">&#9670;&#160;</a></span>BuildTimeOfLatestSyncPulseMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_latest_sync_pulse_message.html">CSerialProtocol::STimeOfLatestSyncPulseMessage</a> CSerialProtocol::BuildTimeOfLatestSyncPulseMessage </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>uTimestamp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build time of the latest sync pulse message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uTimestamp</td><td>Measured time of the latest sync pulse. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The time of the latest sync pulse message. </dd></dl>
-
-</div>
-</div>
-<a id="a929353a8a586088cbc7da489bd015e90" name="a929353a8a586088cbc7da489bd015e90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a929353a8a586088cbc7da489bd015e90">&#9670;&#160;</a></span>BuildTimeOfNavigationDataMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_serial_protocol_1_1_s_time_of_navigation_data_message.html">CSerialProtocol::STimeOfNavigationDataMessage</a> CSerialProtocol::BuildTimeOfNavigationDataMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_s_attitude_data.html">SAttitudeData</a> &amp;&#160;</td>
-          <td class="paramname"><em>korVehicleAttitude</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build time of navigation data message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">korVehicleAttitude</td><td>Reference to vehicle attitude data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Time of navigation data message. </dd></dl>
-
-</div>
-</div>
-<a id="a103feda1c33d1542fd9639fe88a356ac" name="a103feda1c33d1542fd9639fe88a356ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a103feda1c33d1542fd9639fe88a356ac">&#9670;&#160;</a></span>CalculateCrc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t CSerialProtocol::CalculateCrc </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>uNumberOfWords_</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculate CRC. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pData</td><td>Pointer to 32-bit data words aarray. </td></tr>
-    <tr><td class="paramname">uNumberOfWords_</td><td>Number of words in the array. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>32-bit CRC (CRC-32/MPEG2) </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a70ebcc3244ec0cf19e48f7c17d8988a9" name="a70ebcc3244ec0cf19e48f7c17d8988a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70ebcc3244ec0cf19e48f7c17d8988a9">&#9670;&#160;</a></span>skfAngleScale_</h2>
@@ -697,7 +462,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr float CSerialProtocol::skfAngularRateScale_ { <a class="el" href="class_c_serial_protocol.html#adbcbae0d209994a4315aea9692c05989">skfMaxAngularRate_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max() - 1) }</td>
+          <td class="memname">constexpr float CSerialProtocol::skfAngularRateScale_ { <a class="el" href="class_c_serial_protocol.html#adbcbae0d209994a4315aea9692c05989">skfMaxAngularRate_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max()) }</td>
         </tr>
       </table>
   </td>
@@ -905,7 +670,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr float CSerialProtocol::skfSpecificForceScale_ { <a class="el" href="class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723">skfMaxSpecificForce_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max() - 1) }</td>
+          <td class="memname">constexpr float CSerialProtocol::skfSpecificForceScale_ { <a class="el" href="class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723">skfMaxSpecificForce_</a> / static_cast&lt;float&gt;(std::numeric_limits&lt;int16_t&gt;::max()) }</td>
         </tr>
       </table>
   </td>
@@ -1001,7 +766,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint16_t CSerialProtocol::uVersion_ { 2U }</td>
+          <td class="memname">constexpr uint16_t CSerialProtocol::uVersion_ { 3U }</td>
         </tr>
       </table>
   </td>
@@ -1015,9 +780,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_c_serial_protocol_8h.html">CSerialProtocol.h</a></li>
-<li><a class="el" href="_c_serial_protocol_8cpp.html">CSerialProtocol.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

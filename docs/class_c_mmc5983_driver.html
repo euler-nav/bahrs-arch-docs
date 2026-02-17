@@ -109,6 +109,11 @@ $(document).ready(function(){initNavTree('class_c_mmc5983_driver.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_mmc5983_driver-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CMmc5983Driver Class Reference</div></div>
@@ -126,14 +131,131 @@ Inheritance diagram for CMmc5983Driver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a581c65e94cbadca26d010e1140e3d33b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a581c65e94cbadca26d010e1140e3d33b">Init</a> () override</td></tr>
+<tr class="separator:a581c65e94cbadca26d010e1140e3d33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996954c98f722f68e30e7df081853800"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a996954c98f722f68e30e7df081853800">IsInitialized</a> () override</td></tr>
+<tr class="separator:a996954c98f722f68e30e7df081853800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8ee0619972322cef57769210db2650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aea8ee0619972322cef57769210db2650">PollSensor</a> (uint64_t uTimestamp)</td></tr>
+<tr class="memdesc:aea8ee0619972322cef57769210db2650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the MMC5983 sensor.  <br /></td></tr>
+<tr class="separator:aea8ee0619972322cef57769210db2650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a69566253144f12ad172f9cbbf5fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aa6a69566253144f12ad172f9cbbf5fbc">PollSensor</a> ()</td></tr>
-<tr class="memdesc:aa6a69566253144f12ad172f9cbbf5fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements an iteration of cyclic data exchange with the sensor.  <br /></td></tr>
+<tr class="memdesc:aa6a69566253144f12ad172f9cbbf5fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function overload that generates a timestamp without a data-ready interrupt.  <br /></td></tr>
 <tr class="separator:aa6a69566253144f12ad172f9cbbf5fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_software_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_software_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_software_component.html">CSoftwareComponent&lt; CMmc5983Driver, 1U &gt;</a></td></tr>
+<tr class="memitem:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a9b9a310d314be9f7966d4ff7491dd3c4">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;)=delete</td></tr>
+<tr class="separator:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a1ffcc4521f7e2308fb65cd01b63cc963">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a923aaf474ba39912e1871430708d77b9">operator=</a> (const <a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#aa4a6ed5126419bc6cf1e8c1b622751e1">operator=</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">Init</a> ()=0</td></tr>
 <tr class="separator:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">IsInitialized</a> ()=0</td></tr>
 <tr class="separator:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab72eeb9187498ca1afd6a2458e14f058"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058">EMeasurementMode</a> { <br />
+&#160;&#160;<a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058ae642238da9eee570225bc6affcb3a3ef">eSkip</a> = 0x00
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058a235b98528cf77c9d6729bdc71ff9d918">e1Hz</a> = 0x01
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058aaa2c0f3ac3197a28331b170368893425">e10Hz</a> = 0x02
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058a4497a50b5e8a51afdb9f6a280e8a9c8d">e20Hz</a> = 0x03
+, <br />
+&#160;&#160;<a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058ab5841e7d5ed300f681ee2a5d8f45f96f">e50Hz</a> = 0x04
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058a781b391ac5ca00b7d72a019258a70076">e100Hz</a> = 0x05
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058a5177d85c8aa312422d4ff8566c9f89bc">e200Hz</a> = 0x06
+, <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058a46c4aa5cd8372d78bdfe9e4338368943">e1000Hz</a> = 0x07
+<br />
+ }</td></tr>
+<tr class="memdesc:ab72eeb9187498ca1afd6a2458e14f058"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum of measurement mode.  <a href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058">More...</a><br /></td></tr>
+<tr class="separator:ab72eeb9187498ca1afd6a2458e14f058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a5356d66cad462f820a7ab7c68c8db"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8db">EBandwidth</a> { <a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8dba781b391ac5ca00b7d72a019258a70076">e100Hz</a> = 0x00
+, <a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8dba5177d85c8aa312422d4ff8566c9f89bc">e200Hz</a> = 0x01
+, <a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8dbaecefc40d2b267778eac78eab927161fc">e400Hz</a> = 0x02
+, <a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8dba20c83ff5b61b3b5883ff3a8dfa0c2107">e800Hz</a> = 0x03
+ }</td></tr>
+<tr class="memdesc:a76a5356d66cad462f820a7ab7c68c8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum of bandwidth filter.  <a href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8db">More...</a><br /></td></tr>
+<tr class="separator:a76a5356d66cad462f820a7ab7c68c8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afa2541ef2ee1cd395d192a49f6341b92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#afa2541ef2ee1cd395d192a49f6341b92">CMmc5983Driver</a> (<a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;)=delete</td></tr>
+<tr class="separator:afa2541ef2ee1cd395d192a49f6341b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8728169ae1d441b07936de95dfbed1c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a8728169ae1d441b07936de95dfbed1c6">CMmc5983Driver</a> (<a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a8728169ae1d441b07936de95dfbed1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa448d828a09e9c725a479b80af31bfde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aa448d828a09e9c725a479b80af31bfde">operator=</a> (const <a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:aa448d828a09e9c725a479b80af31bfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041c09818d986db9366319e374a2d80c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a041c09818d986db9366319e374a2d80c">operator=</a> (<a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:a041c09818d986db9366319e374a2d80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45e4a6514eee1064eb2a49e603a3757"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ae45e4a6514eee1064eb2a49e603a3757">CMmc5983Driver</a> ()=default</td></tr>
+<tr class="separator:ae45e4a6514eee1064eb2a49e603a3757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7840968afdc0164c4964d8757e8835dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a7840968afdc0164c4964d8757e8835dd">~CMmc5983Driver</a> ()=default</td></tr>
+<tr class="separator:a7840968afdc0164c4964d8757e8835dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357fd5583b54b31f21fac4e927bf675b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a357fd5583b54b31f21fac4e927bf675b">setSoftReset</a> ()</td></tr>
+<tr class="memdesc:a357fd5583b54b31f21fac4e927bf675b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full sensor reset.  <br /></td></tr>
+<tr class="separator:a357fd5583b54b31f21fac4e927bf675b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad734685b0eaa403778621e9587882c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ad734685b0eaa403778621e9587882c46">setBitSet</a> ()</td></tr>
+<tr class="memdesc:ad734685b0eaa403778621e9587882c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request SET function inductor coil integrated into chip See sensor datasheet for more information.  <br /></td></tr>
+<tr class="separator:ad734685b0eaa403778621e9587882c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f9a548862bfab186613347216e2b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ad0f9a548862bfab186613347216e2b8c">setBitReset</a> ()</td></tr>
+<tr class="memdesc:ad0f9a548862bfab186613347216e2b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request RESET function inductor coil integrated into chip See sensor datasheet for more information.  <br /></td></tr>
+<tr class="separator:ad0f9a548862bfab186613347216e2b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5721c9e32e0eb9d32cbd826c4e695deb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a5721c9e32e0eb9d32cbd826c4e695deb">setContinuousModeFrequency</a> (<a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058">EMeasurementMode</a> eMeasurementMode)</td></tr>
+<tr class="memdesc:a5721c9e32e0eb9d32cbd826c4e695deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Measurement Mode value and enable continuous mode.  <br /></td></tr>
+<tr class="separator:a5721c9e32e0eb9d32cbd826c4e695deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac422976cb61521af185104cc5b6253e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ac422976cb61521af185104cc5b6253e3">setFilterBandwidth</a> (<a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8db">EBandwidth</a> eBandwidth)</td></tr>
+<tr class="memdesc:ac422976cb61521af185104cc5b6253e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Filter Bandwidth value.  <br /></td></tr>
+<tr class="separator:ac422976cb61521af185104cc5b6253e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1556c8544e37b99e40b9d7a2b2fa3f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a1556c8544e37b99e40b9d7a2b2fa3f3c">setAutoSetReset</a> ()</td></tr>
+<tr class="memdesc:a1556c8544e37b99e40b9d7a2b2fa3f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable auto Set/Reset mode.  <br /></td></tr>
+<tr class="separator:a1556c8544e37b99e40b9d7a2b2fa3f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c4aed68b1f7a0c834da1169ea582fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#ae1c4aed68b1f7a0c834da1169ea582fc">getMeasurementXYZ</a> (float &amp;frValueX, float &amp;frValueY, float &amp;frValueZ)</td></tr>
+<tr class="memdesc:ae1c4aed68b1f7a0c834da1169ea582fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get measured magnetic field vector.  <br /></td></tr>
+<tr class="separator:ae1c4aed68b1f7a0c834da1169ea582fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7a3c60c5b85da400269b010940864c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aef7a3c60c5b85da400269b010940864c">getTemperature</a> ()</td></tr>
+<tr class="memdesc:aef7a3c60c5b85da400269b010940864c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Temperature value.  <br /></td></tr>
+<tr class="separator:aef7a3c60c5b85da400269b010940864c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5b5be7c0f2114a008f685ac39517a0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aae5b5be7c0f2114a008f685ac39517a0">getProductID</a> ()</td></tr>
+<tr class="memdesc:aae5b5be7c0f2114a008f685ac39517a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Product ID value.  <br /></td></tr>
+<tr class="separator:aae5b5be7c0f2114a008f685ac39517a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9df6a7cdf6c754a868ac5529406468"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#abd9df6a7cdf6c754a868ac5529406468">getStatusRegValue</a> ()</td></tr>
+<tr class="memdesc:abd9df6a7cdf6c754a868ac5529406468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the data ready to be read.  <br /></td></tr>
+<tr class="separator:abd9df6a7cdf6c754a868ac5529406468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a2e9be28cb77dda4152f7cdb9e9c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a81a2e9be28cb77dda4152f7cdb9e9c71">readFromAddress</a> (uint8_t *upBuffer, uint8_t uReadAddr, uint16_t uNumByteToRead)</td></tr>
+<tr class="memdesc:a81a2e9be28cb77dda4152f7cdb9e9c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from address via SPI.  <br /></td></tr>
+<tr class="separator:a81a2e9be28cb77dda4152f7cdb9e9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a4d4669bffc7f77f5a2a81791c9b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aa1a4d4669bffc7f77f5a2a81791c9b44">writeToAddress</a> (uint8_t uWriteAddr, uint8_t uVal)</td></tr>
+<tr class="memdesc:aa1a4d4669bffc7f77f5a2a81791c9b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to address via SPI.  <br /></td></tr>
+<tr class="separator:aa1a4d4669bffc7f77f5a2a81791c9b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa381a4b062964fdad6fcecb47cbcf368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#aa381a4b062964fdad6fcecb47cbcf368">setCsOn</a> ()</td></tr>
+<tr class="memdesc:aa381a4b062964fdad6fcecb47cbcf368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the chip select pin is On.  <br /></td></tr>
+<tr class="separator:aa381a4b062964fdad6fcecb47cbcf368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd36e2ef8802c803dbfc335cb44ee5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a3cd36e2ef8802c803dbfc335cb44ee5d">setCsOff</a> ()</td></tr>
+<tr class="memdesc:a3cd36e2ef8802c803dbfc335cb44ee5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the chip select pin is Off.  <br /></td></tr>
+<tr class="separator:a3cd36e2ef8802c803dbfc335cb44ee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655d17a07feb2eb0c90cd238f7c43b09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a655d17a07feb2eb0c90cd238f7c43b09">spiWriteRead</a> (uint8_t uByte)</td></tr>
+<tr class="memdesc:a655d17a07feb2eb0c90cd238f7c43b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read/Write via SPI.  <br /></td></tr>
+<tr class="separator:a655d17a07feb2eb0c90cd238f7c43b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:adb9d81ac458edb43500d5dc16ddaf14d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#adb9d81ac458edb43500d5dc16ddaf14d">getInstanceImpl</a> (unsigned uInstanceIndex)</td></tr>
+<tr class="separator:adb9d81ac458edb43500d5dc16ddaf14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0a9460681f795e691b04177fbd6cfd64"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a0a9460681f795e691b04177fbd6cfd64">uSensorStatus_</a> = 0</td></tr>
+<tr class="memdesc:a0a9460681f795e691b04177fbd6cfd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor status after initialization.  <br /></td></tr>
+<tr class="separator:a0a9460681f795e691b04177fbd6cfd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a5d546e4a40ea56bab35aea7b20c38542"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a5d546e4a40ea56bab35aea7b20c38542">skuReadWriteTimeoutSpi_</a> {2U}</td></tr>
+<tr class="separator:a5d546e4a40ea56bab35aea7b20c38542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19abaa22b3c2e165a0a52f8576b1e922"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mmc5983_driver.html#a19abaa22b3c2e165a0a52f8576b1e922">skuReadWriteTimeoutI2c_</a> {3U}</td></tr>
+<tr class="separator:a19abaa22b3c2e165a0a52f8576b1e922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -154,9 +276,460 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0b74e621a83bfb2ee8cd523cf6a3b93e inherit pro_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a0b74e621a83bfb2ee8cd523cf6a3b93e">~CSoftwareComponent</a> ()=default</td></tr>
 <tr class="separator:a0b74e621a83bfb2ee8cd523cf6a3b93e inherit pro_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a76a5356d66cad462f820a7ab7c68c8db" name="a76a5356d66cad462f820a7ab7c68c8db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a5356d66cad462f820a7ab7c68c8db">&#9670;&#160;</a></span>EBandwidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8db">CMmc5983Driver::EBandwidth</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An enum of bandwidth filter. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a76a5356d66cad462f820a7ab7c68c8dba781b391ac5ca00b7d72a019258a70076" name="a76a5356d66cad462f820a7ab7c68c8dba781b391ac5ca00b7d72a019258a70076"></a>e100Hz&#160;</td><td class="fielddoc"><p>Filter bandwidth 100 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a76a5356d66cad462f820a7ab7c68c8dba5177d85c8aa312422d4ff8566c9f89bc" name="a76a5356d66cad462f820a7ab7c68c8dba5177d85c8aa312422d4ff8566c9f89bc"></a>e200Hz&#160;</td><td class="fielddoc"><p>Filter bandwidth 200 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a76a5356d66cad462f820a7ab7c68c8dbaecefc40d2b267778eac78eab927161fc" name="a76a5356d66cad462f820a7ab7c68c8dbaecefc40d2b267778eac78eab927161fc"></a>e400Hz&#160;</td><td class="fielddoc"><p>Filter bandwidth 400 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a76a5356d66cad462f820a7ab7c68c8dba20c83ff5b61b3b5883ff3a8dfa0c2107" name="a76a5356d66cad462f820a7ab7c68c8dba20c83ff5b61b3b5883ff3a8dfa0c2107"></a>e800Hz&#160;</td><td class="fielddoc"><p>Filter bandwidth 800 Hz. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab72eeb9187498ca1afd6a2458e14f058" name="ab72eeb9187498ca1afd6a2458e14f058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72eeb9187498ca1afd6a2458e14f058">&#9670;&#160;</a></span>EMeasurementMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058">CMmc5983Driver::EMeasurementMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An enum of measurement mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058ae642238da9eee570225bc6affcb3a3ef" name="ab72eeb9187498ca1afd6a2458e14f058ae642238da9eee570225bc6affcb3a3ef"></a>eSkip&#160;</td><td class="fielddoc"><p>No continuous measurement mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058a235b98528cf77c9d6729bdc71ff9d918" name="ab72eeb9187498ca1afd6a2458e14f058a235b98528cf77c9d6729bdc71ff9d918"></a>e1Hz&#160;</td><td class="fielddoc"><p>Frequency 1 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058aaa2c0f3ac3197a28331b170368893425" name="ab72eeb9187498ca1afd6a2458e14f058aaa2c0f3ac3197a28331b170368893425"></a>e10Hz&#160;</td><td class="fielddoc"><p>Frequency 10 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058a4497a50b5e8a51afdb9f6a280e8a9c8d" name="ab72eeb9187498ca1afd6a2458e14f058a4497a50b5e8a51afdb9f6a280e8a9c8d"></a>e20Hz&#160;</td><td class="fielddoc"><p>Frequency 20 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058ab5841e7d5ed300f681ee2a5d8f45f96f" name="ab72eeb9187498ca1afd6a2458e14f058ab5841e7d5ed300f681ee2a5d8f45f96f"></a>e50Hz&#160;</td><td class="fielddoc"><p>Frequency 50 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058a781b391ac5ca00b7d72a019258a70076" name="ab72eeb9187498ca1afd6a2458e14f058a781b391ac5ca00b7d72a019258a70076"></a>e100Hz&#160;</td><td class="fielddoc"><p>Frequency 100 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058a5177d85c8aa312422d4ff8566c9f89bc" name="ab72eeb9187498ca1afd6a2458e14f058a5177d85c8aa312422d4ff8566c9f89bc"></a>e200Hz&#160;</td><td class="fielddoc"><p>Frequency 200 Hz. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab72eeb9187498ca1afd6a2458e14f058a46c4aa5cd8372d78bdfe9e4338368943" name="ab72eeb9187498ca1afd6a2458e14f058a46c4aa5cd8372d78bdfe9e4338368943"></a>e1000Hz&#160;</td><td class="fielddoc"><p>Frequency 1000 Hz. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afa2541ef2ee1cd395d192a49f6341b92" name="afa2541ef2ee1cd395d192a49f6341b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2541ef2ee1cd395d192a49f6341b92">&#9670;&#160;</a></span>CMmc5983Driver() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMmc5983Driver::CMmc5983Driver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8728169ae1d441b07936de95dfbed1c6" name="a8728169ae1d441b07936de95dfbed1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8728169ae1d441b07936de95dfbed1c6">&#9670;&#160;</a></span>CMmc5983Driver() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMmc5983Driver::CMmc5983Driver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae45e4a6514eee1064eb2a49e603a3757" name="ae45e4a6514eee1064eb2a49e603a3757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45e4a6514eee1064eb2a49e603a3757">&#9670;&#160;</a></span>CMmc5983Driver() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMmc5983Driver::CMmc5983Driver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7840968afdc0164c4964d8757e8835dd" name="a7840968afdc0164c4964d8757e8835dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7840968afdc0164c4964d8757e8835dd">&#9670;&#160;</a></span>~CMmc5983Driver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMmc5983Driver::~CMmc5983Driver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adb9d81ac458edb43500d5dc16ddaf14d" name="adb9d81ac458edb43500d5dc16ddaf14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9d81ac458edb43500d5dc16ddaf14d">&#9670;&#160;</a></span>getInstanceImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp; CMmc5983Driver::getInstanceImpl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>uInstanceIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1c4aed68b1f7a0c834da1169ea582fc" name="ae1c4aed68b1f7a0c834da1169ea582fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c4aed68b1f7a0c834da1169ea582fc">&#9670;&#160;</a></span>getMeasurementXYZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::getMeasurementXYZ </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>frValueX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>frValueY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>frValueZ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get measured magnetic field vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frValueX</td><td>reference to the value X variable </td></tr>
+    <tr><td class="paramname">frValueY</td><td>reference to the value Y variable </td></tr>
+    <tr><td class="paramname">frValueZ</td><td>reference to the value Z variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae5b5be7c0f2114a008f685ac39517a0" name="aae5b5be7c0f2114a008f685ac39517a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5b5be7c0f2114a008f685ac39517a0">&#9670;&#160;</a></span>getProductID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CMmc5983Driver::getProductID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Product ID value. </p>
+<dl class="section return"><dt>Returns</dt><dd>ProductID value </dd></dl>
+
+</div>
+</div>
+<a id="abd9df6a7cdf6c754a868ac5529406468" name="abd9df6a7cdf6c754a868ac5529406468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9df6a7cdf6c754a868ac5529406468">&#9670;&#160;</a></span>getStatusRegValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CMmc5983Driver::getStatusRegValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the data ready to be read. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t Bit mask </dd></dl>
+
+</div>
+</div>
+<a id="aef7a3c60c5b85da400269b010940864c" name="aef7a3c60c5b85da400269b010940864c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7a3c60c5b85da400269b010940864c">&#9670;&#160;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CMmc5983Driver::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Temperature value. </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature value </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: Temperature and magnetic cannot be measured simultaneously </dd></dl>
+
+</div>
+</div>
+<a id="a581c65e94cbadca26d010e1140e3d33b" name="a581c65e94cbadca26d010e1140e3d33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581c65e94cbadca26d010e1140e3d33b">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the software component. </p>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">CSoftwareComponent&lt; CMmc5983Driver, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a996954c98f722f68e30e7df081853800" name="a996954c98f722f68e30e7df081853800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996954c98f722f68e30e7df081853800">&#9670;&#160;</a></span>IsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMmc5983Driver::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get initialization status of the software component. </p><dl class="section return"><dt>Returns</dt><dd>True &ndash; the component is initialized, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">CSoftwareComponent&lt; CMmc5983Driver, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a041c09818d986db9366319e374a2d80c" name="a041c09818d986db9366319e374a2d80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041c09818d986db9366319e374a2d80c">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp; CMmc5983Driver::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa448d828a09e9c725a479b80af31bfde" name="aa448d828a09e9c725a479b80af31bfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa448d828a09e9c725a479b80af31bfde">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp; CMmc5983Driver::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_mmc5983_driver.html">CMmc5983Driver</a> &amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa6a69566253144f12ad172f9cbbf5fbc" name="aa6a69566253144f12ad172f9cbbf5fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6a69566253144f12ad172f9cbbf5fbc">&#9670;&#160;</a></span>PollSensor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a69566253144f12ad172f9cbbf5fbc">&#9670;&#160;</a></span>PollSensor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +743,395 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implements an iteration of cyclic data exchange with the sensor. </p>
+<p>A function overload that generates a timestamp without a data-ready interrupt. </p>
+
+</div>
+</div>
+<a id="aea8ee0619972322cef57769210db2650" name="aea8ee0619972322cef57769210db2650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8ee0619972322cef57769210db2650">&#9670;&#160;</a></span>PollSensor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::PollSensor </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>uTimestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll the MMC5983 sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uTimestamp</td><td>Timestamp of the measurement generated by data-ready interrupt handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81a2e9be28cb77dda4152f7cdb9e9c71" name="a81a2e9be28cb77dda4152f7cdb9e9c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a2e9be28cb77dda4152f7cdb9e9c71">&#9670;&#160;</a></span>readFromAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::readFromAddress </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>upBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>uReadAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>uNumByteToRead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read from address via SPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upBuffer</td><td>Buffer for record </td></tr>
+    <tr><td class="paramname">uReadAddr</td><td>Register address </td></tr>
+    <tr><td class="paramname">uNumByteToRead</td><td>Number of bytes to read </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1556c8544e37b99e40b9d7a2b2fa3f3c" name="a1556c8544e37b99e40b9d7a2b2fa3f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1556c8544e37b99e40b9d7a2b2fa3f3c">&#9670;&#160;</a></span>setAutoSetReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setAutoSetReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable auto Set/Reset mode. </p>
+
+</div>
+</div>
+<a id="ad0f9a548862bfab186613347216e2b8c" name="ad0f9a548862bfab186613347216e2b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f9a548862bfab186613347216e2b8c">&#9670;&#160;</a></span>setBitReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setBitReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request RESET function inductor coil integrated into chip See sensor datasheet for more information. </p>
+
+</div>
+</div>
+<a id="ad734685b0eaa403778621e9587882c46" name="ad734685b0eaa403778621e9587882c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad734685b0eaa403778621e9587882c46">&#9670;&#160;</a></span>setBitSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setBitSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request SET function inductor coil integrated into chip See sensor datasheet for more information. </p>
+
+</div>
+</div>
+<a id="a5721c9e32e0eb9d32cbd826c4e695deb" name="a5721c9e32e0eb9d32cbd826c4e695deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5721c9e32e0eb9d32cbd826c4e695deb">&#9670;&#160;</a></span>setContinuousModeFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setContinuousModeFrequency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mmc5983_driver.html#ab72eeb9187498ca1afd6a2458e14f058">EMeasurementMode</a>&#160;</td>
+          <td class="paramname"><em>eMeasurementMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Measurement Mode value and enable continuous mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eMeasurementMode</td><td>Mode value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3cd36e2ef8802c803dbfc335cb44ee5d" name="a3cd36e2ef8802c803dbfc335cb44ee5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd36e2ef8802c803dbfc335cb44ee5d">&#9670;&#160;</a></span>setCsOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setCsOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the chip select pin is Off. </p>
+
+</div>
+</div>
+<a id="aa381a4b062964fdad6fcecb47cbcf368" name="aa381a4b062964fdad6fcecb47cbcf368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa381a4b062964fdad6fcecb47cbcf368">&#9670;&#160;</a></span>setCsOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setCsOn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the chip select pin is On. </p>
+
+</div>
+</div>
+<a id="ac422976cb61521af185104cc5b6253e3" name="ac422976cb61521af185104cc5b6253e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac422976cb61521af185104cc5b6253e3">&#9670;&#160;</a></span>setFilterBandwidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setFilterBandwidth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mmc5983_driver.html#a76a5356d66cad462f820a7ab7c68c8db">EBandwidth</a>&#160;</td>
+          <td class="paramname"><em>eBandwidth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Filter Bandwidth value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eBandwidth</td><td>filter value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a357fd5583b54b31f21fac4e927bf675b" name="a357fd5583b54b31f21fac4e927bf675b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357fd5583b54b31f21fac4e927bf675b">&#9670;&#160;</a></span>setSoftReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::setSoftReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Full sensor reset. </p>
+
+</div>
+</div>
+<a id="a655d17a07feb2eb0c90cd238f7c43b09" name="a655d17a07feb2eb0c90cd238f7c43b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a655d17a07feb2eb0c90cd238f7c43b09">&#9670;&#160;</a></span>spiWriteRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CMmc5983Driver::spiWriteRead </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>uByte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read/Write via SPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uByte</td><td>Register add or dummy byte </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The read value via SPI </dd></dl>
+
+</div>
+</div>
+<a id="aa1a4d4669bffc7f77f5a2a81791c9b44" name="aa1a4d4669bffc7f77f5a2a81791c9b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a4d4669bffc7f77f5a2a81791c9b44">&#9670;&#160;</a></span>writeToAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMmc5983Driver::writeToAddress </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>uWriteAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>uVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write to address via SPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uWriteAddr</td><td>Register address </td></tr>
+    <tr><td class="paramname">uVal</td><td>The resulting value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -194,6 +1155,75 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a19abaa22b3c2e165a0a52f8576b1e922" name="a19abaa22b3c2e165a0a52f8576b1e922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19abaa22b3c2e165a0a52f8576b1e922">&#9670;&#160;</a></span>skuReadWriteTimeoutI2c_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t CMmc5983Driver::skuReadWriteTimeoutI2c_ {3U}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d546e4a40ea56bab35aea7b20c38542" name="a5d546e4a40ea56bab35aea7b20c38542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d546e4a40ea56bab35aea7b20c38542">&#9670;&#160;</a></span>skuReadWriteTimeoutSpi_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t CMmc5983Driver::skuReadWriteTimeoutSpi_ {2U}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a9460681f795e691b04177fbd6cfd64" name="a0a9460681f795e691b04177fbd6cfd64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9460681f795e691b04177fbd6cfd64">&#9670;&#160;</a></span>uSensorStatus_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CMmc5983Driver::uSensorStatus_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sensor status after initialization. </p>
 
 </div>
 </div>

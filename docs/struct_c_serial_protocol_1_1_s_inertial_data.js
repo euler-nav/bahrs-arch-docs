@@ -6,6 +6,6 @@ var struct_c_serial_protocol_1_1_s_inertial_data =
     [ "iSpecificForceX_", "struct_c_serial_protocol_1_1_s_inertial_data.html#a458197fa31eb271614aa2b7b9075f66d", null ],
     [ "iSpecificForceY_", "struct_c_serial_protocol_1_1_s_inertial_data.html#a35ad004c938d9b4dee78826f9bb45662", null ],
     [ "iSpecificForceZ_", "struct_c_serial_protocol_1_1_s_inertial_data.html#add19208983d0a97ef49fe3ec4c8f26c1", null ],
-    [ "uSequenceCounter_", "struct_c_serial_protocol_1_1_s_inertial_data.html#ab3bb5a9b82a1f2d0030dc9376542d2d6", null ],
-    [ "uValidity_", "struct_c_serial_protocol_1_1_s_inertial_data.html#a5cc2f21decc7ebf5b7ba51d2222c7303", null ]
+    [ "uHealthInfo_", "struct_c_serial_protocol_1_1_s_inertial_data.html#a603e47bc75cf0a42a17ab5304a03ad12", null ],
+    [ "uSequenceCounter_", "struct_c_serial_protocol_1_1_s_inertial_data.html#ab3bb5a9b82a1f2d0030dc9376542d2d6", null ]
 ];

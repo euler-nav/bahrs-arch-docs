@@ -109,7 +109,10 @@ $(document).ready(function(){initNavTree('_c_icm20789_driver_8h.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">CIcm20789Driver.h File Reference</div></div>
 </div><!--header-->
@@ -121,6 +124,14 @@ $(document).ready(function(){initNavTree('_c_icm20789_driver_8h.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_icm20789_driver.html">CIcm20789Driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_icm20789_driver_1_1_s_calib_param.html">CIcm20789Driver::SCalibParam</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensation parameters of the pressure sensors. The parameters are retrieved from the sensor's internal memory.  <a href="struct_c_icm20789_driver_1_1_s_calib_param.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_n_icm20789_driver_config"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_icm20789_driver_config.html">NIcm20789DriverConfig</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -271,6 +282,32 @@ Macros</h2></td></tr>
 <tr class="memdesc:a43d1647897726bd0e982497fe729cc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test enabler bits in the dedicated register.  <br /></td></tr>
 <tr class="separator:a43d1647897726bd0e982497fe729cc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae443c971754d2a88e506d9cf6108a66a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66a">NIcm20789DriverConfig::EAccelDynamicRange</a> : uint8_t { <a class="el" href="namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa6086eaea9eae6e4c9b43bacd71eb4770">NIcm20789DriverConfig::e2g</a> = 0x00
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa78972faf7a21d5ac33ba1ae45cdb588a">NIcm20789DriverConfig::e4g</a> = 0x01
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa520ece89631726a34d9e986e693bcbfe">NIcm20789DriverConfig::e8g</a> = 0x02
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa34fb25274a32db30a8543e33d1a32900">NIcm20789DriverConfig::e16g</a> = 0x03
+ }</td></tr>
+<tr class="separator:ae443c971754d2a88e506d9cf6108a66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2baa2ba2c9638d5aa5af249bd838cce"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838cce">NIcm20789DriverConfig::EGyroDynamicRange</a> : uint8_t { <a class="el" href="namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea72be64c499c5a90787bb55efa6d47ad3">NIcm20789DriverConfig::e250dps</a> = 0x00
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea75dc92599ced13fda6316255311f5c98">NIcm20789DriverConfig::e500dps</a> = 0x01
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea506fb69f184af7342509cac7fc066641">NIcm20789DriverConfig::e1000dps</a> = 0x02
+, <a class="el" href="namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838cceae6c7cfc579e8cf2e56034e9d11fa5e6b">NIcm20789DriverConfig::e2000dps</a> = 0x03
+ }</td></tr>
+<tr class="separator:ae2baa2ba2c9638d5aa5af249bd838cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab5031dffdb79ec49b8d7f9d2d769ca6b"><td class="memTemplParams" colspan="2">template&lt;EGyroDynamicRange Range&gt; </td></tr>
+<tr class="memitem:ab5031dffdb79ec49b8d7f9d2d769ca6b"><td class="memTemplItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_n_icm20789_driver_config.html#ab5031dffdb79ec49b8d7f9d2d769ca6b">NIcm20789DriverConfig::getGyroscopeRangeInDegreesPerSecond</a> ()</td></tr>
+<tr class="memdesc:ab5031dffdb79ec49b8d7f9d2d769ca6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template function to get gyroscope range from an enum value.  <br /></td></tr>
+<tr class="separator:ab5031dffdb79ec49b8d7f9d2d769ca6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fff71043bc0ed21b8df921a802a6ea"><td class="memTemplParams" colspan="2">template&lt;EAccelDynamicRange Range&gt; </td></tr>
+<tr class="memitem:a10fff71043bc0ed21b8df921a802a6ea"><td class="memTemplItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_n_icm20789_driver_config.html#a10fff71043bc0ed21b8df921a802a6ea">NIcm20789DriverConfig::getAccelerometerRangeInG</a> ()</td></tr>
+<tr class="memdesc:a10fff71043bc0ed21b8df921a802a6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template function to get accelerometer range from an enum value.  <br /></td></tr>
+<tr class="separator:a10fff71043bc0ed21b8df921a802a6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a728962cf0509125d9c2e32ca3ed8d1fa"><td class="memItemLeft" align="right" valign="top">osThreadId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_icm20789_driver_8h.html#a728962cf0509125d9c2e32ca3ed8d1fa">TaskInitHandle</a></td></tr>
@@ -294,10 +331,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                ((<a class="code hl_define" href="_c_icm20789_driver_8h.html#a1182ef031e450da3d7181a24f40f2ea9">ICM20789_ACCEL_SELF_TEST_AL_MAX</a> * <a class="code hl_define" href="_c_icm20789_driver_8h.html#a9337ecc72bd823995f8441fbe3672b7a">ICM20789_SELF_TEST_SCALE</a> \</div>
 <div class="line">                / <a class="code hl_define" href="_c_icm20789_driver_8h.html#a9581e618a62b0429fb14a22fb64dbccc">ICM20789_SELF_TEST_ACCEL_FS_MG</a>) * <a class="code hl_define" href="_c_icm20789_driver_8h.html#a2b9b7b5cfddaac20d135b2ad54254ec0">ICM20789_SELF_TEST_PRECISION</a>)</div>
-<div class="ttc" id="a_c_icm20789_driver_8h_html_a1182ef031e450da3d7181a24f40f2ea9"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a1182ef031e450da3d7181a24f40f2ea9">ICM20789_ACCEL_SELF_TEST_AL_MAX</a></div><div class="ttdeci">#define ICM20789_ACCEL_SELF_TEST_AL_MAX</div><div class="ttdoc">Maximum absolute limit for accelerometer self-test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:74</div></div>
-<div class="ttc" id="a_c_icm20789_driver_8h_html_a2b9b7b5cfddaac20d135b2ad54254ec0"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a2b9b7b5cfddaac20d135b2ad54254ec0">ICM20789_SELF_TEST_PRECISION</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_PRECISION</div><div class="ttdoc">A precision parameter for the IMU self-test.</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:61</div></div>
-<div class="ttc" id="a_c_icm20789_driver_8h_html_a9337ecc72bd823995f8441fbe3672b7a"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a9337ecc72bd823995f8441fbe3672b7a">ICM20789_SELF_TEST_SCALE</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_SCALE</div><div class="ttdoc">Self test scale.</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:68</div></div>
-<div class="ttc" id="a_c_icm20789_driver_8h_html_a9581e618a62b0429fb14a22fb64dbccc"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a9581e618a62b0429fb14a22fb64dbccc">ICM20789_SELF_TEST_ACCEL_FS_MG</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_ACCEL_FS_MG</div><div class="ttdoc">Default accelerometer full scale for a self test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:66</div></div>
+<div class="ttc" id="a_c_icm20789_driver_8h_html_a1182ef031e450da3d7181a24f40f2ea9"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a1182ef031e450da3d7181a24f40f2ea9">ICM20789_ACCEL_SELF_TEST_AL_MAX</a></div><div class="ttdeci">#define ICM20789_ACCEL_SELF_TEST_AL_MAX</div><div class="ttdoc">Maximum absolute limit for accelerometer self-test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:77</div></div>
+<div class="ttc" id="a_c_icm20789_driver_8h_html_a2b9b7b5cfddaac20d135b2ad54254ec0"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a2b9b7b5cfddaac20d135b2ad54254ec0">ICM20789_SELF_TEST_PRECISION</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_PRECISION</div><div class="ttdoc">A precision parameter for the IMU self-test.</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:64</div></div>
+<div class="ttc" id="a_c_icm20789_driver_8h_html_a9337ecc72bd823995f8441fbe3672b7a"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a9337ecc72bd823995f8441fbe3672b7a">ICM20789_SELF_TEST_SCALE</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_SCALE</div><div class="ttdoc">Self test scale.</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:71</div></div>
+<div class="ttc" id="a_c_icm20789_driver_8h_html_a9581e618a62b0429fb14a22fb64dbccc"><div class="ttname"><a href="_c_icm20789_driver_8h.html#a9581e618a62b0429fb14a22fb64dbccc">ICM20789_SELF_TEST_ACCEL_FS_MG</a></div><div class="ttdeci">#define ICM20789_SELF_TEST_ACCEL_FS_MG</div><div class="ttdoc">Default accelerometer full scale for a self test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:69</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -314,7 +351,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                ((<a class="code hl_define" href="_c_icm20789_driver_8h.html#ab391cfdb55252c648ffd0ded0d2bf6d7">ICM20789_ACCEL_SELF_TEST_AL_MIN</a> * <a class="code hl_define" href="_c_icm20789_driver_8h.html#a9337ecc72bd823995f8441fbe3672b7a">ICM20789_SELF_TEST_SCALE</a> \</div>
 <div class="line">                / <a class="code hl_define" href="_c_icm20789_driver_8h.html#a9581e618a62b0429fb14a22fb64dbccc">ICM20789_SELF_TEST_ACCEL_FS_MG</a>) * <a class="code hl_define" href="_c_icm20789_driver_8h.html#a2b9b7b5cfddaac20d135b2ad54254ec0">ICM20789_SELF_TEST_PRECISION</a>)</div>
-<div class="ttc" id="a_c_icm20789_driver_8h_html_ab391cfdb55252c648ffd0ded0d2bf6d7"><div class="ttname"><a href="_c_icm20789_driver_8h.html#ab391cfdb55252c648ffd0ded0d2bf6d7">ICM20789_ACCEL_SELF_TEST_AL_MIN</a></div><div class="ttdeci">#define ICM20789_ACCEL_SELF_TEST_AL_MIN</div><div class="ttdoc">Minimum absolute limit for accelerometer self-test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:73</div></div>
+<div class="ttc" id="a_c_icm20789_driver_8h_html_ab391cfdb55252c648ffd0ded0d2bf6d7"><div class="ttname"><a href="_c_icm20789_driver_8h.html#ab391cfdb55252c648ffd0ded0d2bf6d7">ICM20789_ACCEL_SELF_TEST_AL_MIN</a></div><div class="ttdeci">#define ICM20789_ACCEL_SELF_TEST_AL_MIN</div><div class="ttdoc">Minimum absolute limit for accelerometer self-test, [mg].</div><div class="ttdef"><b>Definition:</b> CIcm20789Driver.h:76</div></div>
 </div><!-- fragment -->
 </div>
 </div>

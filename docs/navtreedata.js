@@ -103,7 +103,11 @@ var NAVTREE =
           [ "Operating system", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_operating_system", null ],
           [ "Libraries", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_libraries", null ]
         ] ],
-        [ "Usage of dynamic memory", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory", null ]
+        [ "Usage of dynamic memory", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory", [
+          [ "Exceptions", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_exceptions", null ],
+          [ "Implementation", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_implementation", null ],
+          [ "Developer guidelines", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_guidelines", null ]
+        ] ]
       ] ],
       [ "Patterns and principles", "md_doc_pages_page_solution_strategy.html#sec_solution_strategy_patterns_and_principles", [
         [ "Software components", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_software_components", [
@@ -111,7 +115,8 @@ var NAVTREE =
           [ "Design patterns", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_swc_patterns", null ]
         ] ],
         [ "Runtime environment (RTE)", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_runtime_environment", [
-          [ "Principles and patterns", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_rte_principles", null ]
+          [ "Principles and patterns", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_rte_principles", null ],
+          [ "Software component ports", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_swc_ports", null ]
         ] ]
       ] ],
       [ "Signal processing algorithms", "md_doc_pages_page_solution_strategy.html#sec_solution_strategy_algorithms", [
@@ -142,10 +147,11 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -165,11 +171,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ams_assert_8cpp.html",
-"_c_scha63_t_driver_8h.html#a81a53cfdf58ce640ca3377906b09091e",
-"class_c_icm20789_driver.html#a6e345b9c38d18b90bb58724a8bdfe067",
-"functions_g.html",
-"struct_c_nvm_driver_1_1_s_assertions.html",
-"struct_n_magnetic_heading_filter_api_1_1_s_magnetometer_measurement.html"
+"_c_rs232_output_handler_8cpp.html#a53af69353e16aa031897cdf80b2338b3",
+"class_c_bahrs_filter_swc.html#aa4c079cd65ea2ec347b89d959d47bca0",
+"class_c_icm20789_driver.html#a38b356153169d4dbbbec67e68778e04b",
+"class_c_rs232_output_handler.html#af3def178c0c5c51c0cfc8ef2366822a2",
+"class_c_software_component_port_base.html#a220b27919868ea15b9f055ccf18bbb8e",
+"functions_k.html",
+"namespace_n_navigation_utilities.html#afba3a3bd2a80afe16a9849cbaa6a5e89",
+"struct_n_bahrs_filter_api_1_1_s_bahrs_state.html#a29ad8e61fc6a35f3f58ec176ab3247a9",
+"struct_s_vertical_channel_data.html#a97548389340aabb1034db9338d783cc4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

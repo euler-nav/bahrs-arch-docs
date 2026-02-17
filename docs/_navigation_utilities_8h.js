@@ -1,7 +1,9 @@
 var _navigation_utilities_8h =
 [
+    [ "NNavigationUtilities::SEulerAngles", "struct_n_navigation_utilities_1_1_s_euler_angles.html", "struct_n_navigation_utilities_1_1_s_euler_angles" ],
     [ "DcmFromQuaternion", "_navigation_utilities_8h.html#af30032bf88410bee9ed4db0e34751eb1", null ],
     [ "DiffOfUnsigned", "_navigation_utilities_8h.html#a3aee1284dcac50b5bb57ea95dcd5cb23", null ],
+    [ "EulerAnglesToEulerAngles312", "_navigation_utilities_8h.html#afba3a3bd2a80afe16a9849cbaa6a5e89", null ],
     [ "EulerFromQuaternion", "_navigation_utilities_8h.html#a89de5827809f5ce2a4823df323345e91", null ],
     [ "EulerFromSpecificForce", "_navigation_utilities_8h.html#aef0408dfc2b96cdd8ee7a89ffd4f6182", null ],
     [ "HeadingFromMagnetometer", "_navigation_utilities_8h.html#ad8805e612d4fda355e08615830e8c82e", null ],

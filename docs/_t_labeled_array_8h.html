@@ -169,11 +169,11 @@ Macros</h2></td></tr>
 <div class="line">\</div>
 <div class="line">  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ArrayElementType&gt; <span class="keyword">using </span>TLabeledArray = <a class="code hl_class" href="class_t_labeled_array_internal.html">TLabeledArrayInternal&lt;ArrayElementType, EnumType&gt;</a>; \</div>
 <div class="line">\</div>
-<div class="line">  <span class="keyword">using </span>CArrayOfAllLabels = std::array&lt;EnumType, static_cast&lt;size_t&gt;(EnumType::eCount)&gt;; \</div>
+<div class="line">  <span class="keyword">using </span>CSensorLabels = std::array&lt;EnumType, static_cast&lt;size_t&gt;(EnumType::eCount)&gt;; \</div>
 <div class="line">\</div>
-<div class="line">  <span class="keyword">static</span> CArrayOfAllLabels GetArrayOfAllLabels() \</div>
+<div class="line">  <span class="keyword">static</span> CSensorLabels GetSensorLabels() \</div>
 <div class="line">  { \</div>
-<div class="line">    CArrayOfAllLabels oAllLabels; \</div>
+<div class="line">    CSensorLabels oAllLabels; \</div>
 <div class="line">\</div>
 <div class="line">    for (uint32_t uIndex = 0U; uIndex &lt; oAllLabels.size(); ++uIndex) \</div>
 <div class="line">    { \</div>

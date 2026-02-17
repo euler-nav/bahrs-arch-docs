@@ -150,11 +150,45 @@ Libraries</h3>
 <p>Everything that is neither a software component nor a piece of an operating system. Examples: linear algebra library, runtime environment (RTE) implementation, STM32 HAL libraries.</p>
 <h2><a class="anchor" id="subsubsec_solution_strategy_dynamic_memory"></a>
 Usage of dynamic memory</h2>
-<p>Dynamic memory shall not be used. Consequently, functions, templates, and objects from the standard C++ library that rely on dynamic memory shall not be used.</p>
-<p><b>Exceptions</b>:</p><ol type="1">
-<li>Functionality used for development purpose only</li>
-<li>Operating system</li>
+<p>Dynamic memory allocation is <b>prohibited</b> in production code to avoid non-deterministic timing, heap fragmentation, and memory exhaustion risks critical for safety-critical systems.</p>
+<h3><a class="anchor" id="subsubsec_solution_strategy_dynamic_memory_exceptions"></a>
+Exceptions</h3>
+<p>Dynamic memory is permitted only in the following scenarios:</p>
+<ol type="1">
+<li><b>Debug builds only</b>: Debug output serialization (e.g., <code>std::vector</code> for RS232 transmission) and printf functionality when explicitly enabled via CMake option <code>ENABLE_PRINTF</code>. These features must never appear in release builds.</li>
+<li><b>FreeRTOS mutexes</b>: CMSIS-OS v2 API does not provide static mutex allocation, so mutexes are created dynamically during initialization. All other FreeRTOS objects (tasks, queues, semaphores) are allocated statically.</li>
 </ol>
+<h3><a class="anchor" id="subsubsec_solution_strategy_dynamic_memory_implementation"></a>
+Implementation</h3>
+<p>The system uses a multi-layered approach to prevent accidental dynamic memory usage:</p>
+<p><b>Layer 1: Disable newlib heap</b></p>
+<p>The <code>_sbrk()</code> function (foundation of C standard library allocators) is replaced with a stub that triggers an assertion, preventing initialization of newlib's heap.</p>
+<p><b>Layer 2: Block C memory functions</b></p>
+<p>Standard C memory functions (<code>malloc</code>, <code>free</code>, <code>calloc</code>, <code>realloc</code>) are replaced with stubs that assert immediately in production builds.</p>
+<p>When <code>ENABLE_PRINTF</code> is defined for local debugging (V3 only, via CMake option), the <code>_malloc_r()</code> and <code>_free_r()</code> are wrapped and routed through C++ operators. The <code>_calloc_r()</code> and <code>_realloc_r()</code> remain unsupported as printf does not require them.</p>
+<p><b>Layer 3: Route C++ new/delete to FreeRTOS</b></p>
+<p>All C++ <code>operator new</code> and <code>operator delete</code> overloads are redirected to FreeRTOS heap functions (<code>pvPortMalloc</code>, <code>vPortFree</code>). <b>Note</b>: These operators remain functional in release builds but are prohibited by coding guidelines and enforced through code reviews. This provides:</p><ol type="1">
+<li>Single heap for all dynamic allocations (debug builds and FreeRTOS mutexes)</li>
+<li>Centralized memory tracking</li>
+<li>Consistent out-of-memory handling (assertion on allocation failure)</li>
+</ol>
+<p><b>Layer 4: Prevent allocation in interrupts</b></p>
+<p>All allocation functions assert if called from interrupt context, as FreeRTOS heap functions are not interrupt-safe.</p>
+<p><b>Layer 5: No aligned allocation support</b></p>
+<p>FreeRTOS heap does not support memory alignment. Calls to aligned <code>new</code>/<code>delete</code> operators trigger assertions.</p>
+<h3><a class="anchor" id="subsubsec_solution_strategy_dynamic_memory_guidelines"></a>
+Developer guidelines</h3>
+<p><b>Allowed in debug builds only</b>:</p><ul>
+<li>Standard containers: <code>std::vector</code>, <code>std::string</code>, etc. (wrapped in <code>#ifdef SEND_DEBUG_OUTPUT</code>)</li>
+<li>Printf-family functions (when <code>ENABLE_PRINTF</code> CMake option is enabled)</li>
+</ul>
+<p><b>Forbidden in all builds</b>:</p><ul>
+<li>C-style allocation: <code>malloc()</code>, <code>calloc()</code>, etc.</li>
+<li>Dynamic allocation in production code paths</li>
+<li>Dynamic allocation in interrupt handlers</li>
+<li>Aligned memory allocation</li>
+</ul>
+<p><b>Rationale</b>: This approach provides multiple safety barriers while maintaining flexibility for development and debugging. Violations are enforced through a combination of hard assertions (C allocation functions, aligned allocations, interrupt context usage) and policy-based code reviews (new/delete operators).</p>
 <h1><a class="anchor" id="sec_solution_strategy_patterns_and_principles"></a>
 Patterns and principles</h1>
 <h2><a class="anchor" id="subsec_solution_strategy_software_components"></a>
@@ -200,6 +234,30 @@ Principles and patterns</h3>
 <li>SWC ports shall allow thread-safe data exchange between SWCs</li>
 <li>SWC ports shall be read-write accessible</li>
 </ol>
+<h3><a class="anchor" id="subsubsec_solution_strategy_swc_ports"></a>
+Software component ports</h3>
+<p>Ports are the only data exchange mechanism between SWCs. Each port is a mutex-protected value with a unique ID and fixed data type. Ports are created statically, generated by the RTE generator, and initialized once during system startup. All port IDs must be unique across the system, and each port object is a unique C++ type because the ID is a template parameter. Ports provide safe data exchange between SWCs that run in different FreeRTOS tasks and at different rates. The mutex is created in <a class="el" href="class_c_software_component_port_base.html#a220b27919868ea15b9f055ccf18bbb8e">CSoftwareComponentPortBase::CSoftwareComponentPortBase</a>; <a class="el" href="class_c_software_component_port_base.html#ac9df4ccc54f05b4e15174d481520c9a5">CSoftwareComponentPortBase::Init</a> is kept for API compatibility and only returns the readiness flag.</p>
+<p><b>Port Read() operation</b></p>
+<ol type="1">
+<li>Locks the port mutex, copies the current port value to the caller, and unlocks the port.</li>
+<li>Returns false if the port is not ready (mutex creation failed in <a class="el" href="class_c_software_component_port_base.html#a220b27919868ea15b9f055ccf18bbb8e">CSoftwareComponentPortBase::CSoftwareComponentPortBase</a>) or the mutex cannot be acquired within the short, fixed timeout (<a class="el" href="class_c_software_component_port_base.html#a05813dd64c7a45cb2dfa24f18d758c4a">CSoftwareComponentPortBase::skuPortReadTimeout</a>).</li>
+</ol>
+<p><b>Port Write() operation</b></p>
+<ol type="1">
+<li>Locks the port mutex, writes the new value, and unlocks the port.</li>
+<li>Returns false if the port is not ready (mutex creation failed in <a class="el" href="class_c_software_component_port_base.html#a220b27919868ea15b9f055ccf18bbb8e">CSoftwareComponentPortBase::CSoftwareComponentPortBase</a>) or the mutex cannot be acquired within the short, fixed timeout (<a class="el" href="class_c_software_component_port_base.html#ae34f003519a6b0759975571b628c5e9e">CSoftwareComponentPortBase::skuPortWriteTimeout</a>).</li>
+<li>When debug output is enabled and port recording is turned on, the port content is serialized and sent over RS232.</li>
+</ol>
+<p><b>Bulk read of multiple ports</b></p>
+<p><code><a class="el" href="class_c_port_reader.html#af74857365d8529d08600f600ce734ef5">CPortReader::ReadPorts()</a></code> reads several ports as one operation to provide a consistent snapshot for a runnable. Use this API whenever a runnable depends on multiple input ports; use single-port Read() only for isolated reads where cross-port consistency is not required. The function is a variadic template and returns a tuple of the exact port data types, providing compile-time type safety.</p>
+<ol type="1">
+<li>Ports are locked strictly in ascending port ID order to avoid deadlocks. This order is enforced at compile time by a static assertion.</li>
+<li>The lock attempt for each port uses the short, fixed timeout (<a class="el" href="class_c_software_component_port_base.html#a47a5c6830ba0d7ebd14fad3314062263">CSoftwareComponentPortBase::skuPortLockTimeout</a>).</li>
+<li>If any lock fails, no data is returned and all already-locked ports are released.</li>
+<li>If all locks succeed, a tuple of port values is returned and then all ports are unlocked.</li>
+<li>When debug output is enabled, a runnable-call event is logged with the runnable ID and lock status.</li>
+</ol>
+<p>This bulk-read pattern is used by both target firmware and PC re-simulation. The runnable-call event and the per-write port data (when enabled) ensure the replay tool consumes the same port values as the firmware at each runnable call in real time. This keeps offline analysis aligned with in-target behavior without exposing OS or HAL APIs to application SWCs.</p>
 <h1><a class="anchor" id="sec_solution_strategy_algorithms"></a>
 Signal processing algorithms</h1>
 <h2><a class="anchor" id="subsec_solution_strategy_attitude_and_vertical_motion_estimation"></a>
@@ -222,6 +280,9 @@ State vector</h3>
 <li>Barometric altitude \( h \) and velocity in downwards direction \( v_d \)</li>
 <li>A vector of accelerometer biases \( \mathbf{b}_a \)</li>
 <li>A vector of gyroscope biases \( \mathbf{b}_g \)</li>
+<li>A vector of accelerometer scale factors \( \mathbf{s}_a \)</li>
+<li>A vector of gyroscope scale factors \( \mathbf{s}_{g} \)</li>
+<li>A 3D acceleration vector \( \mathbf{a}_{n} \)</li>
 </ol>
 <h3><a class="anchor" id="subsubsec_solution_strategy_estimation_error_state_vector"></a>
 State error vector</h3>
@@ -231,6 +292,9 @@ State error vector</h3>
 <li>Vertical channel errors \( \delta h \) and \( \delta v_d \)</li>
 <li>Error of the accelerometer bias estimate \( \delta\mathbf{b}_a \)</li>
 <li>Error of the gyroscope bias estimate \( \delta\mathbf{b}_g \)</li>
+<li>Error of the accelerometer scale factor estimate \( \delta\mathbf{s}_a \)</li>
+<li>Error of the gyroscope scale factors estimate \( \delta\mathbf{s}_{g} \)</li>
+<li>Error of the 3D acceleration estimate \( \delta\mathbf{a}_{n} \)</li>
 </ol>
 <h3><a class="anchor" id="subsubsec_solution_strategy_estimation_decisions"></a>
 Technology decisions</h3>

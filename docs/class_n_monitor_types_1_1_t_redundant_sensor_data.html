@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('class_n_monitor_types_1_1_t_redundant_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_n_monitor_types_1_1_t_redundant_sensor_data-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">NMonitorTypes::TRedundantSensorData&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -122,8 +123,8 @@ $(document).ready(function(){initNavTree('class_n_monitor_types_1_1_t_redundant_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0704e52907824a5d05445f02708e30b8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a0704e52907824a5d05445f02708e30b8">ERedundantSensorLabels</a> = SRedundantSensorLabels::EnumType</td></tr>
-<tr class="separator:a0704e52907824a5d05445f02708e30b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b9e6da4d7c771ac973db9c5870237f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a97b9e6da4d7c771ac973db9c5870237f">ERedundantSensorLabels</a> = SRedundantSensorDataArrayTemplate::EnumType</td></tr>
+<tr class="separator:a97b9e6da4d7c771ac973db9c5870237f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a01bca0348488468fb4098512b910d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a14a01bca0348488468fb4098512b910d">DataType</a> = SensorDataType</td></tr>
 <tr class="separator:a14a01bca0348488468fb4098512b910d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -132,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac03d465a1f9720f5a8c09f712136b0c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#ac03d465a1f9720f5a8c09f712136b0c5">Set</a> (const SensorDataType &amp;korMeasurement)</td></tr>
 <tr class="memdesc:ac03d465a1f9720f5a8c09f712136b0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sensor data from a single sensor measurement.  <br /></td></tr>
 <tr class="separator:ac03d465a1f9720f5a8c09f712136b0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b39ec9ddde75c83b1f5b3eecf1042f"><td class="memItemLeft" align="right" valign="top">SensorDataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a80b39ec9ddde75c83b1f5b3eecf1042f">Get</a> (<a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a0704e52907824a5d05445f02708e30b8">ERedundantSensorLabels</a> eIndex) const</td></tr>
+<tr class="memitem:a80b39ec9ddde75c83b1f5b3eecf1042f"><td class="memItemLeft" align="right" valign="top">SensorDataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a80b39ec9ddde75c83b1f5b3eecf1042f">Get</a> (<a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a97b9e6da4d7c771ac973db9c5870237f">ERedundantSensorLabels</a> eIndex) const</td></tr>
 <tr class="memdesc:a80b39ec9ddde75c83b1f5b3eecf1042f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get internally stored data of the specific sensor by its logical index.  <br /></td></tr>
 <tr class="separator:a80b39ec9ddde75c83b1f5b3eecf1042f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9a1d24fc5314d80f11b96aedd2bd28"><td class="memItemLeft" align="right" valign="top">SensorDataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a5a9a1d24fc5314d80f11b96aedd2bd28">Get</a> (<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> eSensor) const</td></tr>
@@ -141,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a69b66faee94d978c0eee94388df453a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a0704e52907824a5d05445f02708e30b8">ERedundantSensorLabels</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a69b66faee94d978c0eee94388df453a1">IndexOf</a> (<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> eSensor)</td></tr>
+<tr class="memitem:a69b66faee94d978c0eee94388df453a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a97b9e6da4d7c771ac973db9c5870237f">ERedundantSensorLabels</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a69b66faee94d978c0eee94388df453a1">IndexOf</a> (<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> eSensor)</td></tr>
 <tr class="memdesc:a69b66faee94d978c0eee94388df453a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get logical index of a sensor by its sensor ID.  <br /></td></tr>
 <tr class="separator:a69b66faee94d978c0eee94388df453a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13376f16ee49080d1a50791c6f63a2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#ad13376f16ee49080d1a50791c6f63a2b">IsSensorSupported</a> (<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> eSensor)</td></tr>
@@ -153,6 +154,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7ca479d6937c9c25f43fe9305aa61eb2"><td class="memItemLeft" align="right" valign="top">static constexpr int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a7ca479d6937c9c25f43fe9305aa61eb2">skiMaxRedundantMeasurementCount_</a> { static_cast&lt;int32_t&gt;(ERedundantSensorLabels::eCount) }</td></tr>
 <tr class="memdesc:a7ca479d6937c9c25f43fe9305aa61eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of supported redundant measurement.  <br /></td></tr>
 <tr class="separator:a7ca479d6937c9c25f43fe9305aa61eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab556cb934bfb85cc485dfec33749cf88"><td class="memItemLeft" align="right" valign="top">SRedundantSensorDataArrayTemplate::TLabeledArray&lt; SensorDataType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#ab556cb934bfb85cc485dfec33749cf88">oData_</a></td></tr>
+<tr class="memdesc:ab556cb934bfb85cc485dfec33749cf88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal sensor data storage.  <br /></td></tr>
+<tr class="separator:ab556cb934bfb85cc485dfec33749cf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename SensorDataType, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId1, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId2, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId3&gt;<br />
@@ -183,8 +190,8 @@ template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib
 
 </div>
 </div>
-<a id="a0704e52907824a5d05445f02708e30b8" name="a0704e52907824a5d05445f02708e30b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0704e52907824a5d05445f02708e30b8">&#9670;&#160;</a></span>ERedundantSensorLabels</h2>
+<a id="a97b9e6da4d7c771ac973db9c5870237f" name="a97b9e6da4d7c771ac973db9c5870237f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b9e6da4d7c771ac973db9c5870237f">&#9670;&#160;</a></span>ERedundantSensorLabels</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +199,7 @@ template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib
 template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId1, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId2, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId3&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::ERedundantSensorLabels =  SRedundantSensorLabels::EnumType</td>
+          <td class="memname">using <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::ERedundantSensorLabels =  SRedundantSensorDataArrayTemplate::EnumType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -211,7 +218,7 @@ template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib
         <tr>
           <td class="memname">SensorDataType <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::Get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a0704e52907824a5d05445f02708e30b8">ERedundantSensorLabels</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a97b9e6da4d7c771ac973db9c5870237f">ERedundantSensorLabels</a>&#160;</td>
           <td class="paramname"><em>eIndex</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -270,7 +277,7 @@ template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;<a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a0704e52907824a5d05445f02708e30b8">::ERedundantSensorLabels</a> <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::IndexOf </td>
+          <td class="memname"><a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;<a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html#a97b9e6da4d7c771ac973db9c5870237f">::ERedundantSensorLabels</a> <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::IndexOf </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a>&#160;</td>
           <td class="paramname"><em>eSensor</em></td><td>)</td>
@@ -362,6 +369,32 @@ template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab556cb934bfb85cc485dfec33749cf88" name="ab556cb934bfb85cc485dfec33749cf88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab556cb934bfb85cc485dfec33749cf88">&#9670;&#160;</a></span>oData_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SensorDataType , <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId1, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId2, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">NFusionLibCommon::ESensorId</a> SensorId3&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SRedundantSensorDataArrayTemplate::TLabeledArray&lt;SensorDataType&gt; <a class="el" href="class_n_monitor_types_1_1_t_redundant_sensor_data.html">NMonitorTypes::TRedundantSensorData</a>&lt; SensorDataType, SensorId1, SensorId2, SensorId3 &gt;::oData_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal sensor data storage. </p>
+
+</div>
+</div>
 <a id="a7ca479d6937c9c25f43fe9305aa61eb2" name="a7ca479d6937c9c25f43fe9305aa61eb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ca479d6937c9c25f43fe9305aa61eb2">&#9670;&#160;</a></span>skiMaxRedundantMeasurementCount_</h2>
 

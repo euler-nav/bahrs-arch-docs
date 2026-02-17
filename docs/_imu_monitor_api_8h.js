@@ -1,7 +1,7 @@
 var _imu_monitor_api_8h =
 [
     [ "COutputData", "_imu_monitor_api_8h.html#a93b16b7079f28fde950fb929302a5bda", null ],
-    [ "CRedundantInputData", "_imu_monitor_api_8h.html#afe43aa2260fad96110eb2d14592b2085", null ],
-    [ "ImuMonitorGetState", "_imu_monitor_api_8h.html#a2cc2f0b802c59ea9b9b0c94d3bd42a59", null ],
-    [ "ImuMonitorRun", "_imu_monitor_api_8h.html#acb4fef079d35343608b8c76d6b7f95dc", null ]
+    [ "CRedundantInputDataBahrsV2", "_imu_monitor_api_8h.html#ad516c1e216fb81cf829138b47f4f318c", null ],
+    [ "CRedundantInputDataBahrsV3", "_imu_monitor_api_8h.html#a9b8a08ce1fc4a506648f2ddc48c01ce8", null ],
+    [ "ImuMonitorRun", "_imu_monitor_api_8h.html#ae0f460459f2ba3e7899bdecce9192b12", null ]
 ];

@@ -2,6 +2,8 @@ var class_c_serial_protocol =
 [
     [ "SAccuracyData", "struct_c_serial_protocol_1_1_s_accuracy_data.html", "struct_c_serial_protocol_1_1_s_accuracy_data" ],
     [ "SAccuracyDataMessage", "struct_c_serial_protocol_1_1_s_accuracy_data_message.html", "struct_c_serial_protocol_1_1_s_accuracy_data_message" ],
+    [ "SHardwareVersionData", "struct_c_serial_protocol_1_1_s_hardware_version_data.html", "struct_c_serial_protocol_1_1_s_hardware_version_data" ],
+    [ "SHardwareVersionMessage", "struct_c_serial_protocol_1_1_s_hardware_version_message.html", "struct_c_serial_protocol_1_1_s_hardware_version_message" ],
     [ "SInertialData", "struct_c_serial_protocol_1_1_s_inertial_data.html", "struct_c_serial_protocol_1_1_s_inertial_data" ],
     [ "SInertialDataMessage", "struct_c_serial_protocol_1_1_s_inertial_data_message.html", "struct_c_serial_protocol_1_1_s_inertial_data_message" ],
     [ "SMessageHeader", "struct_c_serial_protocol_1_1_s_message_header.html", "struct_c_serial_protocol_1_1_s_message_header" ],
@@ -21,7 +23,7 @@ var class_c_serial_protocol =
     [ "STimeOfNavigationData", "struct_c_serial_protocol_1_1_s_time_of_navigation_data.html", "struct_c_serial_protocol_1_1_s_time_of_navigation_data" ],
     [ "STimeOfNavigationDataMessage", "struct_c_serial_protocol_1_1_s_time_of_navigation_data_message.html", "struct_c_serial_protocol_1_1_s_time_of_navigation_data_message" ],
     [ "SWriteToPortEventPartialData", "struct_c_serial_protocol_1_1_s_write_to_port_event_partial_data.html", "struct_c_serial_protocol_1_1_s_write_to_port_event_partial_data" ],
-    [ "CrcType_t", "class_c_serial_protocol.html#a0b6fe1be35b7ac5b6cef7cb42bb231dc", null ],
+    [ "CrcType_t", "class_c_serial_protocol.html#a3c8d3dd88aae9ceaed3a00f1e2597127", null ],
     [ "EMessageIds", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277", [
       [ "eInvalid", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277ac755153be5e641cf4748e990da4eaf3b", null ],
       [ "eInertialData", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a20c5438e0c37a772c32abed6e4605613", null ],
@@ -31,6 +33,7 @@ var class_c_serial_protocol =
       [ "eTimeOfInertialData", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a2116e5f7dde5989fbc5b25ca2e2f9cb8", null ],
       [ "eTimeOfSyncPulse", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a0fe39211df978c55e70ec88f2daa2565", null ],
       [ "eSoftwareVersion", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a918564c7d6e89da016d3962fba2c5aa6", null ],
+      [ "eHardwareVersion", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277ae087f9a47c9a1e4e2dd1db1f568a11e8", null ],
       [ "eDebugEventWriteToPort", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a74559aeff5083564705643f5a2663d90", null ],
       [ "eDebugEventRunnableCall", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277aeca86c773014411553d1d287e8d66501", null ],
       [ "eTypeOpenDiagnostic", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a563fe14d0e6abd24f84dd5da3893cad9", null ],
@@ -39,13 +42,26 @@ var class_c_serial_protocol =
       [ "eTypeNVMPageData", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a4d8c76918fdd3c90792bf925d96eb12d", null ],
       [ "eTypeAccept", "class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277a9b0d765bdaa470abe452e0bb0d4eb1de", null ]
     ] ],
+    [ "ESignalHealthInfo", "class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5", [
+      [ "eUnavailable", "class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5a2fdd41f3c9d616a8388fa048e17fb1c5", null ],
+      [ "eSafe", "class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5ad2632d4c4c47601d0639e0d2fbe223f8", null ],
+      [ "eIntegrityRisk", "class_c_serial_protocol.html#a9e579a2efc7ef45941a2769aea066fd5ac46cd5f7cfbb86ee4e6e58de6c3037ef", null ]
+    ] ],
     [ "CSerialProtocol", "class_c_serial_protocol.html#a5056963c92775b50a9d00a9f880334bc", null ],
     [ "~CSerialProtocol", "class_c_serial_protocol.html#a9284a66590ceed3890f168270e5c8427", null ],
-    [ "BuildAccuracyDataMessage", "class_c_serial_protocol.html#ad13e4877408abb5bdd0d3a0bf338406c", null ],
-    [ "BuildInertialDataMessage", "class_c_serial_protocol.html#a37276100f487d8f5d2da232053349c67", null ],
-    [ "BuildNavigationDataMessage", "class_c_serial_protocol.html#a3626dcd0680664343b64e629c19dc29c", null ],
-    [ "BuildSoftwareVersionMessage", "class_c_serial_protocol.html#a2b59dc5f4089d538be66e8477c692929", null ],
-    [ "BuildTimeOfInertialDataMessage", "class_c_serial_protocol.html#abd5ec58cb855e8d1eb7ebf59984778e2", null ],
-    [ "BuildTimeOfLatestSyncPulseMessage", "class_c_serial_protocol.html#a7290bff9226a3cc28853a9d02a178495", null ],
-    [ "BuildTimeOfNavigationDataMessage", "class_c_serial_protocol.html#a929353a8a586088cbc7da489bd015e90", null ]
+    [ "skfAngleScale_", "class_c_serial_protocol.html#a70ebcc3244ec0cf19e48f7c17d8988a9", null ],
+    [ "skfAngularRateScale_", "class_c_serial_protocol.html#ab101c9e3dc3f885cba81a7a441aab597", null ],
+    [ "skfHeighOffset_", "class_c_serial_protocol.html#af28933257c3d874b1dd3baf399fbf22d", null ],
+    [ "skfHeightScale_", "class_c_serial_protocol.html#a687fe393d494ce87d9272eb18a7259e3", null ],
+    [ "skfMaxAngularRate_", "class_c_serial_protocol.html#adbcbae0d209994a4315aea9692c05989", null ],
+    [ "skfMaxHeight_", "class_c_serial_protocol.html#a92a307138f17dab20432b4ab36b53e62", null ],
+    [ "skfMaxSpecificForce_", "class_c_serial_protocol.html#a9885f46794e186adaec9717b3cb56723", null ],
+    [ "skfMaxVelocityDown_", "class_c_serial_protocol.html#ac564c209752edbafc78e9d1227919eb9", null ],
+    [ "skfMinHeight_", "class_c_serial_protocol.html#a21c0caf1cdc5675f38b8b2ee34c0912f", null ],
+    [ "skfMinVelocityDown_", "class_c_serial_protocol.html#af0a67b8f4cbb3731be81dc045043456e", null ],
+    [ "skfSpecificForceScale_", "class_c_serial_protocol.html#aa4d67a302e56847052c0bbd9b9bcb8bc", null ],
+    [ "skfVelocityDownScale_", "class_c_serial_protocol.html#a72cde9185e638b6d6303e2dfb5da53f9", null ],
+    [ "uMarker1_", "class_c_serial_protocol.html#a93cb70e7c49e8d99cfd336510adfb945", null ],
+    [ "uMarker2_", "class_c_serial_protocol.html#a885e5582155c941f2f4ad42a454907bc", null ],
+    [ "uVersion_", "class_c_serial_protocol.html#a01d09961f161fcafd700448983636d95", null ]
 ];

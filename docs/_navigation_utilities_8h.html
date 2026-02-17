@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('_navigation_utilities_8h.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">NavigationUtilities.h File Reference</div></div>
@@ -117,6 +118,11 @@ $(document).ready(function(){initNavTree('_navigation_utilities_8h.html',''); in
 <p>Different functions related to navigational mathematics.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_navigation_utilities_1_1_s_euler_angles.html">NNavigationUtilities::SEulerAngles</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_n_navigation_utilities"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_navigation_utilities.html">NNavigationUtilities</a></td></tr>
@@ -145,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af30032bf88410bee9ed4db0e34751eb1"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_navigation_utilities.html#af30032bf88410bee9ed4db0e34751eb1">NNavigationUtilities::DcmFromQuaternion</a> (const <a class="el" href="class_c_quaternion.html">CQuaternion</a> &amp;korQuaternion)</td></tr>
 <tr class="memdesc:af30032bf88410bee9ed4db0e34751eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a quaternion to a rotation matrix.  <br /></td></tr>
 <tr class="separator:af30032bf88410bee9ed4db0e34751eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba3a3bd2a80afe16a9849cbaa6a5e89"><td class="memItemLeft" align="right" valign="top">SEulerAngles&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_navigation_utilities.html#afba3a3bd2a80afe16a9849cbaa6a5e89">NNavigationUtilities::EulerAnglesToEulerAngles312</a> (const SEulerAngles &amp;korEulerAngles)</td></tr>
+<tr class="memdesc:afba3a3bd2a80afe16a9849cbaa6a5e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Euler angles defined in the 3-1-2 sequence from conventional Euler angles.  <br /></td></tr>
+<tr class="separator:afba3a3bd2a80afe16a9849cbaa6a5e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aee1284dcac50b5bb57ea95dcd5cb23"><td class="memTemplParams" colspan="2">template&lt;typename tUnsignedType &gt; </td></tr>
 <tr class="memitem:a3aee1284dcac50b5bb57ea95dcd5cb23"><td class="memTemplItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_n_navigation_utilities.html#a3aee1284dcac50b5bb57ea95dcd5cb23">NNavigationUtilities::DiffOfUnsigned</a> (tUnsignedType uTimestamp1, tUnsignedType uTimestamp2)</td></tr>
 <tr class="memdesc:a3aee1284dcac50b5bb57ea95dcd5cb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a signed difference of two unsigned numbers. The function asserts if the diff is greater than the max value of the return type.  <br /></td></tr>

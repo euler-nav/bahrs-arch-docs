@@ -122,6 +122,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bmp384_driver.html">CBmp384Driver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class implements the BMP384 Driver. The driver adjusts the sensor BMP384.  <a href="class_c_bmp384_driver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_bmp384_driver_1_1_s_params.html">CBmp384Driver::SParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer pressure compensation parameters read from the NVM of BMP384.  <a href="struct_c_bmp384_driver_1_1_s_params.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_bmp384_driver_1_1_s_float_params.html">CBmp384Driver::SFloatParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of BMP384 compensation trim parameters.  <a href="struct_c_bmp384_driver_1_1_s_float_params.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -153,8 +159,10 @@ Macros</h2></td></tr>
 <tr class="separator:aedc2e0e93a027e9caa33a8e9f334677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a928448b825b1f1a8b2d2551320102884"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a928448b825b1f1a8b2d2551320102884">BMP384_REG_EVENT</a>&#160;&#160;&#160;((uint8_t)0x10)</td></tr>
 <tr class="separator:a928448b825b1f1a8b2d2551320102884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a10748832c8947bf91d0af5174f7e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#af5a10748832c8947bf91d0af5174f7e1">BMP384_REG_INT_STATUS</a>&#160;&#160;&#160;((uint8_t)0x10)</td></tr>
+<tr class="memitem:af5a10748832c8947bf91d0af5174f7e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#af5a10748832c8947bf91d0af5174f7e1">BMP384_REG_INT_STATUS</a>&#160;&#160;&#160;((uint8_t)0x11)</td></tr>
 <tr class="separator:af5a10748832c8947bf91d0af5174f7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619f532d6eea51a15a259ad217ff2733"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a619f532d6eea51a15a259ad217ff2733">BMP384_REG_INT_CTRL</a>&#160;&#160;&#160;((uint8_t)0x19)</td></tr>
+<tr class="separator:a619f532d6eea51a15a259ad217ff2733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af428b4a6fe361b100795cb5c77e22aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#af428b4a6fe361b100795cb5c77e22aa5">BMP384_REG_PWR_CTRL</a>&#160;&#160;&#160;((uint8_t)0x1B)</td></tr>
 <tr class="separator:af428b4a6fe361b100795cb5c77e22aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed961da6cf1d9ef621d2178800519d1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#aed961da6cf1d9ef621d2178800519d1f">BMP384_REG_OSR</a>&#160;&#160;&#160;((uint8_t)0x1C)</td></tr>
@@ -171,6 +179,12 @@ Macros</h2></td></tr>
 <tr class="separator:ae007796eaf246908f40a8f258459702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb4697be138330a90323579876c6d36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a2fb4697be138330a90323579876c6d36">BMP384_DATA_RD</a>&#160;&#160;&#160;((uint8_t)0x04)</td></tr>
 <tr class="separator:a2fb4697be138330a90323579876c6d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61e5eb1935451714b6f9396e2f6ebec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#ad61e5eb1935451714b6f9396e2f6ebec">BMP384_INT_OD</a>&#160;&#160;&#160;((uint8_t)0x01)</td></tr>
+<tr class="separator:ad61e5eb1935451714b6f9396e2f6ebec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56611752e2246eb5ac357c9d7384394e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a56611752e2246eb5ac357c9d7384394e">BMP384_DRDY_EN</a>&#160;&#160;&#160;((uint8_t)(0x01&lt;&lt;6))</td></tr>
+<tr class="separator:a56611752e2246eb5ac357c9d7384394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d993833ac46c009a77ffcb1b63ee6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a64d993833ac46c009a77ffcb1b63ee6d">BMP384_INT_CONF_VALUE</a>&#160;&#160;&#160;(<a class="el" href="_c_bmp384_driver_8h.html#ad61e5eb1935451714b6f9396e2f6ebec">BMP384_INT_OD</a> | <a class="el" href="_c_bmp384_driver_8h.html#a56611752e2246eb5ac357c9d7384394e">BMP384_DRDY_EN</a>)</td></tr>
+<tr class="separator:a64d993833ac46c009a77ffcb1b63ee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e55bbb568a1edb33b3f14b2b16be7cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#a8e55bbb568a1edb33b3f14b2b16be7cc">BMP384_SLEEP_MODE</a>&#160;&#160;&#160;((uint8_t)0x00)</td></tr>
 <tr class="separator:a8e55bbb568a1edb33b3f14b2b16be7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afacab5043cf49c0ce3cf5a6ef10bca67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_bmp384_driver_8h.html#afacab5043cf49c0ce3cf5a6ef10bca67">BMP384_FORCED_MODE</a>&#160;&#160;&#160;((uint8_t)0x10)</td></tr>
@@ -227,6 +241,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define BMP384_DRDY_CMD&#160;&#160;&#160;((uint8_t)0x10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56611752e2246eb5ac357c9d7384394e" name="a56611752e2246eb5ac357c9d7384394e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56611752e2246eb5ac357c9d7384394e">&#9670;&#160;</a></span>BMP384_DRDY_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BMP384_DRDY_EN&#160;&#160;&#160;((uint8_t)(0x01&lt;&lt;6))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -297,6 +325,34 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define BMP384_FORCED_MODE&#160;&#160;&#160;((uint8_t)0x10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64d993833ac46c009a77ffcb1b63ee6d" name="a64d993833ac46c009a77ffcb1b63ee6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d993833ac46c009a77ffcb1b63ee6d">&#9670;&#160;</a></span>BMP384_INT_CONF_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BMP384_INT_CONF_VALUE&#160;&#160;&#160;(<a class="el" href="_c_bmp384_driver_8h.html#ad61e5eb1935451714b6f9396e2f6ebec">BMP384_INT_OD</a> | <a class="el" href="_c_bmp384_driver_8h.html#a56611752e2246eb5ac357c9d7384394e">BMP384_DRDY_EN</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad61e5eb1935451714b6f9396e2f6ebec" name="ad61e5eb1935451714b6f9396e2f6ebec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61e5eb1935451714b6f9396e2f6ebec">&#9670;&#160;</a></span>BMP384_INT_OD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BMP384_INT_OD&#160;&#160;&#160;((uint8_t)0x01)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -415,6 +471,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a619f532d6eea51a15a259ad217ff2733" name="a619f532d6eea51a15a259ad217ff2733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619f532d6eea51a15a259ad217ff2733">&#9670;&#160;</a></span>BMP384_REG_INT_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BMP384_REG_INT_CTRL&#160;&#160;&#160;((uint8_t)0x19)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af5a10748832c8947bf91d0af5174f7e1" name="af5a10748832c8947bf91d0af5174f7e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5a10748832c8947bf91d0af5174f7e1">&#9670;&#160;</a></span>BMP384_REG_INT_STATUS</h2>
 
@@ -422,7 +492,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BMP384_REG_INT_STATUS&#160;&#160;&#160;((uint8_t)0x10)</td>
+          <td class="memname">#define BMP384_REG_INT_STATUS&#160;&#160;&#160;((uint8_t)0x11)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -729,7 +799,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_664c0f4a655728a770a913241e577aea.html">01_Library</a></li><li class="navelem"><a class="el" href="dir_164e1d1ee33457cf7736230e20ec4a56.html">Stm32</a></li><li class="navelem"><a class="el" href="dir_b70053aca336a4269a1bcadc155e2bdf.html">Drivers</a></li><li class="navelem"><a class="el" href="_c_bmp384_driver_8h.html">CBmp384Driver.h</a></li>
+    <li class="navelem"><a class="el" href="dir_0c8ba2742a606ad5b22fedaf9c208dfa.html">02_Projects</a></li><li class="navelem"><a class="el" href="dir_42a22189963e536e56cbb28c8e97fd4f.html">Stm32Bahrs</a></li><li class="navelem"><a class="el" href="dir_615440ac57106adcccfac0ae73cba02d.html">TargetApp</a></li><li class="navelem"><a class="el" href="dir_fcbc5f816ab1c88a12560a838be510eb.html">bsw</a></li><li class="navelem"><a class="el" href="dir_c98ea4ca1565fe10a5df246758117de2.html">bmp384-driver</a></li><li class="navelem"><a class="el" href="dir_e73456090fd3a953fe267226f6a98ab4.html">inc</a></li><li class="navelem"><a class="el" href="_c_bmp384_driver_8h.html">CBmp384Driver.h</a></li>
     <li class="footer">
       Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
     </li>

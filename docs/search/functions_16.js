@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['Y',['../class_c_quaternion.html#a6d37a9b9c967b8a52d43ee0af0d87f23',1,'CQuaternion::Y()'],['../class_c_quaternion.html#a06ab72e7e7c0161dbff2d6c56edf5974',1,'CQuaternion::Y() const']]]
+  ['x_0',['X',['../class_c_quaternion.html#ab86bb5f5d5f5e652fd8f299b12cc7796',1,'CQuaternion::X()'],['../class_c_quaternion.html#a53988385f6eef6530e9fd9810b45985d',1,'CQuaternion::X() const']]]
 ];

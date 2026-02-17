@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['_7ecserialprotocol_0',['~CSerialProtocol',['../class_c_serial_protocol.html#a9284a66590ceed3890f168270e5c8427',1,'CSerialProtocol']]],
-  ['_7ecsoftwarecomponent_1',['~CSoftwareComponent',['../class_c_software_component.html#a0b74e621a83bfb2ee8cd523cf6a3b93e',1,'CSoftwareComponent']]],
-  ['_7ecsoftwarecomponentport_2',['~CSoftwareComponentPort',['../class_c_software_component_port.html#acd3d945636abdf339b9a23ed469880ef',1,'CSoftwareComponentPort']]]
+  ['z_0',['Z',['../class_c_quaternion.html#a5e244abd6ba6243c139b298c6c436d11',1,'CQuaternion::Z()'],['../class_c_quaternion.html#a5446b8323692a752049f5b2a372a5619',1,'CQuaternion::Z() const']]]
 ];

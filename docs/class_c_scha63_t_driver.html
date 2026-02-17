@@ -110,6 +110,11 @@ $(document).ready(function(){initNavTree('class_c_scha63_t_driver.html',''); ini
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_scha63_t_driver-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CScha63TDriver Class Reference</div></div>
@@ -128,8 +133,18 @@ Inheritance diagram for CScha63TDriver:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_scha63_t_driver_1_1_s_compensation_parameters.html">SCompensationParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct to store compensation parameters stored in the sensor's NVM.  <a href="struct_c_scha63_t_driver_1_1_s_compensation_parameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a21b08b97b5b78ef725db78ca5c4dcd6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a21b08b97b5b78ef725db78ca5c4dcd6e">Init</a> () override</td></tr>
+<tr class="separator:a21b08b97b5b78ef725db78ca5c4dcd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68a645a6b8026f3a83b7603b8016923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aa68a645a6b8026f3a83b7603b8016923">IsInitialized</a> () override</td></tr>
+<tr class="separator:aa68a645a6b8026f3a83b7603b8016923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88566c97a94c835eb23c7404bc925688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a88566c97a94c835eb23c7404bc925688">PollSensor</a> ()</td></tr>
 <tr class="memdesc:a88566c97a94c835eb23c7404bc925688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the sensor. Puts batches of 30 measurements periodically into the queue of the FreeRTOS task. The function is called from the 6kHz interrupt triggered by the TIM7.  <br /></td></tr>
 <tr class="separator:a88566c97a94c835eb23c7404bc925688"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,10 +152,141 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afab532c0a0c57c23e4dac1098c32c8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts batches of 30 raw measurements to IMU measurement, applies factory calibration and writes the result to the RTE port. The routine shall be called from FreeRTOS tasks.  <br /></td></tr>
 <tr class="separator:afab532c0a0c57c23e4dac1098c32c8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_software_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_software_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_software_component.html">CSoftwareComponent&lt; CScha63TDriver, 1U &gt;</a></td></tr>
+<tr class="memitem:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a9b9a310d314be9f7966d4ff7491dd3c4">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;)=delete</td></tr>
+<tr class="separator:a9b9a310d314be9f7966d4ff7491dd3c4 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a1ffcc4521f7e2308fb65cd01b63cc963">CSoftwareComponent</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a1ffcc4521f7e2308fb65cd01b63cc963 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a923aaf474ba39912e1871430708d77b9">operator=</a> (const <a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:a923aaf474ba39912e1871430708d77b9 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#aa4a6ed5126419bc6cf1e8c1b622751e1">operator=</a> (<a class="el" href="class_c_software_component.html">CSoftwareComponent</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:aa4a6ed5126419bc6cf1e8c1b622751e1 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">Init</a> ()=0</td></tr>
 <tr class="separator:a8f8820435e42b914eeedafec93ba499a inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">IsInitialized</a> ()=0</td></tr>
 <tr class="separator:a2eff0eea7c5cfa990e6b1847298ce8e6 inherit pub_methods_class_c_software_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a25dcdcd27bc359d69691eb6c003eba0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0c">EMeasurementFrames</a> { <br />
+&#160;&#160;<a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0caf47fbf2130da7be5ebe0fe76a76344c3">eSpecificForceX</a> = 0
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0ca90f373ceb4247361a42af54880a8ba8b">eSpecificForceY</a>
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0cac8c168fe9f0e4f570cd8308bf12a1910">eSpecificForceZ</a>
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0ca72ce777dc29b6c62ae09a30b0f8f7a83">eAngularRateX</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0ca04c64a5a7ea181473f46f55b7a339d48">eAngularRateY</a>
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0caa46e1933804a2d311e76c8193a921689">eAngularRateZ</a>
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0ca6fee770a90aaea29777cb19a8f2c2ffb">eTemperatureUno</a>
+, <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0ca64ec7d2bf42df1d63ada65508ee06145">eTemperatureDue</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0cae45fb5e01a50e76f348840bf24f67cba">eFrameCount</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a25dcdcd27bc359d69691eb6c003eba0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of measurement frames for SPI communication.  <a href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0c">More...</a><br /></td></tr>
+<tr class="separator:a25dcdcd27bc359d69691eb6c003eba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adb569794041ed080b4a00754396f74ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#adb569794041ed080b4a00754396f74ec">CScha63TDriver</a> (<a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;)=delete</td></tr>
+<tr class="separator:adb569794041ed080b4a00754396f74ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b08f5091d59d61e2347bb9aa5cc20c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ab9b08f5091d59d61e2347bb9aa5cc20c">CScha63TDriver</a> (<a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:ab9b08f5091d59d61e2347bb9aa5cc20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3dee22c92640cd936b8f4bf1b2a15a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aa3dee22c92640cd936b8f4bf1b2a15a1">operator=</a> (const <a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;orOther)=delete</td></tr>
+<tr class="separator:aa3dee22c92640cd936b8f4bf1b2a15a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694cbe8c8749a9d39ce46338658fa0dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a694cbe8c8749a9d39ce46338658fa0dd">operator=</a> (<a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="separator:a694cbe8c8749a9d39ce46338658fa0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fde2bbc7e3c418fdb03ba357d455bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ae0fde2bbc7e3c418fdb03ba357d455bf">CScha63TDriver</a> (SPI_HandleTypeDef &amp;korSpiHandle)</td></tr>
+<tr class="separator:ae0fde2bbc7e3c418fdb03ba357d455bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15224a3cfd97aa1bff6fc12a389b26b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ac15224a3cfd97aa1bff6fc12a389b26b">~CScha63TDriver</a> ()=default</td></tr>
+<tr class="separator:ac15224a3cfd97aa1bff6fc12a389b26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa58d7d89631db785fdbf1fd5d73e9b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aaa58d7d89631db785fdbf1fd5d73e9b9">pollUnoStatus</a> ()</td></tr>
+<tr class="memdesc:aaa58d7d89631db785fdbf1fd5d73e9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the status of the UNO ASIC.  <br /></td></tr>
+<tr class="separator:aaa58d7d89631db785fdbf1fd5d73e9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bb1b2fee167d95cca6966a1ded1732"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ab5bb1b2fee167d95cca6966a1ded1732">pollDueStatus</a> ()</td></tr>
+<tr class="memdesc:ab5bb1b2fee167d95cca6966a1ded1732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the status of the DUE ASIC.  <br /></td></tr>
+<tr class="separator:ab5bb1b2fee167d95cca6966a1ded1732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74688fa9c409de33ed2a9b6917bd07cb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a74688fa9c409de33ed2a9b6917bd07cb">spiWriteReadUno</a> (uint32_t uDataOut)</td></tr>
+<tr class="memdesc:a74688fa9c409de33ed2a9b6917bd07cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read/write a 32-bit frame to/from the UNO ASIC.  <br /></td></tr>
+<tr class="separator:a74688fa9c409de33ed2a9b6917bd07cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01c7cbf3e07cfd2ce9ebeab91d6d837"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#af01c7cbf3e07cfd2ce9ebeab91d6d837">spiWriteReadDue</a> (uint32_t uDataOut)</td></tr>
+<tr class="memdesc:af01c7cbf3e07cfd2ce9ebeab91d6d837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read/write a 32-bit frame to/from the DUE ASIC.  <br /></td></tr>
+<tr class="separator:af01c7cbf3e07cfd2ce9ebeab91d6d837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fab53825e9858a79a9f5378df0f473d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a6fab53825e9858a79a9f5378df0f473d">spiWriteRead</a> (uint32_t uDataOut, GPIO_TypeDef *opGpioX, uint16_t uGpioPin)</td></tr>
+<tr class="memdesc:a6fab53825e9858a79a9f5378df0f473d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI communication with the sensor.  <br /></td></tr>
+<tr class="separator:a6fab53825e9858a79a9f5378df0f473d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a49a4054bc2627bf2bd8edf126070d5ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a49a4054bc2627bf2bd8edf126070d5ab">getInstanceImpl</a> (unsigned uInstanceIndex)</td></tr>
+<tr class="separator:a49a4054bc2627bf2bd8edf126070d5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa87fc70085a9f83952887322941985"><td class="memItemLeft" align="right" valign="top">static SPI_HandleTypeDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#affa87fc70085a9f83952887322941985">getSpiHandle</a> ()</td></tr>
+<tr class="memdesc:affa87fc70085a9f83952887322941985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to a SPI handle object instantiated in the HAL library. Returns reference to hspi1 for BAHRS V2 and hspi2 for BAHRS V3.  <br /></td></tr>
+<tr class="separator:affa87fc70085a9f83952887322941985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8b3e079eebec939ab21ee5b6cf1e70"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aef8b3e079eebec939ab21ee5b6cf1e70">checkRsError</a> (uint32_t uFrame)</td></tr>
+<tr class="memdesc:aef8b3e079eebec939ab21ee5b6cf1e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for RS error bits in the frame.  <br /></td></tr>
+<tr class="separator:aef8b3e079eebec939ab21ee5b6cf1e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e03de3c8d8e133e8930f352c7133e65"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a4e03de3c8d8e133e8930f352c7133e65">checkRsErrorInFrames</a> (uint32_t *upFrames, unsigned uFrameCount)</td></tr>
+<tr class="memdesc:a4e03de3c8d8e133e8930f352c7133e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for RS errors in an array of frames received from the ASIC:  <br /></td></tr>
+<tr class="separator:a4e03de3c8d8e133e8930f352c7133e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefdf5f24281432e8f6423830c8b81e9"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aeefdf5f24281432e8f6423830c8b81e9">frameToInt16</a> (uint32_t uFrame)</td></tr>
+<tr class="memdesc:aeefdf5f24281432e8f6423830c8b81e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 16-bit integer from the frame received from the ASIC.  <br /></td></tr>
+<tr class="separator:aeefdf5f24281432e8f6423830c8b81e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896f6a292abf56e4e99fde35c4bc5bef"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a896f6a292abf56e4e99fde35c4bc5bef">frameToUint16</a> (uint32_t uFrame)</td></tr>
+<tr class="memdesc:a896f6a292abf56e4e99fde35c4bc5bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 16-bit unsigned integer from the frame received from the ASIC.  <br /></td></tr>
+<tr class="separator:a896f6a292abf56e4e99fde35c4bc5bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af824b6bc56ce59cfc54772c2844ba7d7"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#af824b6bc56ce59cfc54772c2844ba7d7">lowerInt8FromFrame</a> (uint32_t uFrame)</td></tr>
+<tr class="memdesc:af824b6bc56ce59cfc54772c2844ba7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 8-bit integer from the frame received from the ASIC using the lower bits.  <br /></td></tr>
+<tr class="separator:af824b6bc56ce59cfc54772c2844ba7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445ddcead62da44554cd183675b581b1"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a445ddcead62da44554cd183675b581b1">upperInt8FromFrame</a> (uint32_t uFrame)</td></tr>
+<tr class="memdesc:a445ddcead62da44554cd183675b581b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 8-bit integer from the frame received from the ASIC using the upper bits.  <br /></td></tr>
+<tr class="separator:a445ddcead62da44554cd183675b581b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7d96de67396d5d1708b15334979c1350"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a7d96de67396d5d1708b15334979c1350">bIsInitialized_</a> { false }</td></tr>
+<tr class="memdesc:a7d96de67396d5d1708b15334979c1350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor initialization status: true &ndash; initialized, false otherwise.  <br /></td></tr>
+<tr class="separator:a7d96de67396d5d1708b15334979c1350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353eb7b0d7df1bac44f13dbcd8b45723"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a353eb7b0d7df1bac44f13dbcd8b45723">acSerialNumber_</a> [14] { &quot;&quot; }</td></tr>
+<tr class="memdesc:a353eb7b0d7df1bac44f13dbcd8b45723"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the sensor read from the sensor's NVM.  <br /></td></tr>
+<tr class="separator:a353eb7b0d7df1bac44f13dbcd8b45723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b5e65184eefa2b830cf606193bbfcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_scha63_t_driver_1_1_s_compensation_parameters.html">SCompensationParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a30b5e65184eefa2b830cf606193bbfcb">oCompensationParameters_</a></td></tr>
+<tr class="memdesc:a30b5e65184eefa2b830cf606193bbfcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensation parameters read from the sensor's NVM.  <br /></td></tr>
+<tr class="separator:a30b5e65184eefa2b830cf606193bbfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1841bcfc6a5236519d652bc3a9d44a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_scha63_t_dataset.html">SScha63TDataset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a6e1841bcfc6a5236519d652bc3a9d44a">oLatestDataset_</a></td></tr>
+<tr class="memdesc:a6e1841bcfc6a5236519d652bc3a9d44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest 30 measurements that are transfered periodically to the queue of the dedicated FreeRTOS task.  <br /></td></tr>
+<tr class="separator:a6e1841bcfc6a5236519d652bc3a9d44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17696b28a2071987a29452171876aab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_scha63_t_dataset.html">SScha63TDataset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ae17696b28a2071987a29452171876aab">oOutputDataset_</a></td></tr>
+<tr class="separator:ae17696b28a2071987a29452171876aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae124335f4d0e1823bd21c8adf38a8afe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ae124335f4d0e1823bd21c8adf38a8afe">bErrorFlags_</a> { false }</td></tr>
+<tr class="memdesc:ae124335f4d0e1823bd21c8adf38a8afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flag indicating errors during ASIC operation.  <br /></td></tr>
+<tr class="separator:ae124335f4d0e1823bd21c8adf38a8afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8339a7fa1cbbaa8e9d7eb5c142f6f2ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_scha63_t_status_uno.html">SScha63TStatusUno</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a8339a7fa1cbbaa8e9d7eb5c142f6f2ce">oStatusUno_</a></td></tr>
+<tr class="memdesc:a8339a7fa1cbbaa8e9d7eb5c142f6f2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest content of the UNO status registers. Valid only when bErrorFlags_ is true.  <br /></td></tr>
+<tr class="separator:a8339a7fa1cbbaa8e9d7eb5c142f6f2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdac6ce1b7d4ffea094232916aacf123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_scha63_t_status_due.html">SScha63TStatusDue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#acdac6ce1b7d4ffea094232916aacf123">oStatusDue_</a></td></tr>
+<tr class="memdesc:acdac6ce1b7d4ffea094232916aacf123"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest content of the DUE status registers. Valid only when bErrorFlags_ is true.  <br /></td></tr>
+<tr class="separator:acdac6ce1b7d4ffea094232916aacf123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04959ea22015e5e7039646b25667fd29"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a04959ea22015e5e7039646b25667fd29">bDatasetAvailable_</a> { false }</td></tr>
+<tr class="separator:a04959ea22015e5e7039646b25667fd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857ad6ef0d503b8f13310d59a75ccf94"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a857ad6ef0d503b8f13310d59a75ccf94">orSpiHandle_</a></td></tr>
+<tr class="separator:a857ad6ef0d503b8f13310d59a75ccf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a27a105304ff45bf6f6302c06ca09aa39"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a27a105304ff45bf6f6302c06ca09aa39">skfGravity_</a> { 9.8F }</td></tr>
+<tr class="memdesc:a27a105304ff45bf6f6302c06ca09aa39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravity constant, [m/s^2].  <br /></td></tr>
+<tr class="separator:a27a105304ff45bf6f6302c06ca09aa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39685c706fcee15dac57ee991842d10"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ab39685c706fcee15dac57ee991842d10">skfDegreesToRadians_</a> { 0.017453292F }</td></tr>
+<tr class="memdesc:ab39685c706fcee15dac57ee991842d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale factor to convert degrees to radians, [rad/deg].  <br /></td></tr>
+<tr class="separator:ab39685c706fcee15dac57ee991842d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7eff3c962e8333b17a02b4c9e93e07"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#a8f7eff3c962e8333b17a02b4c9e93e07">skfAccelerometerSensitivity_</a> { 4905.0F }</td></tr>
+<tr class="memdesc:a8f7eff3c962e8333b17a02b4c9e93e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accelerometer sensitivity, [LSB/g].  <br /></td></tr>
+<tr class="separator:a8f7eff3c962e8333b17a02b4c9e93e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef67e3b75c92f478dae303cc1bf1d5f2"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#aef67e3b75c92f478dae303cc1bf1d5f2">skfGyroscopeSensitivity_</a> { 80.0F }</td></tr>
+<tr class="memdesc:aef67e3b75c92f478dae303cc1bf1d5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gyroscope sensitivity, [LSB/deg/s].  <br /></td></tr>
+<tr class="separator:aef67e3b75c92f478dae303cc1bf1d5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54fe4be2f939e61354b2c7d879a17e4"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scha63_t_driver.html#ac54fe4be2f939e61354b2c7d879a17e4">skiMaxAttemptsToConfigure_</a> { 2 }</td></tr>
+<tr class="memdesc:ac54fe4be2f939e61354b2c7d879a17e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of attempts to configure the sensor.  <br /></td></tr>
+<tr class="separator:ac54fe4be2f939e61354b2c7d879a17e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -163,7 +309,228 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is class implements a driver for the Murata SCHA63T inertial sensor. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a25dcdcd27bc359d69691eb6c003eba0c" name="a25dcdcd27bc359d69691eb6c003eba0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25dcdcd27bc359d69691eb6c003eba0c">&#9670;&#160;</a></span>EMeasurementFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_scha63_t_driver.html#a25dcdcd27bc359d69691eb6c003eba0c">CScha63TDriver::EMeasurementFrames</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enumeration of measurement frames for SPI communication. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0caf47fbf2130da7be5ebe0fe76a76344c3" name="a25dcdcd27bc359d69691eb6c003eba0caf47fbf2130da7be5ebe0fe76a76344c3"></a>eSpecificForceX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0ca90f373ceb4247361a42af54880a8ba8b" name="a25dcdcd27bc359d69691eb6c003eba0ca90f373ceb4247361a42af54880a8ba8b"></a>eSpecificForceY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0cac8c168fe9f0e4f570cd8308bf12a1910" name="a25dcdcd27bc359d69691eb6c003eba0cac8c168fe9f0e4f570cd8308bf12a1910"></a>eSpecificForceZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0ca72ce777dc29b6c62ae09a30b0f8f7a83" name="a25dcdcd27bc359d69691eb6c003eba0ca72ce777dc29b6c62ae09a30b0f8f7a83"></a>eAngularRateX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0ca04c64a5a7ea181473f46f55b7a339d48" name="a25dcdcd27bc359d69691eb6c003eba0ca04c64a5a7ea181473f46f55b7a339d48"></a>eAngularRateY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0caa46e1933804a2d311e76c8193a921689" name="a25dcdcd27bc359d69691eb6c003eba0caa46e1933804a2d311e76c8193a921689"></a>eAngularRateZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0ca6fee770a90aaea29777cb19a8f2c2ffb" name="a25dcdcd27bc359d69691eb6c003eba0ca6fee770a90aaea29777cb19a8f2c2ffb"></a>eTemperatureUno&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0ca64ec7d2bf42df1d63ada65508ee06145" name="a25dcdcd27bc359d69691eb6c003eba0ca64ec7d2bf42df1d63ada65508ee06145"></a>eTemperatureDue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a25dcdcd27bc359d69691eb6c003eba0cae45fb5e01a50e76f348840bf24f67cba" name="a25dcdcd27bc359d69691eb6c003eba0cae45fb5e01a50e76f348840bf24f67cba"></a>eFrameCount&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adb569794041ed080b4a00754396f74ec" name="adb569794041ed080b4a00754396f74ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb569794041ed080b4a00754396f74ec">&#9670;&#160;</a></span>CScha63TDriver() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CScha63TDriver::CScha63TDriver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9b08f5091d59d61e2347bb9aa5cc20c" name="ab9b08f5091d59d61e2347bb9aa5cc20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b08f5091d59d61e2347bb9aa5cc20c">&#9670;&#160;</a></span>CScha63TDriver() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CScha63TDriver::CScha63TDriver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0fde2bbc7e3c418fdb03ba357d455bf" name="ae0fde2bbc7e3c418fdb03ba357d455bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0fde2bbc7e3c418fdb03ba357d455bf">&#9670;&#160;</a></span>CScha63TDriver() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CScha63TDriver::CScha63TDriver </td>
+          <td>(</td>
+          <td class="paramtype">SPI_HandleTypeDef &amp;&#160;</td>
+          <td class="paramname"><em>korSpiHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac15224a3cfd97aa1bff6fc12a389b26b" name="ac15224a3cfd97aa1bff6fc12a389b26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15224a3cfd97aa1bff6fc12a389b26b">&#9670;&#160;</a></span>~CScha63TDriver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CScha63TDriver::~CScha63TDriver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef8b3e079eebec939ab21ee5b6cf1e70" name="aef8b3e079eebec939ab21ee5b6cf1e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8b3e079eebec939ab21ee5b6cf1e70">&#9670;&#160;</a></span>checkRsError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::checkRsError </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check for RS error bits in the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uFrame</td><td>32-bit frame received from the ASIC. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True &ndash; there are errors, false &ndash; no errors. </dd></dl>
+
+</div>
+</div>
+<a id="a4e03de3c8d8e133e8930f352c7133e65" name="a4e03de3c8d8e133e8930f352c7133e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e03de3c8d8e133e8930f352c7133e65">&#9670;&#160;</a></span>checkRsErrorInFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::checkRsErrorInFrames </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>upFrames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>uFrameCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check for RS errors in an array of frames received from the ASIC: </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upFrames</td><td>A pointer to the first array element. </td></tr>
+    <tr><td class="paramname">uFrameCount</td><td>Number of frames ín the array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there are errors, false &ndash; no errors. </dd></dl>
+
+</div>
+</div>
 <a id="afab532c0a0c57c23e4dac1098c32c8eb" name="afab532c0a0c57c23e4dac1098c32c8eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afab532c0a0c57c23e4dac1098c32c8eb">&#9670;&#160;</a></span>ConvertRawDataset()</h2>
 
@@ -183,6 +550,301 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aeefdf5f24281432e8f6423830c8b81e9" name="aeefdf5f24281432e8f6423830c8b81e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefdf5f24281432e8f6423830c8b81e9">&#9670;&#160;</a></span>frameToInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t CScha63TDriver::frameToInt16 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 16-bit integer from the frame received from the ASIC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uFrame</td><td>A 32-bit frame received from the ASIC: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>16-bit integer. </dd></dl>
+
+</div>
+</div>
+<a id="a896f6a292abf56e4e99fde35c4bc5bef" name="a896f6a292abf56e4e99fde35c4bc5bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896f6a292abf56e4e99fde35c4bc5bef">&#9670;&#160;</a></span>frameToUint16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t CScha63TDriver::frameToUint16 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 16-bit unsigned integer from the frame received from the ASIC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uFrame</td><td>A 32-bit frame received from the ASIC: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 16-bit unsigned integer. </dd></dl>
+
+</div>
+</div>
+<a id="a49a4054bc2627bf2bd8edf126070d5ab" name="a49a4054bc2627bf2bd8edf126070d5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a4054bc2627bf2bd8edf126070d5ab">&#9670;&#160;</a></span>getInstanceImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp; CScha63TDriver::getInstanceImpl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>uInstanceIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affa87fc70085a9f83952887322941985" name="affa87fc70085a9f83952887322941985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa87fc70085a9f83952887322941985">&#9670;&#160;</a></span>getSpiHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef &amp; CScha63TDriver::getSpiHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get reference to a SPI handle object instantiated in the HAL library. Returns reference to hspi1 for BAHRS V2 and hspi2 for BAHRS V3. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to SPI handle. </dd></dl>
+
+</div>
+</div>
+<a id="a21b08b97b5b78ef725db78ca5c4dcd6e" name="a21b08b97b5b78ef725db78ca5c4dcd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b08b97b5b78ef725db78ca5c4dcd6e">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CScha63TDriver::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the software component. </p>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">CSoftwareComponent&lt; CScha63TDriver, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aa68a645a6b8026f3a83b7603b8016923" name="aa68a645a6b8026f3a83b7603b8016923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68a645a6b8026f3a83b7603b8016923">&#9670;&#160;</a></span>IsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get initialization status of the software component. </p><dl class="section return"><dt>Returns</dt><dd>True &ndash; the component is initialized, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">CSoftwareComponent&lt; CScha63TDriver, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="af824b6bc56ce59cfc54772c2844ba7d7" name="af824b6bc56ce59cfc54772c2844ba7d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af824b6bc56ce59cfc54772c2844ba7d7">&#9670;&#160;</a></span>lowerInt8FromFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t CScha63TDriver::lowerInt8FromFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 8-bit integer from the frame received from the ASIC using the lower bits. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uFrame</td><td>A 32-bit frame received from the ASIC. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Desired 8-bit integer. </dd></dl>
+
+</div>
+</div>
+<a id="aa3dee22c92640cd936b8f4bf1b2a15a1" name="aa3dee22c92640cd936b8f4bf1b2a15a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dee22c92640cd936b8f4bf1b2a15a1">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp; CScha63TDriver::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a694cbe8c8749a9d39ce46338658fa0dd" name="a694cbe8c8749a9d39ce46338658fa0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694cbe8c8749a9d39ce46338658fa0dd">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp; CScha63TDriver::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_scha63_t_driver.html">CScha63TDriver</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>orOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5bb1b2fee167d95cca6966a1ded1732" name="ab5bb1b2fee167d95cca6966a1ded1732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bb1b2fee167d95cca6966a1ded1732">&#9670;&#160;</a></span>pollDueStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::pollDueStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Poll the status of the DUE ASIC. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the DUE ASIC operates normally, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a88566c97a94c835eb23c7404bc925688" name="a88566c97a94c835eb23c7404bc925688"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88566c97a94c835eb23c7404bc925688">&#9670;&#160;</a></span>PollSensor()</h2>
 
@@ -199,6 +861,192 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Poll the sensor. Puts batches of 30 measurements periodically into the queue of the FreeRTOS task. The function is called from the 6kHz interrupt triggered by the TIM7. </p>
+
+</div>
+</div>
+<a id="aaa58d7d89631db785fdbf1fd5d73e9b9" name="aaa58d7d89631db785fdbf1fd5d73e9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa58d7d89631db785fdbf1fd5d73e9b9">&#9670;&#160;</a></span>pollUnoStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::pollUnoStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Poll the status of the UNO ASIC. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the UNO ASIC operates normally, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a6fab53825e9858a79a9f5378df0f473d" name="a6fab53825e9858a79a9f5378df0f473d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fab53825e9858a79a9f5378df0f473d">&#9670;&#160;</a></span>spiWriteRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CScha63TDriver::spiWriteRead </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uDataOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>opGpioX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>uGpioPin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SPI communication with the sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uDataOut</td><td>Data to be sent. </td></tr>
+    <tr><td class="paramname">opGpioX</td><td>CSB GPIO group. </td></tr>
+    <tr><td class="paramname">uGpioPin</td><td>CSB GPIO pin. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Response of the sensor. </dd></dl>
+
+</div>
+</div>
+<a id="af01c7cbf3e07cfd2ce9ebeab91d6d837" name="af01c7cbf3e07cfd2ce9ebeab91d6d837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01c7cbf3e07cfd2ce9ebeab91d6d837">&#9670;&#160;</a></span>spiWriteReadDue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CScha63TDriver::spiWriteReadDue </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uDataOut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read/write a 32-bit frame to/from the DUE ASIC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uDataOut</td><td>Data to be send on SPI (for example read address). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Response of the sensor to the previous operation. </dd></dl>
+
+</div>
+</div>
+<a id="a74688fa9c409de33ed2a9b6917bd07cb" name="a74688fa9c409de33ed2a9b6917bd07cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74688fa9c409de33ed2a9b6917bd07cb">&#9670;&#160;</a></span>spiWriteReadUno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CScha63TDriver::spiWriteReadUno </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uDataOut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read/write a 32-bit frame to/from the UNO ASIC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uDataOut</td><td>Data to be send on SPI (for example read address). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Response of the sensor to the previous operation. </dd></dl>
+
+</div>
+</div>
+<a id="a445ddcead62da44554cd183675b581b1" name="a445ddcead62da44554cd183675b581b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445ddcead62da44554cd183675b581b1">&#9670;&#160;</a></span>upperInt8FromFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t CScha63TDriver::upperInt8FromFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 8-bit integer from the frame received from the ASIC using the upper bits. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uFrame</td><td>A 32-bit frame received from the ASIC. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Desired 8-bit integer. </dd></dl>
 
 </div>
 </div>
@@ -222,6 +1070,361 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a353eb7b0d7df1bac44f13dbcd8b45723" name="a353eb7b0d7df1bac44f13dbcd8b45723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353eb7b0d7df1bac44f13dbcd8b45723">&#9670;&#160;</a></span>acSerialNumber_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CScha63TDriver::acSerialNumber_[14] { &quot;&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ID of the sensor read from the sensor's NVM. </p>
+
+</div>
+</div>
+<a id="a04959ea22015e5e7039646b25667fd29" name="a04959ea22015e5e7039646b25667fd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04959ea22015e5e7039646b25667fd29">&#9670;&#160;</a></span>bDatasetAvailable_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool CScha63TDriver::bDatasetAvailable_ { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae124335f4d0e1823bd21c8adf38a8afe" name="ae124335f4d0e1823bd21c8adf38a8afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae124335f4d0e1823bd21c8adf38a8afe">&#9670;&#160;</a></span>bErrorFlags_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::bErrorFlags_ { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The flag indicating errors during ASIC operation. </p>
+
+</div>
+</div>
+<a id="a7d96de67396d5d1708b15334979c1350" name="a7d96de67396d5d1708b15334979c1350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d96de67396d5d1708b15334979c1350">&#9670;&#160;</a></span>bIsInitialized_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CScha63TDriver::bIsInitialized_ { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sensor initialization status: true &ndash; initialized, false otherwise. </p>
+
+</div>
+</div>
+<a id="a30b5e65184eefa2b830cf606193bbfcb" name="a30b5e65184eefa2b830cf606193bbfcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b5e65184eefa2b830cf606193bbfcb">&#9670;&#160;</a></span>oCompensationParameters_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_scha63_t_driver_1_1_s_compensation_parameters.html">SCompensationParameters</a> CScha63TDriver::oCompensationParameters_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compensation parameters read from the sensor's NVM. </p>
+
+</div>
+</div>
+<a id="a6e1841bcfc6a5236519d652bc3a9d44a" name="a6e1841bcfc6a5236519d652bc3a9d44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1841bcfc6a5236519d652bc3a9d44a">&#9670;&#160;</a></span>oLatestDataset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s_scha63_t_dataset.html">SScha63TDataset</a> CScha63TDriver::oLatestDataset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The latest 30 measurements that are transfered periodically to the queue of the dedicated FreeRTOS task. </p>
+
+</div>
+</div>
+<a id="ae17696b28a2071987a29452171876aab" name="ae17696b28a2071987a29452171876aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17696b28a2071987a29452171876aab">&#9670;&#160;</a></span>oOutputDataset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s_scha63_t_dataset.html">SScha63TDataset</a> CScha63TDriver::oOutputDataset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a857ad6ef0d503b8f13310d59a75ccf94" name="a857ad6ef0d503b8f13310d59a75ccf94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857ad6ef0d503b8f13310d59a75ccf94">&#9670;&#160;</a></span>orSpiHandle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef&amp; CScha63TDriver::orSpiHandle_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdac6ce1b7d4ffea094232916aacf123" name="acdac6ce1b7d4ffea094232916aacf123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdac6ce1b7d4ffea094232916aacf123">&#9670;&#160;</a></span>oStatusDue_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s_scha63_t_status_due.html">SScha63TStatusDue</a> CScha63TDriver::oStatusDue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The latest content of the DUE status registers. Valid only when bErrorFlags_ is true. </p>
+
+</div>
+</div>
+<a id="a8339a7fa1cbbaa8e9d7eb5c142f6f2ce" name="a8339a7fa1cbbaa8e9d7eb5c142f6f2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8339a7fa1cbbaa8e9d7eb5c142f6f2ce">&#9670;&#160;</a></span>oStatusUno_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s_scha63_t_status_uno.html">SScha63TStatusUno</a> CScha63TDriver::oStatusUno_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The latest content of the UNO status registers. Valid only when bErrorFlags_ is true. </p>
+
+</div>
+</div>
+<a id="a8f7eff3c962e8333b17a02b4c9e93e07" name="a8f7eff3c962e8333b17a02b4c9e93e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7eff3c962e8333b17a02b4c9e93e07">&#9670;&#160;</a></span>skfAccelerometerSensitivity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float CScha63TDriver::skfAccelerometerSensitivity_ { 4905.0F }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Accelerometer sensitivity, [LSB/g]. </p>
+
+</div>
+</div>
+<a id="ab39685c706fcee15dac57ee991842d10" name="ab39685c706fcee15dac57ee991842d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39685c706fcee15dac57ee991842d10">&#9670;&#160;</a></span>skfDegreesToRadians_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float CScha63TDriver::skfDegreesToRadians_ { 0.017453292F }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale factor to convert degrees to radians, [rad/deg]. </p>
+
+</div>
+</div>
+<a id="a27a105304ff45bf6f6302c06ca09aa39" name="a27a105304ff45bf6f6302c06ca09aa39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a105304ff45bf6f6302c06ca09aa39">&#9670;&#160;</a></span>skfGravity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float CScha63TDriver::skfGravity_ { 9.8F }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gravity constant, [m/s^2]. </p>
+
+</div>
+</div>
+<a id="aef67e3b75c92f478dae303cc1bf1d5f2" name="aef67e3b75c92f478dae303cc1bf1d5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef67e3b75c92f478dae303cc1bf1d5f2">&#9670;&#160;</a></span>skfGyroscopeSensitivity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float CScha63TDriver::skfGyroscopeSensitivity_ { 80.0F }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gyroscope sensitivity, [LSB/deg/s]. </p>
+
+</div>
+</div>
+<a id="ac54fe4be2f939e61354b2c7d879a17e4" name="ac54fe4be2f939e61354b2c7d879a17e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54fe4be2f939e61354b2c7d879a17e4">&#9670;&#160;</a></span>skiMaxAttemptsToConfigure_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int CScha63TDriver::skiMaxAttemptsToConfigure_ { 2 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of attempts to configure the sensor. </p>
 
 </div>
 </div>

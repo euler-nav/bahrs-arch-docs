@@ -112,11 +112,21 @@ $(document).ready(function(){initNavTree('class_c_diagnostic_mode.html',''); ini
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_c_diagnostic_mode-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CDiagnosticMode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_c_diagnostic_mode_1_1_u_r_x_packet_max_size.html">URXPacketMaxSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_c_diagnostic_mode_1_1_u_t_x_packet_max_size.html">UTXPacketMaxSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa6403c82dc2e0716b192e191f517d9c5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#aa6403c82dc2e0716b192e191f517d9c5">EDiagnosticModeStatus</a> : int8_t { <br />
@@ -145,6 +155,49 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0361a3c657a7e7d066bc1d4f09da461d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a0361a3c657a7e7d066bc1d4f09da461d">GetInstance</a> ()</td></tr>
 <tr class="separator:a0361a3c657a7e7d066bc1d4f09da461d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a73c7432a65e43744dca566ca051bb74a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a73c7432a65e43744dca566ca051bb74a">CDiagnosticMode</a> ()</td></tr>
+<tr class="separator:a73c7432a65e43744dca566ca051bb74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cafbdd5bb0f637141d8ed88270026f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#ae1cafbdd5bb0f637141d8ed88270026f">CDiagnosticMode</a> (const <a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;)</td></tr>
+<tr class="separator:ae1cafbdd5bb0f637141d8ed88270026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d94b9341253f4e24f27f8c5b6d80003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a2d94b9341253f4e24f27f8c5b6d80003">operator=</a> (<a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;)</td></tr>
+<tr class="separator:a2d94b9341253f4e24f27f8c5b6d80003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c4b61cfc6a9ac1f5825aa296c0cd58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#aa2c4b61cfc6a9ac1f5825aa296c0cd58">uartDataParser</a> (uint16_t uSize)</td></tr>
+<tr class="separator:aa2c4b61cfc6a9ac1f5825aa296c0cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27edea1ae446467e17d7c2f2359a780c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a27edea1ae446467e17d7c2f2359a780c">diagnosticSend</a> ()</td></tr>
+<tr class="separator:a27edea1ae446467e17d7c2f2359a780c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68086803928c0785935f551206117efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a68086803928c0785935f551206117efc">fillSendBuffer</a> (const void *pBuffer, uint16_t uSize)</td></tr>
+<tr class="separator:a68086803928c0785935f551206117efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48206dfb7bd89807077667ad91f94d7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a48206dfb7bd89807077667ad91f94d7e">handlePacket</a> (<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277">CSerialProtocol::EMessageIds</a> ePacketType)</td></tr>
+<tr class="separator:a48206dfb7bd89807077667ad91f94d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a744b9f0bd549c8762284805eb12e35ad"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a744b9f0bd549c8762284805eb12e35ad">auUartRxBuffer_</a> [<a class="el" href="class_c_diagnostic_mode.html#a12d02effac856624e5b8d15b077b2b6c">skuRXBufferSize_</a>]</td></tr>
+<tr class="separator:a744b9f0bd549c8762284805eb12e35ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63353847cc294eea5e683d18cacced00"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a63353847cc294eea5e683d18cacced00">auUartTxBuffer_</a> [<a class="el" href="class_c_diagnostic_mode.html#a07115c41472ecc1eefa802aae5c7da12">skuTXBufferSize_</a>]</td></tr>
+<tr class="separator:a63353847cc294eea5e683d18cacced00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14836e9c1e83d9f2cca2cbf9b707e8d2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a14836e9c1e83d9f2cca2cbf9b707e8d2">uUartTxSendSize_</a> { 0u }</td></tr>
+<tr class="separator:a14836e9c1e83d9f2cca2cbf9b707e8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab1c06a282e454319214c8df53cffee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_diagnostic_mode.html#aa6403c82dc2e0716b192e191f517d9c5">EDiagnosticModeStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a2ab1c06a282e454319214c8df53cffee">eCurrState_</a> { <a class="el" href="class_c_diagnostic_mode.html#aa6403c82dc2e0716b192e191f517d9c5a068ea8d88af2f30694c39c33f3b593d5">EDiagnosticModeStatus::eDiagnosticModeStatusNormal</a> }</td></tr>
+<tr class="separator:a2ab1c06a282e454319214c8df53cffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82493971056d79741b8797f26a52efd5"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a82493971056d79741b8797f26a52efd5">opUartHandle_</a> { nullptr }</td></tr>
+<tr class="separator:a82493971056d79741b8797f26a52efd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7960856f919b9838ffbf5b6542b10715"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a7960856f919b9838ffbf5b6542b10715">opDmaHandle_</a> { nullptr }</td></tr>
+<tr class="separator:a7960856f919b9838ffbf5b6542b10715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a373523a10db145b560aa2a24cdf19565"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a373523a10db145b560aa2a24cdf19565">skuUARTSendTimeoutUs_</a> { 1000000 }</td></tr>
+<tr class="separator:a373523a10db145b560aa2a24cdf19565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c844d06638ee46b6a9b81574dc026f7"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a6c844d06638ee46b6a9b81574dc026f7">skuDiagnosticModeTimeoutUs_</a> { 5000000 }</td></tr>
+<tr class="separator:a6c844d06638ee46b6a9b81574dc026f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d02effac856624e5b8d15b077b2b6c"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a12d02effac856624e5b8d15b077b2b6c">skuRXBufferSize_</a> { sizeof(<a class="el" href="union_c_diagnostic_mode_1_1_u_r_x_packet_max_size.html">URXPacketMaxSize</a>) }</td></tr>
+<tr class="separator:a12d02effac856624e5b8d15b077b2b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07115c41472ecc1eefa802aae5c7da12"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_diagnostic_mode.html#a07115c41472ecc1eefa802aae5c7da12">skuTXBufferSize_</a> { sizeof(<a class="el" href="union_c_diagnostic_mode_1_1_u_t_x_packet_max_size.html">UTXPacketMaxSize</a>) }</td></tr>
+<tr class="separator:a07115c41472ecc1eefa802aae5c7da12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aa6403c82dc2e0716b192e191f517d9c5" name="aa6403c82dc2e0716b192e191f517d9c5"></a>
@@ -176,6 +229,58 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a73c7432a65e43744dca566ca051bb74a" name="a73c7432a65e43744dca566ca051bb74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c7432a65e43744dca566ca051bb74a">&#9670;&#160;</a></span>CDiagnosticMode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDiagnosticMode::CDiagnosticMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1cafbdd5bb0f637141d8ed88270026f" name="ae1cafbdd5bb0f637141d8ed88270026f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cafbdd5bb0f637141d8ed88270026f">&#9670;&#160;</a></span>CDiagnosticMode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDiagnosticMode::CDiagnosticMode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aef62f06d0fcb8bf5f71f941844db54d9" name="aef62f06d0fcb8bf5f71f941844db54d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef62f06d0fcb8bf5f71f941844db54d9">&#9670;&#160;</a></span>DiagnosticModeProcess()</h2>
@@ -192,6 +297,68 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method: <a class="el" href="class_c_diagnostic_mode.html#aef62f06d0fcb8bf5f71f941844db54d9">DiagnosticModeProcess()</a> Stops the main program flow until the end of the diagnostic mode. </p>
+
+</div>
+</div>
+<a id="a27edea1ae446467e17d7c2f2359a780c" name="a27edea1ae446467e17d7c2f2359a780c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27edea1ae446467e17d7c2f2359a780c">&#9670;&#160;</a></span>diagnosticSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDiagnosticMode::diagnosticSend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method: DiagnosticSend() Sends a message via UART using a pre-setted up handle. </p>
+
+</div>
+</div>
+<a id="a68086803928c0785935f551206117efc" name="a68086803928c0785935f551206117efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68086803928c0785935f551206117efc">&#9670;&#160;</a></span>fillSendBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDiagnosticMode::fillSendBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>uSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -220,6 +387,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a48206dfb7bd89807077667ad91f94d7e" name="a48206dfb7bd89807077667ad91f94d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48206dfb7bd89807077667ad91f94d7e">&#9670;&#160;</a></span>handlePacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDiagnosticMode::handlePacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277">CSerialProtocol::EMessageIds</a>&#160;</td>
+          <td class="paramname"><em>ePacketType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method: PacketAccepted() Sends a message confirming the successful packet processing by the device. </p>
+
+</div>
+</div>
 <a id="a5c0173e3940bb78efa4ec5dd1eb9acf6" name="a5c0173e3940bb78efa4ec5dd1eb9acf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c0173e3940bb78efa4ec5dd1eb9acf6">&#9670;&#160;</a></span>isDiagnosticModeEnabled()</h2>
 
@@ -235,6 +429,32 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method: IsDiagnosticModeEnabled() Returns true if device is working in Debug mode. </p>
+
+</div>
+</div>
+<a id="a2d94b9341253f4e24f27f8c5b6d80003" name="a2d94b9341253f4e24f27f8c5b6d80003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d94b9341253f4e24f27f8c5b6d80003">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp; CDiagnosticMode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_diagnostic_mode.html">CDiagnosticMode</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -267,6 +487,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa2c4b61cfc6a9ac1f5825aa296c0cd58" name="aa2c4b61cfc6a9ac1f5825aa296c0cd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c4b61cfc6a9ac1f5825aa296c0cd58">&#9670;&#160;</a></span>uartDataParser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDiagnosticMode::uartDataParser </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>uSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method: UARTDataParser() Packet data parser. Changes the mode of operation in case of successful package parsing. </p>
+
+</div>
+</div>
 <a id="a0d79144c4519dafd292ef79b0b72ad2a" name="a0d79144c4519dafd292ef79b0b72ad2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d79144c4519dafd292ef79b0b72ad2a">&#9670;&#160;</a></span>UARTRxInterruptHandler()</h2>
 
@@ -283,6 +530,227 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method: <a class="el" href="class_c_diagnostic_mode.html#a0d79144c4519dafd292ef79b0b72ad2a">UARTRxInterruptHandler()</a> The handler of the received data in the UART RX interrupt. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a744b9f0bd549c8762284805eb12e35ad" name="a744b9f0bd549c8762284805eb12e35ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744b9f0bd549c8762284805eb12e35ad">&#9670;&#160;</a></span>auUartRxBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CDiagnosticMode::auUartRxBuffer_[<a class="el" href="class_c_diagnostic_mode.html#a12d02effac856624e5b8d15b077b2b6c">skuRXBufferSize_</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63353847cc294eea5e683d18cacced00" name="a63353847cc294eea5e683d18cacced00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63353847cc294eea5e683d18cacced00">&#9670;&#160;</a></span>auUartTxBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CDiagnosticMode::auUartTxBuffer_[<a class="el" href="class_c_diagnostic_mode.html#a07115c41472ecc1eefa802aae5c7da12">skuTXBufferSize_</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ab1c06a282e454319214c8df53cffee" name="a2ab1c06a282e454319214c8df53cffee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab1c06a282e454319214c8df53cffee">&#9670;&#160;</a></span>eCurrState_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_diagnostic_mode.html#aa6403c82dc2e0716b192e191f517d9c5">EDiagnosticModeStatus</a> CDiagnosticMode::eCurrState_ { <a class="el" href="class_c_diagnostic_mode.html#aa6403c82dc2e0716b192e191f517d9c5a068ea8d88af2f30694c39c33f3b593d5">EDiagnosticModeStatus::eDiagnosticModeStatusNormal</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7960856f919b9838ffbf5b6542b10715" name="a7960856f919b9838ffbf5b6542b10715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7960856f919b9838ffbf5b6542b10715">&#9670;&#160;</a></span>opDmaHandle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef* CDiagnosticMode::opDmaHandle_ { nullptr }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82493971056d79741b8797f26a52efd5" name="a82493971056d79741b8797f26a52efd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82493971056d79741b8797f26a52efd5">&#9670;&#160;</a></span>opUartHandle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef* CDiagnosticMode::opUartHandle_ { nullptr }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c844d06638ee46b6a9b81574dc026f7" name="a6c844d06638ee46b6a9b81574dc026f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c844d06638ee46b6a9b81574dc026f7">&#9670;&#160;</a></span>skuDiagnosticModeTimeoutUs_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint64_t CDiagnosticMode::skuDiagnosticModeTimeoutUs_ { 5000000 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12d02effac856624e5b8d15b077b2b6c" name="a12d02effac856624e5b8d15b077b2b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d02effac856624e5b8d15b077b2b6c">&#9670;&#160;</a></span>skuRXBufferSize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t CDiagnosticMode::skuRXBufferSize_ { sizeof(<a class="el" href="union_c_diagnostic_mode_1_1_u_r_x_packet_max_size.html">URXPacketMaxSize</a>) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07115c41472ecc1eefa802aae5c7da12" name="a07115c41472ecc1eefa802aae5c7da12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07115c41472ecc1eefa802aae5c7da12">&#9670;&#160;</a></span>skuTXBufferSize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t CDiagnosticMode::skuTXBufferSize_ { sizeof(<a class="el" href="union_c_diagnostic_mode_1_1_u_t_x_packet_max_size.html">UTXPacketMaxSize</a>) }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a373523a10db145b560aa2a24cdf19565" name="a373523a10db145b560aa2a24cdf19565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373523a10db145b560aa2a24cdf19565">&#9670;&#160;</a></span>skuUARTSendTimeoutUs_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint64_t CDiagnosticMode::skuUARTSendTimeoutUs_ { 1000000 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14836e9c1e83d9f2cca2cbf9b707e8d2" name="a14836e9c1e83d9f2cca2cbf9b707e8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14836e9c1e83d9f2cca2cbf9b707e8d2">&#9670;&#160;</a></span>uUartTxSendSize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t CDiagnosticMode::uUartTxSendSize_ { 0u }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

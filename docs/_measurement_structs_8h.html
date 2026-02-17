@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('_measurement_structs_8h.html',''); ini
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">MeasurementStructs.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -160,15 +161,32 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93a9a3ed5e24bd481a93b232c3ec8984d0f">NFusionLibCommon::eBahrsFilter2</a> = 11
 , <br />
 &#160;&#160;<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93adf01ffc987f7e22912a049f52b159a57">NFusionLibCommon::eBahrsFilter3</a> = 12
+, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93a95468a826ba85ccebe618f2f47b5f3b4">NFusionLibCommon::eBmi270</a> = 13
+, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93ab41a73a02517fee9496fc9bdcaa267a1">NFusionLibCommon::eAsm330</a> = 14
+, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93ac08db8b2c6e961e2f0e18f758e5ecc67">NFusionLibCommon::eIcp20100</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93ab631dbba7624d1a784ac2f7117023123">NFusionLibCommon::eLps22</a> = 16
+, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93a3cf280c2c938ec4ca459c4524907aff4">NFusionLibCommon::eBmm350</a> = 17
+, <a class="el" href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93af69976d6d73a6aac78922e5723cae227">NFusionLibCommon::eLis3Mdl</a> = 18
 <br />
  }</td></tr>
 <tr class="memdesc:a0c4aed51589e762c267affa04c4d8e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumeration of sensors.  <a href="namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93">More...</a><br /></td></tr>
 <tr class="separator:a0c4aed51589e762c267affa04c4d8e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8edf4a06e6768f022cc50139f4595f48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_fusion_lib_common.html#a8edf4a06e6768f022cc50139f4595f48">NFusionLibCommon::isInertialSensor</a> (ESensorId eSensorId)</td></tr>
+<tr class="memdesc:a8edf4a06e6768f022cc50139f4595f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sensor is an inertial sensor.  <br /></td></tr>
+<tr class="separator:a8edf4a06e6768f022cc50139f4595f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15be0bb94a6e77ac89450175ab97e9ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_fusion_lib_common.html#a15be0bb94a6e77ac89450175ab97e9ac">NFusionLibCommon::isPressureSensor</a> (ESensorId eSensorId)</td></tr>
+<tr class="memdesc:a15be0bb94a6e77ac89450175ab97e9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sensor is a pressure sensor.  <br /></td></tr>
+<tr class="separator:a15be0bb94a6e77ac89450175ab97e9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efd694a41d116728e4c2ff2569f672e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_fusion_lib_common.html#a0efd694a41d116728e4c2ff2569f672e">NFusionLibCommon::isMagneticSensor</a> (ESensorId eSensorId)</td></tr>
+<tr class="memdesc:a0efd694a41d116728e4c2ff2569f672e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sensor is a magnetic sensor.  <br /></td></tr>
+<tr class="separator:a0efd694a41d116728e4c2ff2569f672e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of measurement structs. </p>
-<dl class="section author"><dt>Author</dt><dd>Fedor Baklanov </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>6 December 2023 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright 2023. AMS Advanced Air Mobility Sensors UG. All rights reserved. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

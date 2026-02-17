@@ -19,6 +19,15 @@ var _measurement_structs_8h =
       [ "eMmc5983", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93a7da0f1924db02ccd6fc5c7776ede058f", null ],
       [ "eBahrsFilter1", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93a98f427e6f8e8ffbf3be7a02715e9cdb8", null ],
       [ "eBahrsFilter2", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93a9a3ed5e24bd481a93b232c3ec8984d0f", null ],
-      [ "eBahrsFilter3", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93adf01ffc987f7e22912a049f52b159a57", null ]
-    ] ]
+      [ "eBahrsFilter3", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93adf01ffc987f7e22912a049f52b159a57", null ],
+      [ "eBmi270", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93a95468a826ba85ccebe618f2f47b5f3b4", null ],
+      [ "eAsm330", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93ab41a73a02517fee9496fc9bdcaa267a1", null ],
+      [ "eIcp20100", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93ac08db8b2c6e961e2f0e18f758e5ecc67", null ],
+      [ "eLps22", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93ab631dbba7624d1a784ac2f7117023123", null ],
+      [ "eBmm350", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93a3cf280c2c938ec4ca459c4524907aff4", null ],
+      [ "eLis3Mdl", "_measurement_structs_8h.html#a0c4aed51589e762c267affa04c4d8e93af69976d6d73a6aac78922e5723cae227", null ]
+    ] ],
+    [ "isInertialSensor", "_measurement_structs_8h.html#a8edf4a06e6768f022cc50139f4595f48", null ],
+    [ "isMagneticSensor", "_measurement_structs_8h.html#a0efd694a41d116728e4c2ff2569f672e", null ],
+    [ "isPressureSensor", "_measurement_structs_8h.html#a15be0bb94a6e77ac89450175ab97e9ac", null ]
 ];
