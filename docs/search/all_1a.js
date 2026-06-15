@@ -1,25 +1,11 @@
 var searchData=
 [
-  ['_7ecattitudemonitorswc_0',['~CAttitudeMonitorSwc',['../class_c_attitude_monitor_swc.html#a3369a9068ebbfb11c6d03f57b264b732',1,'CAttitudeMonitorSwc']]],
-  ['_7ecbahrsfilterswc_1',['~CBahrsFilterSwc',['../class_c_bahrs_filter_swc.html#acf0c3e91854da93ef20d35968ed10189',1,'CBahrsFilterSwc']]],
-  ['_7ecbaromonitorswc_2',['~CBaroMonitorSwc',['../class_c_baro_monitor_swc.html#a02726ef82fef9a13affadada2c0b4578',1,'CBaroMonitorSwc']]],
-  ['_7ecbmm150driver_3',['~CBmm150Driver',['../class_c_bmm150_driver.html#a21f5377119827ace32bef2daf58731e9',1,'CBmm150Driver']]],
-  ['_7ecbmp384driver_4',['~CBmp384Driver',['../class_c_bmp384_driver.html#ae613a6e647be7df4aa4bc9edfbfa16a4',1,'CBmp384Driver']]],
-  ['_7eccanhandler_5',['~CCanHandler',['../class_c_can_handler.html#ae63a6aa3aa0ae23477d9127e66236c72',1,'CCanHandler']]],
-  ['_7eccanoutputhandler_6',['~CCanOutputHandler',['../class_c_can_output_handler.html#a676f169b7507fbd4a6e15464c39ce6fb',1,'CCanOutputHandler']]],
-  ['_7ecimumonitorswc_7',['~CImuMonitorSwc',['../class_c_imu_monitor_swc.html#a9c48ba1fed1ac0d100ed8bdf40456545',1,'CImuMonitorSwc']]],
-  ['_7ecmagneticheadingfilterswc_8',['~CMagneticHeadingFilterSwc',['../class_c_magnetic_heading_filter_swc.html#ab7a42053c2ff13ad8c72ef05b90c9ba3',1,'CMagneticHeadingFilterSwc']]],
-  ['_7ecmagnetometercompensator_9',['~CMagnetometerCompensator',['../class_c_magnetometer_compensator.html#a01db9ba5853ffae78f5bea5b9a41d2eb',1,'CMagnetometerCompensator']]],
-  ['_7ecmmc5983driver_10',['~CMmc5983Driver',['../class_c_mmc5983_driver.html#a7840968afdc0164c4964d8757e8835dd',1,'CMmc5983Driver']]],
-  ['_7ecnvmdriver_11',['~CNvmDriver',['../class_c_nvm_driver.html#a1d850d75008bcdff0377102f8999b878',1,'CNvmDriver']]],
-  ['_7ecoutputtransformer_12',['~COutputTransformer',['../class_c_output_transformer.html#a9bbc4e0028541bd6718815ea94759078',1,'COutputTransformer']]],
-  ['_7ecrs232outputhandler_13',['~CRs232OutputHandler',['../class_c_rs232_output_handler.html#a5b18108b4c91d4bcd7b4b90428e9666f',1,'CRs232OutputHandler']]],
-  ['_7ecrte_14',['~CRte',['../class_c_rte.html#aec4bdc49e78b4366db8143512545e531',1,'CRte']]],
-  ['_7ecscha63tdriver_15',['~CScha63TDriver',['../class_c_scha63_t_driver.html#ac15224a3cfd97aa1bff6fc12a389b26b',1,'CScha63TDriver']]],
-  ['_7ecserialprotocol_16',['~CSerialProtocol',['../class_c_serial_protocol.html#a9284a66590ceed3890f168270e5c8427',1,'CSerialProtocol']]],
-  ['_7ecsoftwarecomponent_17',['~CSoftwareComponent',['../class_c_software_component.html#a0b74e621a83bfb2ee8cd523cf6a3b93e',1,'CSoftwareComponent']]],
-  ['_7ecsoftwarecomponentport_18',['~CSoftwareComponentPort',['../class_c_software_component_port.html#acd3d945636abdf339b9a23ed469880ef',1,'CSoftwareComponentPort']]],
-  ['_7ecsoftwarecomponentportbase_19',['~CSoftwareComponentPortBase',['../class_c_software_component_port_base.html#a13edab0e89022838cc39864c3ea18125',1,'CSoftwareComponentPortBase']]],
-  ['_7ecsyncpulsehandler_20',['~CSyncPulseHandler',['../class_c_sync_pulse_handler.html#a5839ab76a3f81b4f16ca92d4378f893c',1,'CSyncPulseHandler']]],
-  ['_7ecverticalchannelmonitorswc_21',['~CVerticalChannelMonitorSwc',['../class_c_vertical_channel_monitor_swc.html#a55720dda8f0ada55edc929ce00b0c84c',1,'CVerticalChannelMonitorSwc']]]
+  ['vector_0',['vector',['../page_solution_strategy.html#subsubsec_solution_strategy_estimation_error_state_vector',1,'State error vector'],['../page_solution_strategy.html#subsubsec_solution_strategy_estimation_state_vector',1,'State vector']]],
+  ['version_20identifier_1',['Source code version identifier',['../index.html#autotoc_md0',1,'']]],
+  ['vertical_20channel_20monitor_20swc_2',['Internal behavior of Vertical channel monitor SWC',['../page_runtime_view.html#subsec_runtime_view_vertical_channel_monitor_activity',1,'']]],
+  ['vertical_20motion_3',['Estimation of attitude and vertical motion',['../page_solution_strategy.html#subsec_solution_strategy_attitude_and_vertical_motion_estimation',1,'']]],
+  ['verticalchannelmonitorapi_2eh_4',['VerticalChannelMonitorApi.h',['../_vertical_channel_monitor_api_8h.html',1,'']]],
+  ['verticalchannelmonitorgetstate_5',['VerticalChannelMonitorGetState',['../namespace_n_vertical_channel_monitor_api.html#ac6fa680816ef3abc1fc648ba5c206768',1,'NVerticalChannelMonitorApi']]],
+  ['verticalchannelmonitorrun_6',['VerticalChannelMonitorRun',['../namespace_n_vertical_channel_monitor_api.html#a9c61709d8f0eb21d5aca45ecd2467c31',1,'NVerticalChannelMonitorApi']]],
+  ['view_7',['view',['../page_building_block_view.html',1,'Building block view'],['../page_deployment_view.html',1,'Deployment view'],['../page_runtime_view.html',1,'Runtime view']]]
 ];

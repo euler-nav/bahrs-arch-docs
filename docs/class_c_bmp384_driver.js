@@ -1,7 +1,7 @@
 var class_c_bmp384_driver =
 [
-    [ "SFloatParams", "struct_c_bmp384_driver_1_1_s_float_params.html", "struct_c_bmp384_driver_1_1_s_float_params" ],
     [ "SParams", "struct_c_bmp384_driver_1_1_s_params.html", "struct_c_bmp384_driver_1_1_s_params" ],
+    [ "SFloatParams", "struct_c_bmp384_driver_1_1_s_float_params.html", "struct_c_bmp384_driver_1_1_s_float_params" ],
     [ "EIirFilter", "class_c_bmp384_driver.html#ab07590110ab72c9cdc5736a05116c9a7", [
       [ "eOff", "class_c_bmp384_driver.html#ab07590110ab72c9cdc5736a05116c9a7a141ea5e87436d9b31dd17d5d4b9807a1", null ],
       [ "e1", "class_c_bmp384_driver.html#ab07590110ab72c9cdc5736a05116c9a7acd3dc8b6cffb41e4163dcbd857ca87da", null ],

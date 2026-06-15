@@ -24,6 +24,8 @@ var _c_serial_protocol_8h =
     [ "CSerialProtocol::SPacketReadNVMPage", "struct_c_serial_protocol_1_1_s_packet_read_n_v_m_page.html", "struct_c_serial_protocol_1_1_s_packet_read_n_v_m_page" ],
     [ "CSerialProtocol::SPacketReceiveConfirmation", "struct_c_serial_protocol_1_1_s_packet_receive_confirmation.html", "struct_c_serial_protocol_1_1_s_packet_receive_confirmation" ],
     [ "CSerialProtocol::SPacketNVMPage", "struct_c_serial_protocol_1_1_s_packet_n_v_m_page.html", "struct_c_serial_protocol_1_1_s_packet_n_v_m_page" ],
+    [ "CMathConstants", "class_c_math_constants.html", "class_c_math_constants" ],
+    [ "CGeoConstants", "class_c_geo_constants.html", "class_c_geo_constants" ],
     [ "BIT_POS_HEALTH_ANGULAR_RATE_X", "_c_serial_protocol_8h.html#a66c31638264d4ce258a973b8dc6bf268", null ],
     [ "BIT_POS_HEALTH_ANGULAR_RATE_Y", "_c_serial_protocol_8h.html#a7075c11ed2327b43a3c7b206f9318929", null ],
     [ "BIT_POS_HEALTH_ANGULAR_RATE_Z", "_c_serial_protocol_8h.html#a090a940b7613049e83394a31a99a5f61", null ],

@@ -13,6 +13,7 @@ var searchData=
   ['populateredundantimudataobject_10',['populateRedundantImuDataObject',['../class_c_imu_monitor_swc.html#ad73f63d50afb942e56f6cb74402fa375',1,'CImuMonitorSwc']]],
   ['populateredundantinputdataobject_11',['populateRedundantInputDataObject',['../class_c_attitude_monitor_swc.html#a355267d210818bf0837fdf0ff7d1183b',1,'CAttitudeMonitorSwc::populateRedundantInputDataObject()'],['../class_c_vertical_channel_monitor_swc.html#ac7564840277542291d791101f503e981',1,'CVerticalChannelMonitorSwc::populateRedundantInputDataObject()']]],
   ['populateredundantpressuredataobject_12',['populateRedundantPressureDataObject',['../class_c_baro_monitor_swc.html#a600297ab7a1ea444db2466bafdf28e7f',1,'CBaroMonitorSwc']]],
-  ['processdatabaro_13',['processDataBaro',['../class_c_icm20789_driver.html#ae6cfcbfa5a62dd7e1de77f3b2400dbe4',1,'CIcm20789Driver']]],
-  ['processsyncpulse_14',['ProcessSyncPulse',['../class_c_sync_pulse_handler.html#aed5b5d3a2b117b496535c16e272e3891',1,'CSyncPulseHandler']]]
+  ['pressurecompensatorswccompensate_13',['PressureCompensatorSwcCompensate',['../_pressure_compensator_swc_c_api_8h.html#a5a0a27cddfda532cf23d4d27caf6a327',1,'PressureCompensatorSwcCompensate(uint32_t uSensorIndex):&#160;CPressureCompensator.cpp'],['../_c_pressure_compensator_8cpp.html#a5a0a27cddfda532cf23d4d27caf6a327',1,'PressureCompensatorSwcCompensate(uint32_t uSensorIndex):&#160;CPressureCompensator.cpp']]],
+  ['processdatabaro_14',['processDataBaro',['../class_c_icm20789_driver.html#ae6cfcbfa5a62dd7e1de77f3b2400dbe4',1,'CIcm20789Driver']]],
+  ['processsyncpulse_15',['ProcessSyncPulse',['../class_c_sync_pulse_handler.html#aed5b5d3a2b117b496535c16e272e3891',1,'CSyncPulseHandler']]]
 ];

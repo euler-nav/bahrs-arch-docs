@@ -52,19 +52,19 @@ var _c_icm20789_driver_8h =
     [ "ICM20789_SMPLRT_DIV_VALUE", "_c_icm20789_driver_8h.html#abffd5ca2dc24732c67d12d502dfd9ec1", null ],
     [ "ICM20789_TIMEOUT", "_c_icm20789_driver_8h.html#a98ca599239cf0631d38ee8f7c736b39e", null ],
     [ "ICM20789_TIMEOUT_OTP", "_c_icm20789_driver_8h.html#a23d9366ff01726a269ffc04ef4ad3610", null ],
-    [ "EAccelDynamicRange", "_c_icm20789_driver_8h.html#ae443c971754d2a88e506d9cf6108a66a", [
-      [ "e2g", "_c_icm20789_driver_8h.html#ae443c971754d2a88e506d9cf6108a66aa6086eaea9eae6e4c9b43bacd71eb4770", null ],
-      [ "e4g", "_c_icm20789_driver_8h.html#ae443c971754d2a88e506d9cf6108a66aa78972faf7a21d5ac33ba1ae45cdb588a", null ],
-      [ "e8g", "_c_icm20789_driver_8h.html#ae443c971754d2a88e506d9cf6108a66aa520ece89631726a34d9e986e693bcbfe", null ],
-      [ "e16g", "_c_icm20789_driver_8h.html#ae443c971754d2a88e506d9cf6108a66aa34fb25274a32db30a8543e33d1a32900", null ]
+    [ "NIcm20789DriverConfig::EAccelDynamicRange", "namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66a", [
+      [ "NIcm20789DriverConfig::EAccelDynamicRange::e2g", "namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa6086eaea9eae6e4c9b43bacd71eb4770", null ],
+      [ "NIcm20789DriverConfig::EAccelDynamicRange::e4g", "namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa78972faf7a21d5ac33ba1ae45cdb588a", null ],
+      [ "NIcm20789DriverConfig::EAccelDynamicRange::e8g", "namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa520ece89631726a34d9e986e693bcbfe", null ],
+      [ "NIcm20789DriverConfig::EAccelDynamicRange::e16g", "namespace_n_icm20789_driver_config.html#ae443c971754d2a88e506d9cf6108a66aa34fb25274a32db30a8543e33d1a32900", null ]
     ] ],
-    [ "EGyroDynamicRange", "_c_icm20789_driver_8h.html#ae2baa2ba2c9638d5aa5af249bd838cce", [
-      [ "e250dps", "_c_icm20789_driver_8h.html#ae2baa2ba2c9638d5aa5af249bd838ccea72be64c499c5a90787bb55efa6d47ad3", null ],
-      [ "e500dps", "_c_icm20789_driver_8h.html#ae2baa2ba2c9638d5aa5af249bd838ccea75dc92599ced13fda6316255311f5c98", null ],
-      [ "e1000dps", "_c_icm20789_driver_8h.html#ae2baa2ba2c9638d5aa5af249bd838ccea506fb69f184af7342509cac7fc066641", null ],
-      [ "e2000dps", "_c_icm20789_driver_8h.html#ae2baa2ba2c9638d5aa5af249bd838cceae6c7cfc579e8cf2e56034e9d11fa5e6b", null ]
+    [ "NIcm20789DriverConfig::EGyroDynamicRange", "namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838cce", [
+      [ "NIcm20789DriverConfig::EGyroDynamicRange::e250dps", "namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea72be64c499c5a90787bb55efa6d47ad3", null ],
+      [ "NIcm20789DriverConfig::EGyroDynamicRange::e500dps", "namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea75dc92599ced13fda6316255311f5c98", null ],
+      [ "NIcm20789DriverConfig::EGyroDynamicRange::e1000dps", "namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838ccea506fb69f184af7342509cac7fc066641", null ],
+      [ "NIcm20789DriverConfig::EGyroDynamicRange::e2000dps", "namespace_n_icm20789_driver_config.html#ae2baa2ba2c9638d5aa5af249bd838cceae6c7cfc579e8cf2e56034e9d11fa5e6b", null ]
     ] ],
-    [ "getAccelerometerRangeInG", "_c_icm20789_driver_8h.html#a10fff71043bc0ed21b8df921a802a6ea", null ],
-    [ "getGyroscopeRangeInDegreesPerSecond", "_c_icm20789_driver_8h.html#ab5031dffdb79ec49b8d7f9d2d769ca6b", null ],
+    [ "NIcm20789DriverConfig::getAccelerometerRangeInG", "namespace_n_icm20789_driver_config.html#a10fff71043bc0ed21b8df921a802a6ea", null ],
+    [ "NIcm20789DriverConfig::getGyroscopeRangeInDegreesPerSecond", "namespace_n_icm20789_driver_config.html#ab5031dffdb79ec49b8d7f9d2d769ca6b", null ],
     [ "TaskInitHandle", "_c_icm20789_driver_8h.html#a728962cf0509125d9c2e32ca3ed8d1fa", null ]
 ];

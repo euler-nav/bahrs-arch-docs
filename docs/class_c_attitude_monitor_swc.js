@@ -4,7 +4,7 @@ var class_c_attitude_monitor_swc =
     [ "CAttitudeMonitorSwc", "class_c_attitude_monitor_swc.html#a33a6addacae3e51f7a310f14f7e1d7ba", null ],
     [ "CAttitudeMonitorSwc", "class_c_attitude_monitor_swc.html#a4334de912e3d6713d7975cd5dbeca507", null ],
     [ "~CAttitudeMonitorSwc", "class_c_attitude_monitor_swc.html#a3369a9068ebbfb11c6d03f57b264b732", null ],
-    [ "computeUnsafeAttitudeOutput", "class_c_attitude_monitor_swc.html#a3c225e545ccdcda08cce4aa419d27c0d", null ],
+    [ "computeUnsafeAttitudeOutput", "class_c_attitude_monitor_swc.html#a3b14c10c5cf935d6f60381d06e83e433", null ],
     [ "convertAttitudeToSafeAttitude", "class_c_attitude_monitor_swc.html#a13e3cb2f11c946d0e8c5768744da3b0d", null ],
     [ "getInstanceImpl", "class_c_attitude_monitor_swc.html#a18861973421cd703dfa3cca8eccc58bd", null ],
     [ "Init", "class_c_attitude_monitor_swc.html#a74a90f91a04a2c45a030fd847a5eaf0c", null ],

@@ -21,5 +21,5 @@ var namespace_n_bahrs_filter_api =
     [ "SBahrsState", "struct_n_bahrs_filter_api_1_1_s_bahrs_state.html", "struct_n_bahrs_filter_api_1_1_s_bahrs_state" ],
     [ "SBahrsStateStd", "struct_n_bahrs_filter_api_1_1_s_bahrs_state_std.html", "struct_n_bahrs_filter_api_1_1_s_bahrs_state_std" ],
     [ "SOutputData", "struct_n_bahrs_filter_api_1_1_s_output_data.html", "struct_n_bahrs_filter_api_1_1_s_output_data" ],
-    [ "EFilterModes", "namespace_n_bahrs_filter_api.html#a1cbf3afa9fdce88b399f42a2124b644f", null ]
+    [ "EFilterModes", "namespace_n_bahrs_filter_api.html#a908c6d24ab7019f980c7e4773249d924", null ]
 ];

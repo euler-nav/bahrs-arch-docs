@@ -25,113 +25,7 @@
 var NAVTREE =
 [
   [ "AMS Advanced Air Mobility Sensors UG", "index.html", [
-    [ "EULER-NAV Baro-Inertial Attitude and Heading Reference System (BAHRS)", "index.html", null ],
-    [ "Architecture constraints", "md_doc_pages_page_architecture_constraints.html", null ],
-    [ "Building block view", "md_doc_pages_page_building_block_view.html", [
-      [ "Level 0", "md_doc_pages_page_building_block_view.html#sec_bb_view_level_0", null ],
-      [ "Level 1", "md_doc_pages_page_building_block_view.html#sec_bb_view_level_1", [
-        [ "Application software", "md_doc_pages_page_building_block_view.html#subsec_asw", null ],
-        [ "Basic software", "md_doc_pages_page_building_block_view.html#subsec_bsw", null ],
-        [ "Runtime Environment", "md_doc_pages_page_building_block_view.html#subsec_rte", null ]
-      ] ],
-      [ "Level 2", "md_doc_pages_page_building_block_view.html#sec_bb_view_level_2", [
-        [ "Basic software", "md_doc_pages_page_building_block_view.html#subsec_bsw_level_2", [
-          [ "List of basic software components", "md_doc_pages_page_building_block_view.html#subsubsec_bsw_swc_list", null ]
-        ] ],
-        [ "Runtime environment", "md_doc_pages_page_building_block_view.html#subsec_rte_level_2", null ],
-        [ "Application software", "md_doc_pages_page_building_block_view.html#subsec_asw_level_2", [
-          [ "List of application software components", "md_doc_pages_page_building_block_view.html#subsubsec_asw_swc_list", null ]
-        ] ]
-      ] ],
-      [ "Level 3", "md_doc_pages_page_building_block_view.html#sec_bb_view_level_3", [
-        [ "Application software", "md_doc_pages_page_building_block_view.html#subsec_asw_level_3", [
-          [ "UML component diagram", "md_doc_pages_page_building_block_view.html#subsubsec_asw_level_3_component_diagram", null ]
-        ] ],
-        [ "Basic software", "md_doc_pages_page_building_block_view.html#subsec_bsw_level_3", [
-          [ "UML component diagram", "md_doc_pages_page_building_block_view.html#subsubsec_bsw_level_3_component_diagram", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "Cross-cutting concepts", "md_doc_pages_page_cross_cutting_concerns.html", null ],
-    [ "Deployment view", "md_doc_pages_page_deployment_view.html", null ],
-    [ "Design decisions", "md_doc_pages_page_design_decisions.html", [
-      [ "Runtime environment", "md_doc_pages_page_design_decisions.html#sec_design_decisions_rte", [
-        [ "Port access protection", "md_doc_pages_page_design_decisions.html#subsec_design_decisions_port_protection", null ],
-        [ "Software component port data types", "md_doc_pages_page_design_decisions.html#subsec_design_decisions_port_data_types", null ],
-        [ "Auto-generation of runtime environment", "md_doc_pages_page_design_decisions.html#subsec_design_decisions_rte_autogeneration", null ]
-      ] ]
-    ] ],
-    [ "Glossary", "md_doc_pages_page_glossary.html", [
-      [ "Abbreviations", "md_doc_pages_page_glossary.html#sec_glossary_abbreviations", [
-        [ "BAHRS", "md_doc_pages_page_glossary.html#BAHRS", null ],
-        [ "SWC", "md_doc_pages_page_glossary.html#SWC", null ],
-        [ "BSW", "md_doc_pages_page_glossary.html#BSW", null ],
-        [ "ASW", "md_doc_pages_page_glossary.html#ASW", null ],
-        [ "FDI", "md_doc_pages_page_glossary.html#FDI", null ]
-      ] ],
-      [ "Terms and definitions", "md_doc_pages_page_glossary.html#sec_glossary_definitions", null ]
-    ] ],
-    [ "Introduction and goals", "md_doc_pages_page_intro_and_goals.html", null ],
-    [ "Quality requirements", "md_doc_pages_page_quality_requirements.html", null ],
-    [ "Risks and technical debt", "md_doc_pages_page_risks_and_tech_debt.html", null ],
-    [ "Runtime view", "md_doc_pages_page_runtime_view.html", [
-      [ "BAHRS software activity diagram", "md_doc_pages_page_runtime_view.html#sec_runtime_view_bahrs_sw_activity", null ],
-      [ "FreeRTOS tasks", "md_doc_pages_page_runtime_view.html#sec_runtime_view_freertos_tasks", [
-        [ "Task scheduling and interactions", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_scheduling_and_interaction", [
-          [ "Signal chain: BAHRS Filter 1", "md_doc_pages_page_runtime_view.html#subsubsec_runtime_view_filter_chain_1", null ],
-          [ "Signal chain: BAHRS Filters 2 and 3", "md_doc_pages_page_runtime_view.html#subsubsec_runtime_view_filter_chain_2_and_3", null ]
-        ] ],
-        [ "Internal behavior of tasks", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_task_internal_behavior", [
-          [ "Cyclic task (5ms interval)", "md_doc_pages_page_runtime_view.html#subsubsec_runtime_view_task_5_ms", null ],
-          [ "Cyclic task (10ms interval)", "md_doc_pages_page_runtime_view.html#subsubsec_runtime_view_task_10_ms", null ]
-        ] ]
-      ] ],
-      [ "Software components", "md_doc_pages_page_runtime_view.html#sec_runtime_view_internal_behavior_swc", [
-        [ "Internal behavior of IMU monitor SWC", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_imu_monitor_activity", null ],
-        [ "Internal behavior of Barometer monitor SWC", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_barometer_monitor_activity", null ],
-        [ "Internal behavior of Vertical channel monitor SWC", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_vertical_channel_monitor_activity", null ],
-        [ "behavior of  Attitude monitor SWC", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_attitude_monitor_activityInternal", null ],
-        [ "FDI activity for an arbitrary scalar signal", "md_doc_pages_page_runtime_view.html#subsec_runtime_view_scalar_signal_fdi_activity", null ]
-      ] ]
-    ] ],
-    [ "Solution strategy", "md_doc_pages_page_solution_strategy.html", [
-      [ "General", "md_doc_pages_page_solution_strategy.html#sec_solution_strategy_general", [
-        [ "Operating system", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_operating_system", null ],
-        [ "Programming language", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_programming_language", null ],
-        [ "Source code classification", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_source_file_types", [
-          [ "Software components", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_software_component", null ],
-          [ "Operating system", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_operating_system", null ],
-          [ "Libraries", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_libraries", null ]
-        ] ],
-        [ "Usage of dynamic memory", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory", [
-          [ "Exceptions", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_exceptions", null ],
-          [ "Implementation", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_implementation", null ],
-          [ "Developer guidelines", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_dynamic_memory_guidelines", null ]
-        ] ]
-      ] ],
-      [ "Patterns and principles", "md_doc_pages_page_solution_strategy.html#sec_solution_strategy_patterns_and_principles", [
-        [ "Software components", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_software_components", [
-          [ "Principles", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_swc_principles", null ],
-          [ "Design patterns", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_swc_patterns", null ]
-        ] ],
-        [ "Runtime environment (RTE)", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_runtime_environment", [
-          [ "Principles and patterns", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_rte_principles", null ],
-          [ "Software component ports", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_swc_ports", null ]
-        ] ]
-      ] ],
-      [ "Signal processing algorithms", "md_doc_pages_page_solution_strategy.html#sec_solution_strategy_algorithms", [
-        [ "Estimation of attitude and vertical motion", "md_doc_pages_page_solution_strategy.html#subsec_solution_strategy_attitude_and_vertical_motion_estimation", [
-          [ "Introduction", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_estimation_intro", null ],
-          [ "State vector", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_estimation_state_vector", null ],
-          [ "State error vector", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_estimation_error_state_vector", null ],
-          [ "Technology decisions", "md_doc_pages_page_solution_strategy.html#subsubsec_solution_strategy_estimation_decisions", [
-            [ "Decoupling of magnetic heading estimation", "md_doc_pages_page_solution_strategy.html#par_solution_strategy_technology_decision_1", null ],
-            [ "Single IMU signal source for every filter", "md_doc_pages_page_solution_strategy.html#par_solution_strategy_technology_decision_2", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "System scope and context", "md_doc_pages_page_system_scope_and_context.html", null ],
+    [ "EULER-NAV Baro-Inertial Attitude and Heading Reference System (BAHRS)", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -152,7 +46,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -171,16 +65,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ams_assert_8cpp.html",
-"_c_rs232_output_handler_8cpp.html#a53af69353e16aa031897cdf80b2338b3",
-"class_c_bahrs_filter_swc.html#aa4c079cd65ea2ec347b89d959d47bca0",
-"class_c_icm20789_driver.html#a38b356153169d4dbbbec67e68778e04b",
-"class_c_rs232_output_handler.html#af3def178c0c5c51c0cfc8ef2366822a2",
-"class_c_software_component_port_base.html#a220b27919868ea15b9f055ccf18bbb8e",
-"functions_k.html",
-"namespace_n_navigation_utilities.html#afba3a3bd2a80afe16a9849cbaa6a5e89",
-"struct_n_bahrs_filter_api_1_1_s_bahrs_state.html#a29ad8e61fc6a35f3f58ec176ab3247a9",
-"struct_s_vertical_channel_data.html#a97548389340aabb1034db9338d783cc4"
+"_c_scha63_t_driver_8h.html#a5a47f744e9474820af5ba1d3896b5ca6",
+"class_c_bmp384_driver.html#ade0780318453119cdc1cbf3fa448458aa3a8a5bc24de3351b6093f4c81a681613",
+"class_c_imu_pre_filter_swc.html#a0915bd54710cf470b2f5c11bd73f8d00",
+"class_c_rs232_output_handler.html#ad4396d96977d4f20e904d647bb7c60b2",
+"class_c_software_component_port.html#a0954d7e454e9a920807e21ed36a72f4d",
+"functions_e.html",
+"page_glossary.html#sec_glossary_abbreviations",
+"struct_c_serial_protocol_1_1_s_packet_receive_confirmation.html#ab4cd2bb5299e999cfe89601d037174a4",
+"struct_s_magnetic_measurement.html#ab5d4a19d7e6986364a965c56699ddc86"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

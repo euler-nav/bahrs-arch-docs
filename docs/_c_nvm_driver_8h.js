@@ -6,7 +6,8 @@ var _c_nvm_driver_8h =
     [ "CNvmDriver::SMagnetometerCalibrationParameters", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters.html", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters" ],
     [ "CNvmDriver::SAssertions", "struct_c_nvm_driver_1_1_s_assertions.html", "struct_c_nvm_driver_1_1_s_assertions" ],
     [ "CNvmDriver::SCanConfigurationParameters", "struct_c_nvm_driver_1_1_s_can_configuration_parameters.html", "struct_c_nvm_driver_1_1_s_can_configuration_parameters" ],
+    [ "CNvmDriver::SPressureCompensationParameters", "struct_c_nvm_driver_1_1_s_pressure_compensation_parameters.html", "struct_c_nvm_driver_1_1_s_pressure_compensation_parameters" ],
     [ "CNvmDriver::SNvmData", "struct_c_nvm_driver_1_1_s_nvm_data.html", "struct_c_nvm_driver_1_1_s_nvm_data" ],
-    [ "CNvmDriver::TNvmBlock< tBlockDataType, uOffset >", "struct_c_nvm_driver_1_1_t_nvm_block.html", "struct_c_nvm_driver_1_1_t_nvm_block" ],
+    [ "CNvmDriver::TNvmBlock&lt; tBlockDataType, uOffset &gt;", "struct_c_nvm_driver_1_1_t_nvm_block.html", "struct_c_nvm_driver_1_1_t_nvm_block" ],
     [ "hfmpi2c1", "_c_nvm_driver_8h.html#a81eaa735754baedc738ebbe46013eb4a", null ]
 ];

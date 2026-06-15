@@ -6,11 +6,11 @@ var annotated_dup =
       [ "SOutputData", "struct_n_bahrs_filter_api_1_1_s_output_data.html", "struct_n_bahrs_filter_api_1_1_s_output_data" ]
     ] ],
     [ "NFusionLibCommon", "namespace_n_fusion_lib_common.html", [
-      [ "SAttitudeOutputData", "struct_n_fusion_lib_common_1_1_s_attitude_output_data.html", "struct_n_fusion_lib_common_1_1_s_attitude_output_data" ],
-      [ "SBarometerData", "struct_n_fusion_lib_common_1_1_s_barometer_data.html", "struct_n_fusion_lib_common_1_1_s_barometer_data" ],
+      [ "SMeasurementBase", "struct_n_fusion_lib_common_1_1_s_measurement_base.html", "struct_n_fusion_lib_common_1_1_s_measurement_base" ],
       [ "SImuMeasurement", "struct_n_fusion_lib_common_1_1_s_imu_measurement.html", "struct_n_fusion_lib_common_1_1_s_imu_measurement" ],
       [ "SMagnetometerData", "struct_n_fusion_lib_common_1_1_s_magnetometer_data.html", "struct_n_fusion_lib_common_1_1_s_magnetometer_data" ],
-      [ "SMeasurementBase", "struct_n_fusion_lib_common_1_1_s_measurement_base.html", "struct_n_fusion_lib_common_1_1_s_measurement_base" ],
+      [ "SBarometerData", "struct_n_fusion_lib_common_1_1_s_barometer_data.html", "struct_n_fusion_lib_common_1_1_s_barometer_data" ],
+      [ "SAttitudeOutputData", "struct_n_fusion_lib_common_1_1_s_attitude_output_data.html", "struct_n_fusion_lib_common_1_1_s_attitude_output_data" ],
       [ "SVerticalChannelData", "struct_n_fusion_lib_common_1_1_s_vertical_channel_data.html", "struct_n_fusion_lib_common_1_1_s_vertical_channel_data" ]
     ] ],
     [ "NLibCommon", "namespace_n_lib_common.html", [
@@ -21,9 +21,9 @@ var annotated_dup =
       [ "SOutputData", "struct_n_magnetic_heading_filter_api_1_1_s_output_data.html", "struct_n_magnetic_heading_filter_api_1_1_s_output_data" ]
     ] ],
     [ "NMonitorTypes", "namespace_n_monitor_types.html", [
+      [ "TRedundantSensorData", "class_n_monitor_types_1_1_t_redundant_sensor_data.html", "class_n_monitor_types_1_1_t_redundant_sensor_data" ],
       [ "SMultidimensionalSignalBase", "struct_n_monitor_types_1_1_s_multidimensional_signal_base.html", "struct_n_monitor_types_1_1_s_multidimensional_signal_base" ],
-      [ "TMultidimensionalSignal", "class_n_monitor_types_1_1_t_multidimensional_signal.html", "class_n_monitor_types_1_1_t_multidimensional_signal" ],
-      [ "TRedundantSensorData", "class_n_monitor_types_1_1_t_redundant_sensor_data.html", "class_n_monitor_types_1_1_t_redundant_sensor_data" ]
+      [ "TMultidimensionalSignal", "class_n_monitor_types_1_1_t_multidimensional_signal.html", "class_n_monitor_types_1_1_t_multidimensional_signal" ]
     ] ],
     [ "NNavigationUtilities", "namespace_n_navigation_utilities.html", [
       [ "CGeoConstants", "class_n_navigation_utilities_1_1_c_geo_constants.html", "class_n_navigation_utilities_1_1_c_geo_constants" ],
@@ -36,18 +36,24 @@ var annotated_dup =
     [ "CBaroMonitorSwc", "class_c_baro_monitor_swc.html", "class_c_baro_monitor_swc" ],
     [ "CBmm150Driver", "class_c_bmm150_driver.html", "class_c_bmm150_driver" ],
     [ "CBmp384Driver", "class_c_bmp384_driver.html", "class_c_bmp384_driver" ],
+    [ "CButterworthLowPassFilter2", "class_c_butterworth_low_pass_filter2.html", "class_c_butterworth_low_pass_filter2" ],
     [ "CCanHandler", "class_c_can_handler.html", "class_c_can_handler" ],
     [ "CCanOutputHandler", "class_c_can_output_handler.html", "class_c_can_output_handler" ],
     [ "CDiagnosticMode", "class_c_diagnostic_mode.html", "class_c_diagnostic_mode" ],
+    [ "CGeoConstants", "class_c_geo_constants.html", "class_c_geo_constants" ],
     [ "CIcm20789Driver", "class_c_icm20789_driver.html", "class_c_icm20789_driver" ],
     [ "CImuDataAfterMonitor", "class_c_imu_data_after_monitor.html", null ],
     [ "CImuMonitorSwc", "class_c_imu_monitor_swc.html", "class_c_imu_monitor_swc" ],
+    [ "CImuPreFilterSwc", "class_c_imu_pre_filter_swc.html", "class_c_imu_pre_filter_swc" ],
+    [ "CLowpassFilter", "class_c_lowpass_filter.html", "class_c_lowpass_filter" ],
     [ "CMagneticHeadingFilterSwc", "class_c_magnetic_heading_filter_swc.html", "class_c_magnetic_heading_filter_swc" ],
     [ "CMagnetometerCompensator", "class_c_magnetometer_compensator.html", "class_c_magnetometer_compensator" ],
+    [ "CMathConstants", "class_c_math_constants.html", "class_c_math_constants" ],
     [ "CMmc5983Driver", "class_c_mmc5983_driver.html", "class_c_mmc5983_driver" ],
     [ "CNvmDriver", "class_c_nvm_driver.html", "class_c_nvm_driver" ],
     [ "COutputTransformer", "class_c_output_transformer.html", "class_c_output_transformer" ],
     [ "CPortReader", "class_c_port_reader.html", "class_c_port_reader" ],
+    [ "CPressureCompensator", "class_c_pressure_compensator.html", "class_c_pressure_compensator" ],
     [ "CQuaternion", "class_c_quaternion.html", "class_c_quaternion" ],
     [ "CRs232OutputHandler", "class_c_rs232_output_handler.html", "class_c_rs232_output_handler" ],
     [ "CRte", "class_c_rte.html", "class_c_rte" ],
@@ -76,10 +82,10 @@ var annotated_dup =
     [ "STimeOfSyncPulse", "struct_s_time_of_sync_pulse.html", "struct_s_time_of_sync_pulse" ],
     [ "SVerticalChannelData", "struct_s_vertical_channel_data.html", "struct_s_vertical_channel_data" ],
     [ "TArePortIdsAscending", "struct_t_are_port_ids_ascending.html", null ],
-    [ "TArePortIdsAscending< FirstPortType, RestPortTypes... >", "struct_t_are_port_ids_ascending_3_01_first_port_type_00_01_rest_port_types_8_8_8_01_4.html", "struct_t_are_port_ids_ascending_3_01_first_port_type_00_01_rest_port_types_8_8_8_01_4" ],
-    [ "TArePortIdsAscending< PortType >", "struct_t_are_port_ids_ascending_3_01_port_type_01_4.html", "struct_t_are_port_ids_ascending_3_01_port_type_01_4" ],
+    [ "TArePortIdsAscending&lt; FirstPortType, RestPortTypes... &gt;", "struct_t_are_port_ids_ascending_3_01_first_port_type_00_01_rest_port_types_8_8_8_01_4.html", "struct_t_are_port_ids_ascending_3_01_first_port_type_00_01_rest_port_types_8_8_8_01_4" ],
+    [ "TArePortIdsAscending&lt; PortType &gt;", "struct_t_are_port_ids_ascending_3_01_port_type_01_4.html", "struct_t_are_port_ids_ascending_3_01_port_type_01_4" ],
     [ "TFirstTypeInPack", "struct_t_first_type_in_pack.html", null ],
-    [ "TFirstTypeInPack< First >", "struct_t_first_type_in_pack_3_01_first_01_4.html", "struct_t_first_type_in_pack_3_01_first_01_4" ],
-    [ "TFirstTypeInPack< First, Rest... >", "struct_t_first_type_in_pack_3_01_first_00_01_rest_8_8_8_01_4.html", "struct_t_first_type_in_pack_3_01_first_00_01_rest_8_8_8_01_4" ],
+    [ "TFirstTypeInPack&lt; First &gt;", "struct_t_first_type_in_pack_3_01_first_01_4.html", "struct_t_first_type_in_pack_3_01_first_01_4" ],
+    [ "TFirstTypeInPack&lt; First, Rest... &gt;", "struct_t_first_type_in_pack_3_01_first_00_01_rest_8_8_8_01_4.html", "struct_t_first_type_in_pack_3_01_first_00_01_rest_8_8_8_01_4" ],
     [ "TLabeledArrayInternal", "class_t_labeled_array_internal.html", "class_t_labeled_array_internal" ]
 ];

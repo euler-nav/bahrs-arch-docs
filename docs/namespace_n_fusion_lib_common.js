@@ -1,10 +1,10 @@
 var namespace_n_fusion_lib_common =
 [
-    [ "SAttitudeOutputData", "struct_n_fusion_lib_common_1_1_s_attitude_output_data.html", "struct_n_fusion_lib_common_1_1_s_attitude_output_data" ],
-    [ "SBarometerData", "struct_n_fusion_lib_common_1_1_s_barometer_data.html", "struct_n_fusion_lib_common_1_1_s_barometer_data" ],
+    [ "SMeasurementBase", "struct_n_fusion_lib_common_1_1_s_measurement_base.html", "struct_n_fusion_lib_common_1_1_s_measurement_base" ],
     [ "SImuMeasurement", "struct_n_fusion_lib_common_1_1_s_imu_measurement.html", "struct_n_fusion_lib_common_1_1_s_imu_measurement" ],
     [ "SMagnetometerData", "struct_n_fusion_lib_common_1_1_s_magnetometer_data.html", "struct_n_fusion_lib_common_1_1_s_magnetometer_data" ],
-    [ "SMeasurementBase", "struct_n_fusion_lib_common_1_1_s_measurement_base.html", "struct_n_fusion_lib_common_1_1_s_measurement_base" ],
+    [ "SBarometerData", "struct_n_fusion_lib_common_1_1_s_barometer_data.html", "struct_n_fusion_lib_common_1_1_s_barometer_data" ],
+    [ "SAttitudeOutputData", "struct_n_fusion_lib_common_1_1_s_attitude_output_data.html", "struct_n_fusion_lib_common_1_1_s_attitude_output_data" ],
     [ "SVerticalChannelData", "struct_n_fusion_lib_common_1_1_s_vertical_channel_data.html", "struct_n_fusion_lib_common_1_1_s_vertical_channel_data" ],
     [ "ESensorId", "namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93", [
       [ "eUnknown", "namespace_n_fusion_lib_common.html#a0c4aed51589e762c267affa04c4d8e93a64c3acc11ffdb1be30ea339290bd1508", null ],
