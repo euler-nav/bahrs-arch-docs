@@ -1,5 +1,34 @@
 var hierarchy =
 [
+    [ "CanasCanFilterConfig", "struct_canas_can_filter_config.html", null ],
+    [ "CanasCanFrame", "struct_canas_can_frame.html", null ],
+    [ "CanasConfig", "struct_canas_config.html", null ],
+    [ "CanasDataContainer", "union_canas_data_container.html", null ],
+    [ "CanasGrrChannelState", "struct_canas_grr_channel_state.html", null ],
+    [ "CanasGrrConfig", "struct_canas_grr_config.html", null ],
+    [ "CanasGrrInstance", "struct_canas_grr_instance.html", null ],
+    [ "CanasHookCallbackArgs", "struct_canas_hook_callback_args.html", null ],
+    [ "CanasInstanceStruct", "struct_canas_instance_struct.html", null ],
+    [ "CanasListEntryStruct", "struct_canas_list_entry_struct.html", null ],
+    [ "CanasMessage", "struct_canas_message.html", null ],
+    [ "CanasMessageData", "struct_canas_message_data.html", null ],
+    [ "CanasParamAdvertisement", "struct_canas_param_advertisement.html", null ],
+    [ "CanasParamCacheEntry", "struct_canas_param_cache_entry.html", null ],
+    [ "CanasParamCallbackArgs", "struct_canas_param_callback_args.html", null ],
+    [ "CanasParamSubscription", "struct_canas_param_subscription.html", null ],
+    [ "CanasPlatform", "struct_canas_platform.html", null ],
+    [ "CanasServiceFrameHistoryEntry", "struct_canas_service_frame_history_entry.html", null ],
+    [ "CanasServicePollCallbackArgs", "struct_canas_service_poll_callback_args.html", null ],
+    [ "CanasServiceRequestCallbackArgs", "struct_canas_service_request_callback_args.html", null ],
+    [ "CanasServiceResponseCallbackArgs", "struct_canas_service_response_callback_args.html", null ],
+    [ "CanasServiceSubscription", "struct_canas_service_subscription.html", null ],
+    [ "CanasSrvDdsMasterDoneCallbackArgs", "struct_canas_srv_dds_master_done_callback_args.html", null ],
+    [ "CanasSrvDusMasterDoneCallbackArgs", "struct_canas_srv_dus_master_done_callback_args.html", null ],
+    [ "CanasSrvFpsPendingRequest", "struct_canas_srv_fps_pending_request.html", null ],
+    [ "CanasSrvFpsState", "struct_canas_srv_fps_state.html", null ],
+    [ "CanasSrvIdsData", "struct_canas_srv_ids_data.html", null ],
+    [ "CanasSrvIdsPayload", "struct_canas_srv_ids_payload.html", null ],
+    [ "CanasSrvIdsRequestHandle", "struct_canas_srv_ids_request_handle.html", null ],
     [ "CButterworthLowPassFilter2", "class_c_butterworth_low_pass_filter2.html", null ],
     [ "CDiagnosticMode", "class_c_diagnostic_mode.html", null ],
     [ "CGeoConstants", "class_c_geo_constants.html", null ],
@@ -43,9 +72,11 @@ var hierarchy =
       [ "CBmp384Driver", "class_c_bmp384_driver.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CCanHandler, 1U &gt;", "class_c_software_component.html", [
+      [ "CCanHandler", "class_c_can_handler.html", null ],
       [ "CCanHandler", "class_c_can_handler.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CCanOutputHandler, 1U &gt;", "class_c_software_component.html", [
+      [ "CCanOutputHandler", "class_c_can_output_handler.html", null ],
       [ "CCanOutputHandler", "class_c_can_output_handler.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CIcm20789Driver, 2U &gt;", "class_c_software_component.html", [
@@ -67,6 +98,7 @@ var hierarchy =
       [ "CMmc5983Driver", "class_c_mmc5983_driver.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CNvmDriver, 0U &gt;", "class_c_software_component.html", [
+      [ "CNvmDriver", "class_c_nvm_driver.html", null ],
       [ "CNvmDriver", "class_c_nvm_driver.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; COutputTransformer, 1U &gt;", "class_c_software_component.html", [
@@ -76,6 +108,7 @@ var hierarchy =
       [ "CPressureCompensator", "class_c_pressure_compensator.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CRs232OutputHandler, 1U &gt;", "class_c_software_component.html", [
+      [ "CRs232OutputHandler", "class_c_rs232_output_handler.html", null ],
       [ "CRs232OutputHandler", "class_c_rs232_output_handler.html", null ]
     ] ],
     [ "CSoftwareComponent&lt; CScha63TDriver, 1U &gt;", "class_c_software_component.html", [
@@ -126,6 +159,8 @@ var hierarchy =
       [ "CSoftwareComponentPort< tPortDataType, uPortId >", "class_c_software_component_port.html", null ]
     ] ],
     [ "CSoftwareVersion", "class_c_software_version.html", null ],
+    [ "Fifo", "struct_fifo.html", null ],
+    [ "FifoEntry", "struct_fifo_entry.html", null ],
     [ "CSerialProtocol::SAccuracyData", "struct_c_serial_protocol_1_1_s_accuracy_data.html", null ],
     [ "CSerialProtocol::SAccuracyDataMessage", "struct_c_serial_protocol_1_1_s_accuracy_data_message.html", null ],
     [ "CNvmDriver::SAssertions", "struct_c_nvm_driver_1_1_s_assertions.html", null ],
@@ -137,6 +172,8 @@ var hierarchy =
     [ "CCanOutputHandler::SCanFrameHandle", "struct_c_can_output_handler_1_1_s_can_frame_handle.html", null ],
     [ "CButterworthLowPassFilter2::SCoefficients", "struct_c_butterworth_low_pass_filter2_1_1_s_coefficients.html", null ],
     [ "CScha63TDriver::SCompensationParameters", "struct_c_scha63_t_driver_1_1_s_compensation_parameters.html", null ],
+    [ "ServiceState", "struct_service_state.html", null ],
+    [ "SessionEntry", "struct_session_entry.html", null ],
     [ "NNavigationUtilities::SEulerAngles", "struct_n_navigation_utilities_1_1_s_euler_angles.html", null ],
     [ "CNvmDriver::SEulerAnglesDeviceToVehicle", "struct_c_nvm_driver_1_1_s_euler_angles_device_to_vehicle.html", null ],
     [ "CImuPreFilterSwc::SFilterConfiguration", "struct_c_imu_pre_filter_swc_1_1_s_filter_configuration.html", null ],
@@ -147,6 +184,9 @@ var hierarchy =
     [ "CSerialProtocol::SInertialData", "struct_c_serial_protocol_1_1_s_inertial_data.html", null ],
     [ "CSerialProtocol::SInertialDataMessage", "struct_c_serial_protocol_1_1_s_inertial_data_message.html", null ],
     [ "CNvmDriver::SMagnetometerCalibrationParameters", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters.html", null ],
+    [ "CNvmDriver::SMagnetometerCalibrationParameters1", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters1.html", null ],
+    [ "CNvmDriver::SMagnetometerCalibrationParameters2", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters2.html", null ],
+    [ "CNvmDriver::SMagnetometerCalibrationParameters3", "struct_c_nvm_driver_1_1_s_magnetometer_calibration_parameters3.html", null ],
     [ "NMagneticHeadingFilterApi::SMagnetometerMeasurement", "struct_n_magnetic_heading_filter_api_1_1_s_magnetometer_measurement.html", null ],
     [ "NFusionLibCommon::SMeasurementBase", "struct_n_fusion_lib_common_1_1_s_measurement_base.html", [
       [ "NFusionLibCommon::SAttitudeOutputData", "struct_n_fusion_lib_common_1_1_s_attitude_output_data.html", null ],
@@ -187,6 +227,7 @@ var hierarchy =
     [ "SScha63TStatusUno", "struct_s_scha63_t_status_uno.html", null ],
     [ "CSerialProtocol::SSoftwareVersionData", "struct_c_serial_protocol_1_1_s_software_version_data.html", null ],
     [ "CSerialProtocol::SSoftwareVersionMessage", "struct_c_serial_protocol_1_1_s_software_version_message.html", null ],
+    [ "State", "struct_state.html", null ],
     [ "CSerialProtocol::STimeOfInertialData", "struct_c_serial_protocol_1_1_s_time_of_inertial_data.html", null ],
     [ "CSerialProtocol::STimeOfInertialDataMessage", "struct_c_serial_protocol_1_1_s_time_of_inertial_data_message.html", null ],
     [ "CSerialProtocol::STimeOfLatestSyncPulse", "struct_c_serial_protocol_1_1_s_time_of_latest_sync_pulse.html", null ],

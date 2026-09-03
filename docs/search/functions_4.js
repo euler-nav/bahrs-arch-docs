@@ -9,6 +9,6 @@ var searchData=
   ['diagnosticmodeuartrxinterrupthandler_6',['DiagnosticModeUARTRxInterruptHandler',['../_c_diagnostic_mode_wrapper_8cpp.html#a24a32dfb50a39a8364fb0eaacc549697',1,'DiagnosticModeUARTRxInterruptHandler(uint16_t uSize):&#160;CDiagnosticModeWrapper.cpp'],['../_c_diagnostic_mode_wrapper_8h.html#a24a32dfb50a39a8364fb0eaacc549697',1,'DiagnosticModeUARTRxInterruptHandler(uint16_t uSize):&#160;CDiagnosticModeWrapper.cpp']]],
   ['diagnosticsend_7',['diagnosticSend',['../class_c_diagnostic_mode.html#a27edea1ae446467e17d7c2f2359a780c',1,'CDiagnosticMode']]],
   ['diffofunsigned_8',['DiffOfUnsigned',['../namespace_n_navigation_utilities.html#a3aee1284dcac50b5bb57ea95dcd5cb23',1,'NNavigationUtilities']]],
-  ['drvfilter_9',['drvFilter',['../class_c_can_handler.html#a8ac39999837c42bdc63cb5f51be20af6',1,'CCanHandler']]],
-  ['drvsend_10',['drvSend',['../class_c_can_handler.html#a95a1fb6a9fadc94cc29bd677261b857e',1,'CCanHandler']]]
+  ['drvfilter_9',['drvFilter',['../class_c_can_handler.html#a8ac39999837c42bdc63cb5f51be20af6',1,'CCanHandler::drvFilter(CanasInstance *opInstance, int iIface, const CanasCanFilterConfig *kopFilters, int iNumFilt)'],['../class_c_can_handler.html#a54c2149c7eeff01926a95e9090fb1011',1,'CCanHandler::drvFilter(CanasInstance *opInstance, int iIface, const CanasCanFilterConfig *kopFilters, int iNumFilt)']]],
+  ['drvsend_10',['drvSend',['../class_c_can_handler.html#a95a1fb6a9fadc94cc29bd677261b857e',1,'CCanHandler::drvSend(CanasInstance *opInstance, int iIface, const CanasCanFrame *kopFrame)'],['../class_c_can_handler.html#a95a1fb6a9fadc94cc29bd677261b857e',1,'CCanHandler::drvSend(CanasInstance *opInstance, int iIface, const CanasCanFrame *kopFrame)']]]
 ];
