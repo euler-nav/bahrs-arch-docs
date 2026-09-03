@@ -44,16 +44,46 @@ left to right direction
 interface PressureDataSensor1
 interface PressureDataSensor2
 interface PressureDataSensor3
+interface CompensatedPressureDataSensor1
+interface CompensatedPressureDataSensor2
+interface CompensatedPressureDataSensor3
 interface ImuDataSensor1
 interface ImuDataSensor2
 interface ImuDataSensor3
+interface ImuDataFilteredSensor1
+interface ImuDataFilteredSensor2
+interface ImuDataFilteredSensor3
 interface MagneticFieldSensor1
+
+[Pressure Compensator 1] as PressureCompensator1
+[Pressure Compensator 2] as PressureCompensator2
+[Pressure Compensator 3] as PressureCompensator3
+
+PressureDataSensor1 )-- PressureCompensator1
+PressureDataSensor2 )-- PressureCompensator2
+PressureDataSensor3 )-- PressureCompensator3
+
+[IMU Pre-filter 1] as ImuPreFilter1
+[IMU Pre-filter 2] as ImuPreFilter2
+[IMU Pre-filter 3] as ImuPreFilter3
+
+ImuDataSensor1 )-- ImuPreFilter1
+ImuDataSensor2 )-- ImuPreFilter2
+ImuDataSensor3 )-- ImuPreFilter3
+
+PressureCompensator1 -- CompensatedPressureDataSensor1
+PressureCompensator2 -- CompensatedPressureDataSensor2
+PressureCompensator3 -- CompensatedPressureDataSensor3
+
+ImuPreFilter1 -- ImuDataFilteredSensor1
+ImuPreFilter2 -- ImuDataFilteredSensor2
+ImuPreFilter3 -- ImuDataFilteredSensor3
 
 [Barometer Monitor] as BaroMonitor
 
-PressureDataSensor1 )-- BaroMonitor
-PressureDataSensor2 )-- BaroMonitor
-PressureDataSensor3 )-- BaroMonitor
+CompensatedPressureDataSensor1 )-- BaroMonitor
+CompensatedPressureDataSensor2 )-- BaroMonitor
+CompensatedPressureDataSensor3 )-- BaroMonitor
 
 interface SafePressureData1
 interface SafePressureData2
@@ -69,9 +99,9 @@ MagnetometerCompensator -- CompensatedMagneticFieldData
 [BAHRS Filter 2] as BahrsFilter2
 [BAHRS Filter 3] as BahrsFilter3
 
-ImuDataSensor1 )-- BahrsFilter1
-ImuDataSensor2 )-- BahrsFilter2
-ImuDataSensor3 )-- BahrsFilter3
+ImuDataFilteredSensor1 )-- BahrsFilter1
+ImuDataFilteredSensor2 )-- BahrsFilter2
+ImuDataFilteredSensor3 )-- BahrsFilter3
 
 interface BahrsFilterOutput1
 interface BahrsFilterOutput2
@@ -87,9 +117,9 @@ SafePressureData3 )-- BahrsFilter3
 BahrsFilter3 -- BahrsFilterOutput3
 
 [IMU monitor] as ImuMonitor
-ImuDataSensor1 )-- ImuMonitor
-ImuDataSensor2 )-- ImuMonitor
-ImuDataSensor3 )-- ImuMonitor
+ImuDataFilteredSensor1 )-- ImuMonitor
+ImuDataFilteredSensor2 )-- ImuMonitor
+ImuDataFilteredSensor3 )-- ImuMonitor
 
 interface SafeImuData
 ImuMonitor -- SafeImuData
@@ -239,7 +269,9 @@ loop Every 5ms
 
     activate Scha63TTask
     Scha63TTask -> Scha63TTask: Downsample SCHA63T data
-    Scha63TTask -> Scha63TTask: Provide IMU data set to BAHRS Filter 1
+    Scha63TTask -> Scha63TTask: Provide raw IMU data to SWC port
+    Scha63TTask -> Scha63TTask: Run IMU pre-filter 1
+    Scha63TTask -> Scha63TTask: Provide filtered IMU data set to BAHRS Filter 1
 
     alt Every 10ms
         Scha63TTask ->> BahrsFilter1: Trigger BAHRS Filter 1 iteration
@@ -270,7 +302,9 @@ loop Every 5ms
     IcmSensor -->> Icm20789Task: IMU data
 
     activate Icm20789Task
-    Icm20789Task -> Icm20789Task: Provide IMU data to SWC port
+    Icm20789Task -> Icm20789Task: Provide raw IMU data to SWC port
+    Icm20789Task -> Icm20789Task: Run IMU pre-filter X
+    Icm20789Task -> Icm20789Task: Provide filtered IMU data to BAHRS Filter Y
 
     alt Every 10ms
         Icm20789Task ->> BahrsFilter: Trigger BAHRS Filter Y iteration
@@ -291,6 +325,7 @@ loop Every 5ms
         IcmSensor -->> Icm20789Task: Pressure data
         activate Icm20789Task
         Icm20789Task -> Icm20789Task: Provide pressure data to SWC port
+        Icm20789Task -> Icm20789Task: Run pressure compensator X
         Icm20789Task -> Icm20789Task: Set "waiting for pressure" flag to false
     end
 
@@ -309,12 +344,12 @@ repeat
         :Send Software Version Message;
     endif
 
-    :Run IMU Monitor;
+    :Run IMU Monitor (uses filtered IMU data);
     :Transform IMU Signals to vehicle frame;
     :Send Inertial Data Message on RS232;
 
     if (Counter % 8 == 0) then (yes)
-        :Run Barometer Monitor;
+        :Run Barometer Monitor (uses compensated pressure data);
         :Provide Safe Pressure Data to BAHRS Filters;
     endif
 

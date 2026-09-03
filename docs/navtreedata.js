@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "AMS Advanced Air Mobility Sensors UG", "index.html", [
     [ "EULER-NAV Baro-Inertial Attitude and Heading Reference System (BAHRS)", "index.html", "index" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -53,10 +54,12 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -65,15 +68,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ams_assert_8cpp.html",
-"_c_scha63_t_driver_8h.html#a5a47f744e9474820af5ba1d3896b5ca6",
-"class_c_bmp384_driver.html#ade0780318453119cdc1cbf3fa448458aa3a8a5bc24de3351b6093f4c81a681613",
-"class_c_imu_pre_filter_swc.html#a0915bd54710cf470b2f5c11bd73f8d00",
-"class_c_rs232_output_handler.html#ad4396d96977d4f20e904d647bb7c60b2",
-"class_c_software_component_port.html#a0954d7e454e9a920807e21ed36a72f4d",
-"functions_e.html",
-"page_glossary.html#sec_glossary_abbreviations",
-"struct_c_serial_protocol_1_1_s_packet_receive_confirmation.html#ab4cd2bb5299e999cfe89601d037174a4",
-"struct_s_magnetic_measurement.html#ab5d4a19d7e6986364a965c56699ddc86"
+"_c_scha63_t_driver_8h.html#abdd4fd9f20493734d94dd9fabd256374",
+"canaerospace_8h.html#a8242b6a411101e1e84dc6f53d34c6c6f",
+"class_c_can_output_handler.html#a623e59de65555d063dfe9895a4c6b83e",
+"class_c_lowpass_filter.html#a321a2915ea06b9fba48aa434483410f9",
+"class_c_rs232_output_handler.html#abf9af6407bd05b6c454852388321659a",
+"class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a",
+"dir_4e266ed73c0723cfc6913cf97883ea28.html",
+"internal_8h.html#a833ce267f4c4c5cb6aafdf8139c7ee5a",
+"nod__default_8h.html#a758a53d433eb6efc9bebec1157ab101aa117a23ced97375120726b886925b7f85",
+"nod__default_8h.html#a758a53d433eb6efc9bebec1157ab101aa882e10fd35807066d17bcee6650fe9d5",
+"page_glossary.html#BSW",
+"struct_c_bmp384_driver_1_1_s_params.html",
+"struct_canas_can_frame.html#a2cda0e53fb612bfdb4c5c5bf1956e63a",
+"struct_n_fusion_lib_common_1_1_s_measurement_base.html#a2b50d460a3eda1e217781af227fb0b05",
+"uav_8h.html#a679fbe804dad2ada8c931ba2436dd74ba39df1a66b4f9b3991cc9842b0142fb82"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

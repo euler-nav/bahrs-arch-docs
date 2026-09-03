@@ -19,6 +19,6 @@ var searchData=
   ['transformimusignals_16',['TransformImuSignals',['../class_c_output_transformer.html#a7f43c53c1b274d25432f9317fd7c7247',1,'COutputTransformer']]],
   ['transformmagnetometerinput_17',['TransformMagnetometerInput',['../class_c_output_transformer.html#ab23e1981c242243ecd2a639b7f1f88d4',1,'COutputTransformer']]],
   ['transformorientation_18',['TransformOrientation',['../class_c_output_transformer.html#a6c4e186ed7426dbccc0d7089feb5928b',1,'COutputTransformer']]],
-  ['transmitmessage_19',['TransmitMessage',['../class_c_rs232_output_handler.html#a9bcde79d3b5988633cae04d93c990f2e',1,'CRs232OutputHandler']]],
+  ['transmitmessage_19',['TransmitMessage',['../class_c_rs232_output_handler.html#a9bcde79d3b5988633cae04d93c990f2e',1,'CRs232OutputHandler::TransmitMessage(uint8_t *upData, uint16_t uSize)'],['../class_c_rs232_output_handler.html#a9bcde79d3b5988633cae04d93c990f2e',1,'CRs232OutputHandler::TransmitMessage(uint8_t *upData, uint16_t uSize)']]],
   ['triggerpressuremeasurement_20',['TriggerPressureMeasurement',['../class_c_icm20789_driver.html#aa19680d82bd3fa5a02c4ef3b9ccf6832',1,'CIcm20789Driver']]]
 ];

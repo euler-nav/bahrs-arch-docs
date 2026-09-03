@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['pmutex_0',['pMutex',['../struct_c_can_handler_1_1_s_canas_platform.html#a4249a6024417757c0e4f66bb7b2457dd',1,'CCanHandler::SCanasPlatform']]],
-  ['pmutexhandle_5f_1',['pMutexHandle_',['../class_c_software_component_port_base.html#af732539e91a327515d623f3d26492a1b',1,'CSoftwareComponentPortBase::pMutexHandle_'],['../class_c_rs232_output_handler.html#a3498fce1bd257cfc83d5f2541943c1b1',1,'CRs232OutputHandler::pMutexHandle_'],['../class_c_bahrs_filter_swc.html#a891413745c3cba29366123dfba1d60cf',1,'CBahrsFilterSwc::pMutexHandle_'],['../class_c_magnetic_heading_filter_swc.html#a6a4f30996df14f3792c85815f92ed1af',1,'CMagneticHeadingFilterSwc::pMutexHandle_']]],
-  ['psend_5f_2',['pSend_',['../struct_c_can_output_handler_1_1_s_can_frame_handle.html#a839c6ecb1638c54be6a3db738587bc0c',1,'CCanOutputHandler::SCanFrameHandle']]]
+  ['kauselftestequation_0',['kauSelfTestEquation',['../class_c_icm20789_driver.html#a871ce7630728f01597cee7a8e22d4cb0',1,'CIcm20789Driver']]],
+  ['kesensorid_5f_1',['keSensorId_',['../class_c_bmm150_driver.html#ae14ab42988a750ec7b4c99b3eed38a66',1,'CBmm150Driver::keSensorId_'],['../class_c_icm20789_driver.html#a45fe4ef89a20263f5b5ff994b5f09930',1,'CIcm20789Driver::keSensorId_'],['../class_c_imu_pre_filter_swc.html#aa7146936f1ba7af8125c5d634faceddb',1,'CImuPreFilterSwc::keSensorId_'],['../class_c_pressure_compensator.html#aec1d47ea693f281fe29d1ffc5b86335b',1,'CPressureCompensator::keSensorId_']]],
+  ['kfcutofffrequencyhz_5f_2',['kfCutoffFrequencyHz_',['../class_c_imu_pre_filter_swc.html#a747f8bd0f46472c61b311f62f0ada523',1,'CImuPreFilterSwc']]],
+  ['kuinstanceindex_5f_3',['kuInstanceIndex_',['../class_c_bahrs_filter_swc.html#a8d9c29524b677519cc81b1ef13f05fc2',1,'CBahrsFilterSwc']]],
+  ['kushutdownpin_5f_4',['kuShutdownPin_',['../class_c_icm20789_driver.html#a371db3d34fbcf5ad606daccb5e846f6b',1,'CIcm20789Driver']]]
 ];

@@ -145,11 +145,36 @@ Inheritance diagram for CRs232OutputHandler:</div>
   <img src="class_c_rs232_output_handler.png" usemap="#CRs232OutputHandler_map" alt=""/>
   <map id="CRs232OutputHandler_map" name="CRs232OutputHandler_map">
 <area href="class_c_software_component.html" alt="CSoftwareComponent&lt; CRs232OutputHandler, 1U &gt;" shape="rect" coords="0,0,308,24"/>
+<area href="class_c_software_component.html" alt="CSoftwareComponent&lt; CRs232OutputHandler, 1U &gt;" shape="rect" coords="318,0,626,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac17e2629ede2216f3d92a5337e393158" id="r_ac17e2629ede2216f3d92a5337e393158"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac17e2629ede2216f3d92a5337e393158">Init</a> () override</td></tr>
+<tr class="memitem:a7670f47c187b9a2891c2855bf74e5d22" id="r_a7670f47c187b9a2891c2855bf74e5d22"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7670f47c187b9a2891c2855bf74e5d22">IsInitialized</a> () override</td></tr>
+<tr class="memitem:abdec66bf48d4a2f74579ee6ee43fd94e" id="r_abdec66bf48d4a2f74579ee6ee43fd94e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abdec66bf48d4a2f74579ee6ee43fd94e">QueueTransmissionRequest</a> (<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277">CSerialProtocol::EMessageIds</a> eMessageId)</td></tr>
+<tr class="memdesc:abdec66bf48d4a2f74579ee6ee43fd94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put message transmission request into the queue of the sender task. The function does not make a snapshot of the data to be sent.  <br /></td></tr>
+<tr class="memitem:acd586513f98cbf22148c67df8a94ae44" id="r_acd586513f98cbf22148c67df8a94ae44"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd586513f98cbf22148c67df8a94ae44">SendInertialDataMessage</a> ()</td></tr>
+<tr class="memdesc:acd586513f98cbf22148c67df8a94ae44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send an inertial data message.  <br /></td></tr>
+<tr class="memitem:afc55767c4866ba442981ede2c3751512" id="r_afc55767c4866ba442981ede2c3751512"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc55767c4866ba442981ede2c3751512">SendTimeOfInertialDataMessage</a> ()</td></tr>
+<tr class="memdesc:afc55767c4866ba442981ede2c3751512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send a "time of inertial data" message.  <br /></td></tr>
+<tr class="memitem:a52e4d76de5843caa6b5dfbe3744b37b8" id="r_a52e4d76de5843caa6b5dfbe3744b37b8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a52e4d76de5843caa6b5dfbe3744b37b8">SendNavigationDataMessage</a> ()</td></tr>
+<tr class="memdesc:a52e4d76de5843caa6b5dfbe3744b37b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send a navigation data message.  <br /></td></tr>
+<tr class="memitem:a113b155316c32d0cd21baa6342bd82f5" id="r_a113b155316c32d0cd21baa6342bd82f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a113b155316c32d0cd21baa6342bd82f5">SendTimeOfNavigationDataMessage</a> ()</td></tr>
+<tr class="memdesc:a113b155316c32d0cd21baa6342bd82f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send a "time of navigation data" message.  <br /></td></tr>
+<tr class="memitem:a82465088093c21a9145499c516d6112b" id="r_a82465088093c21a9145499c516d6112b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a82465088093c21a9145499c516d6112b">SendAccuracyDataMessage</a> ()</td></tr>
+<tr class="memdesc:a82465088093c21a9145499c516d6112b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send navigation data accuracy.  <br /></td></tr>
+<tr class="memitem:ad4396d96977d4f20e904d647bb7c60b2" id="r_ad4396d96977d4f20e904d647bb7c60b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad4396d96977d4f20e904d647bb7c60b2">SendTimeOfLatestSyncPulseMessage</a> ()</td></tr>
+<tr class="memdesc:ad4396d96977d4f20e904d647bb7c60b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send the time of the latest pulse.  <br /></td></tr>
+<tr class="memitem:aca8e78f32d633a4b71e0fb72f98969d5" id="r_aca8e78f32d633a4b71e0fb72f98969d5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca8e78f32d633a4b71e0fb72f98969d5">SendSoftwareVersionMessage</a> ()</td></tr>
+<tr class="memdesc:aca8e78f32d633a4b71e0fb72f98969d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send the software version message.  <br /></td></tr>
+<tr class="memitem:a91c4c99576df249b431dc8b5142fdf40" id="r_a91c4c99576df249b431dc8b5142fdf40"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a91c4c99576df249b431dc8b5142fdf40">SendHardwareVersionMessage</a> ()</td></tr>
+<tr class="memdesc:a91c4c99576df249b431dc8b5142fdf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose and send the hardware version message.  <br /></td></tr>
+<tr class="memitem:a9bcde79d3b5988633cae04d93c990f2e" id="r_a9bcde79d3b5988633cae04d93c990f2e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9bcde79d3b5988633cae04d93c990f2e">TransmitMessage</a> (uint8_t *upData, uint16_t uSize)</td></tr>
+<tr class="memdesc:a9bcde79d3b5988633cae04d93c990f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit data using DMA.  <br /></td></tr>
+<tr class="memitem:abf9af6407bd05b6c454852388321659a" id="r_abf9af6407bd05b6c454852388321659a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abf9af6407bd05b6c454852388321659a">UARTTxInterruptHandler</a> (uint16_t uSize)</td></tr>
+<tr class="memdesc:abf9af6407bd05b6c454852388321659a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA Transmission completed callback.  <br /></td></tr>
 <tr class="memitem:ac17e2629ede2216f3d92a5337e393158" id="r_ac17e2629ede2216f3d92a5337e393158"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac17e2629ede2216f3d92a5337e393158">Init</a> () override</td></tr>
 <tr class="memitem:a7670f47c187b9a2891c2855bf74e5d22" id="r_a7670f47c187b9a2891c2855bf74e5d22"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7670f47c187b9a2891c2855bf74e5d22">IsInitialized</a> () override</td></tr>
 <tr class="memitem:abdec66bf48d4a2f74579ee6ee43fd94e" id="r_abdec66bf48d4a2f74579ee6ee43fd94e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abdec66bf48d4a2f74579ee6ee43fd94e">QueueTransmissionRequest</a> (<a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277">CSerialProtocol::EMessageIds</a> eMessageId)</td></tr>
@@ -182,9 +207,19 @@ Public Member Functions</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:aede8c56a96141f6d43935ed38e5baf6b" id="r_aede8c56a96141f6d43935ed38e5baf6b"><td class="memItemLeft">typedef StaticSemaphore_t&#160;</td><td class="memItemRight"><a class="el" href="#aede8c56a96141f6d43935ed38e5baf6b">osStaticMutexDef_t</a></td></tr>
 <tr class="memdesc:aede8c56a96141f6d43935ed38e5baf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The typedef copied from a CMSIS_OS header.  <br /></td></tr>
+<tr class="memitem:aede8c56a96141f6d43935ed38e5baf6b" id="r_aede8c56a96141f6d43935ed38e5baf6b"><td class="memItemLeft">typedef StaticSemaphore_t&#160;</td><td class="memItemRight"><a class="el" href="#aede8c56a96141f6d43935ed38e5baf6b">osStaticMutexDef_t</a></td></tr>
+<tr class="memdesc:aede8c56a96141f6d43935ed38e5baf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The typedef copied from a CMSIS_OS header.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a98311fe145bbb46f411b17b32f34342f" id="r_a98311fe145bbb46f411b17b32f34342f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a98311fe145bbb46f411b17b32f34342f">CRs232OutputHandler</a> (<a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;)=delete</td></tr>
+<tr class="memitem:a720e8faa4f2cac6f1dc2446224457557" id="r_a720e8faa4f2cac6f1dc2446224457557"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a720e8faa4f2cac6f1dc2446224457557">CRs232OutputHandler</a> (<a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:a9aa8089cbf4f35ecc76ca810e1953fed" id="r_a9aa8089cbf4f35ecc76ca810e1953fed"><td class="memItemLeft"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9aa8089cbf4f35ecc76ca810e1953fed">operator=</a> (const <a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;orOther)=delete</td></tr>
+<tr class="memitem:af3def178c0c5c51c0cfc8ef2366822a2" id="r_af3def178c0c5c51c0cfc8ef2366822a2"><td class="memItemLeft"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af3def178c0c5c51c0cfc8ef2366822a2">operator=</a> (<a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&amp;orOther)=delete</td></tr>
+<tr class="memitem:ac14bab2e4190af80e017776b547c6358" id="r_ac14bab2e4190af80e017776b547c6358"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac14bab2e4190af80e017776b547c6358">CRs232OutputHandler</a> ()=default</td></tr>
+<tr class="memitem:a5b18108b4c91d4bcd7b4b90428e9666f" id="r_a5b18108b4c91d4bcd7b4b90428e9666f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5b18108b4c91d4bcd7b4b90428e9666f">~CRs232OutputHandler</a> ()=default</td></tr>
+<tr class="memitem:a6c1062d34fefaba2a584fc7357989035" id="r_a6c1062d34fefaba2a584fc7357989035"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6c1062d34fefaba2a584fc7357989035">isBufferFree</a> (uint16_t uSize)</td></tr>
+<tr class="memdesc:a6c1062d34fefaba2a584fc7357989035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the DMA buffer is able to allocate the amount of bytes that we wish to enqueue.  <br /></td></tr>
 <tr class="memitem:a98311fe145bbb46f411b17b32f34342f" id="r_a98311fe145bbb46f411b17b32f34342f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a98311fe145bbb46f411b17b32f34342f">CRs232OutputHandler</a> (<a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;)=delete</td></tr>
 <tr class="memitem:a720e8faa4f2cac6f1dc2446224457557" id="r_a720e8faa4f2cac6f1dc2446224457557"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a720e8faa4f2cac6f1dc2446224457557">CRs232OutputHandler</a> (<a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&amp;)=delete</td></tr>
 <tr class="memitem:a9aa8089cbf4f35ecc76ca810e1953fed" id="r_a9aa8089cbf4f35ecc76ca810e1953fed"><td class="memItemLeft"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9aa8089cbf4f35ecc76ca810e1953fed">operator=</a> (const <a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;orOther)=delete</td></tr>
@@ -197,13 +232,14 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ab881d21172b50e8e5b925ede5f1f28d2" id="r_ab881d21172b50e8e5b925ede5f1f28d2"><td class="memItemLeft">static <a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab881d21172b50e8e5b925ede5f1f28d2">getInstanceImpl</a> (unsigned uInstanceIndex)</td></tr>
+<tr class="memitem:a9f93b45f15a54b5789eda2557eaef9fa" id="r_a9f93b45f15a54b5789eda2557eaef9fa"><td class="memItemLeft">static <a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9f93b45f15a54b5789eda2557eaef9fa">getInstanceImpl</a> (unsigned uInstanceIndex)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae45e59b1815780d3ba83a7a726fe0a6d" id="r_ae45e59b1815780d3ba83a7a726fe0a6d"><td class="memItemLeft"><a class="el" href="class_c_serial_message_builder.html">CSerialMessageBuilder</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae45e59b1815780d3ba83a7a726fe0a6d">oMessageBuilder_</a></td></tr>
 <tr class="memdesc:ae45e59b1815780d3ba83a7a726fe0a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that builds messages from generic inputs.  <br /></td></tr>
-<tr class="memitem:a2f987a667587f31c756a78fe2de8af05" id="r_a2f987a667587f31c756a78fe2de8af05"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a2f987a667587f31c756a78fe2de8af05">auTxBuffer_</a> [<a class="el" href="#aa59d25204ce6e7ee4996ff006070a7df">skuBufferLength_</a>]</td></tr>
-<tr class="memdesc:a2f987a667587f31c756a78fe2de8af05"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer for DMA transfer.  <br /></td></tr>
+<tr class="memitem:a38d81af77d44f285e447edeaad7af7d9" id="r_a38d81af77d44f285e447edeaad7af7d9"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a38d81af77d44f285e447edeaad7af7d9">auTxBuffer_</a> [<a class="el" href="#aa556826b9c4623ea0670794e787e43e4">skuBufferLength_</a>]</td></tr>
+<tr class="memdesc:a38d81af77d44f285e447edeaad7af7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer for DMA transfer.  <br /></td></tr>
 <tr class="memitem:a55519c1bc50d512b074d2bf5933bb9f6" id="r_a55519c1bc50d512b074d2bf5933bb9f6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a55519c1bc50d512b074d2bf5933bb9f6">uTxBufferRdIdx_</a> { 0U }</td></tr>
 <tr class="memdesc:a55519c1bc50d512b074d2bf5933bb9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output buffer read index.  <br /></td></tr>
 <tr class="memitem:ac102fb494856115cb33af010582ebeab" id="r_ac102fb494856115cb33af010582ebeab"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ac102fb494856115cb33af010582ebeab">uTxBufferWrIdx_</a> { 0U }</td></tr>
@@ -217,8 +253,8 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aa59d25204ce6e7ee4996ff006070a7df" id="r_aa59d25204ce6e7ee4996ff006070a7df"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa59d25204ce6e7ee4996ff006070a7df">skuBufferLength_</a> { 512U }</td></tr>
-<tr class="memdesc:aa59d25204ce6e7ee4996ff006070a7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum allowed message length in bytes.  <br /></td></tr>
+<tr class="memitem:aa556826b9c4623ea0670794e787e43e4" id="r_aa556826b9c4623ea0670794e787e43e4"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa556826b9c4623ea0670794e787e43e4">skuBufferLength_</a> { 512U }</td></tr>
+<tr class="memdesc:aa556826b9c4623ea0670794e787e43e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum allowed message length in bytes.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -237,7 +273,31 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>RS232 Output Handler software component. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="aede8c56a96141f6d43935ed38e5baf6b" name="aede8c56a96141f6d43935ed38e5baf6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aede8c56a96141f6d43935ed38e5baf6b">&#9670;&#160;</a></span>osStaticMutexDef_t</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aede8c56a96141f6d43935ed38e5baf6b">&#9670;&#160;</a></span>osStaticMutexDef_t <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef StaticSemaphore_t <a class="el" href="#aede8c56a96141f6d43935ed38e5baf6b">CRs232OutputHandler::osStaticMutexDef_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The typedef copied from a CMSIS_OS header. </p>
+
+</div>
+</div>
+<a id="aede8c56a96141f6d43935ed38e5baf6b" name="aede8c56a96141f6d43935ed38e5baf6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede8c56a96141f6d43935ed38e5baf6b">&#9670;&#160;</a></span>osStaticMutexDef_t <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +322,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a98311fe145bbb46f411b17b32f34342f" name="a98311fe145bbb46f411b17b32f34342f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98311fe145bbb46f411b17b32f34342f">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98311fe145bbb46f411b17b32f34342f">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a720e8faa4f2cac6f1dc2446224457557" name="a720e8faa4f2cac6f1dc2446224457557"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a720e8faa4f2cac6f1dc2446224457557">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a720e8faa4f2cac6f1dc2446224457557">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ac14bab2e4190af80e017776b547c6358" name="ac14bab2e4190af80e017776b547c6358"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14bab2e4190af80e017776b547c6358">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14bab2e4190af80e017776b547c6358">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +397,107 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a5b18108b4c91d4bcd7b4b90428e9666f" name="a5b18108b4c91d4bcd7b4b90428e9666f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b18108b4c91d4bcd7b4b90428e9666f">&#9670;&#160;</a></span>~CRs232OutputHandler()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b18108b4c91d4bcd7b4b90428e9666f">&#9670;&#160;</a></span>~CRs232OutputHandler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRs232OutputHandler::~CRs232OutputHandler </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98311fe145bbb46f411b17b32f34342f" name="a98311fe145bbb46f411b17b32f34342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98311fe145bbb46f411b17b32f34342f">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRs232OutputHandler::CRs232OutputHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a720e8faa4f2cac6f1dc2446224457557" name="a720e8faa4f2cac6f1dc2446224457557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720e8faa4f2cac6f1dc2446224457557">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRs232OutputHandler::CRs232OutputHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac14bab2e4190af80e017776b547c6358" name="ac14bab2e4190af80e017776b547c6358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14bab2e4190af80e017776b547c6358">&#9670;&#160;</a></span>CRs232OutputHandler() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRs232OutputHandler::CRs232OutputHandler </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b18108b4c91d4bcd7b4b90428e9666f" name="a5b18108b4c91d4bcd7b4b90428e9666f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b18108b4c91d4bcd7b4b90428e9666f">&#9670;&#160;</a></span>~CRs232OutputHandler() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,8 +522,33 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a9f93b45f15a54b5789eda2557eaef9fa" name="a9f93b45f15a54b5789eda2557eaef9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f93b45f15a54b5789eda2557eaef9fa">&#9670;&#160;</a></span>getInstanceImpl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp; CRs232OutputHandler::getInstanceImpl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>uInstanceIndex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab881d21172b50e8e5b925ede5f1f28d2" name="ab881d21172b50e8e5b925ede5f1f28d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab881d21172b50e8e5b925ede5f1f28d2">&#9670;&#160;</a></span>getInstanceImpl()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab881d21172b50e8e5b925ede5f1f28d2">&#9670;&#160;</a></span>getInstanceImpl() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +573,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ac17e2629ede2216f3d92a5337e393158" name="ac17e2629ede2216f3d92a5337e393158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac17e2629ede2216f3d92a5337e393158">&#9670;&#160;</a></span>Init()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac17e2629ede2216f3d92a5337e393158">&#9670;&#160;</a></span>Init() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the software component. </p>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a8f8820435e42b914eeedafec93ba499a">CSoftwareComponent&lt; CRs232OutputHandler, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="ac17e2629ede2216f3d92a5337e393158" name="ac17e2629ede2216f3d92a5337e393158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac17e2629ede2216f3d92a5337e393158">&#9670;&#160;</a></span>Init() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +629,40 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a6c1062d34fefaba2a584fc7357989035" name="a6c1062d34fefaba2a584fc7357989035"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c1062d34fefaba2a584fc7357989035">&#9670;&#160;</a></span>isBufferFree()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1062d34fefaba2a584fc7357989035">&#9670;&#160;</a></span>isBufferFree() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRs232OutputHandler::isBufferFree </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>uSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the DMA buffer is able to allocate the amount of bytes that we wish to enqueue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uSize</td><td>Number of bytes sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c1062d34fefaba2a584fc7357989035" name="a6c1062d34fefaba2a584fc7357989035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1062d34fefaba2a584fc7357989035">&#9670;&#160;</a></span>isBufferFree() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +695,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a7670f47c187b9a2891c2855bf74e5d22" name="a7670f47c187b9a2891c2855bf74e5d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7670f47c187b9a2891c2855bf74e5d22">&#9670;&#160;</a></span>IsInitialized()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7670f47c187b9a2891c2855bf74e5d22">&#9670;&#160;</a></span>IsInitialized() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRs232OutputHandler::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get initialization status of the software component. </p><dl class="section return"><dt>Returns</dt><dd>True &ndash; the component is initialized, false otherwise. </dd></dl>
+
+<p>Implements <a class="el" href="class_c_software_component.html#a2eff0eea7c5cfa990e6b1847298ce8e6">CSoftwareComponent&lt; CRs232OutputHandler, 1U &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a7670f47c187b9a2891c2855bf74e5d22" name="a7670f47c187b9a2891c2855bf74e5d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7670f47c187b9a2891c2855bf74e5d22">&#9670;&#160;</a></span>IsInitialized() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,7 +751,32 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9aa8089cbf4f35ecc76ca810e1953fed" name="a9aa8089cbf4f35ecc76ca810e1953fed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa8089cbf4f35ecc76ca810e1953fed">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa8089cbf4f35ecc76ca810e1953fed">&#9670;&#160;</a></span>operator=() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp; CRs232OutputHandler::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>orOther</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9aa8089cbf4f35ecc76ca810e1953fed" name="a9aa8089cbf4f35ecc76ca810e1953fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa8089cbf4f35ecc76ca810e1953fed">&#9670;&#160;</a></span>operator=() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,7 +801,32 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af3def178c0c5c51c0cfc8ef2366822a2" name="af3def178c0c5c51c0cfc8ef2366822a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3def178c0c5c51c0cfc8ef2366822a2">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3def178c0c5c51c0cfc8ef2366822a2">&#9670;&#160;</a></span>operator=() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp; CRs232OutputHandler::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rs232_output_handler.html">CRs232OutputHandler</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>orOther</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3def178c0c5c51c0cfc8ef2366822a2" name="af3def178c0c5c51c0cfc8ef2366822a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3def178c0c5c51c0cfc8ef2366822a2">&#9670;&#160;</a></span>operator=() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +851,32 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abdec66bf48d4a2f74579ee6ee43fd94e" name="abdec66bf48d4a2f74579ee6ee43fd94e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdec66bf48d4a2f74579ee6ee43fd94e">&#9670;&#160;</a></span>QueueTransmissionRequest()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abdec66bf48d4a2f74579ee6ee43fd94e">&#9670;&#160;</a></span>QueueTransmissionRequest() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::QueueTransmissionRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_serial_protocol.html#ab121f5b36b08ce7aec5008c43699b277">CSerialProtocol::EMessageIds</a></td>          <td class="paramname"><span class="paramname"><em>eMessageId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Put message transmission request into the queue of the sender task. The function does not make a snapshot of the data to be sent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eMessageId</td><td>Id of the message to be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdec66bf48d4a2f74579ee6ee43fd94e" name="abdec66bf48d4a2f74579ee6ee43fd94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdec66bf48d4a2f74579ee6ee43fd94e">&#9670;&#160;</a></span>QueueTransmissionRequest() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +901,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a82465088093c21a9145499c516d6112b" name="a82465088093c21a9145499c516d6112b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82465088093c21a9145499c516d6112b">&#9670;&#160;</a></span>SendAccuracyDataMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a82465088093c21a9145499c516d6112b">&#9670;&#160;</a></span>SendAccuracyDataMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendAccuracyDataMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send navigation data accuracy. </p>
+
+</div>
+</div>
+<a id="a82465088093c21a9145499c516d6112b" name="a82465088093c21a9145499c516d6112b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82465088093c21a9145499c516d6112b">&#9670;&#160;</a></span>SendAccuracyDataMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +939,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a91c4c99576df249b431dc8b5142fdf40" name="a91c4c99576df249b431dc8b5142fdf40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c4c99576df249b431dc8b5142fdf40">&#9670;&#160;</a></span>SendHardwareVersionMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4c99576df249b431dc8b5142fdf40">&#9670;&#160;</a></span>SendHardwareVersionMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendHardwareVersionMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send the hardware version message. </p>
+
+</div>
+</div>
+<a id="a91c4c99576df249b431dc8b5142fdf40" name="a91c4c99576df249b431dc8b5142fdf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4c99576df249b431dc8b5142fdf40">&#9670;&#160;</a></span>SendHardwareVersionMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,7 +977,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="acd586513f98cbf22148c67df8a94ae44" name="acd586513f98cbf22148c67df8a94ae44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd586513f98cbf22148c67df8a94ae44">&#9670;&#160;</a></span>SendInertialDataMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd586513f98cbf22148c67df8a94ae44">&#9670;&#160;</a></span>SendInertialDataMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendInertialDataMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send an inertial data message. </p>
+
+</div>
+</div>
+<a id="acd586513f98cbf22148c67df8a94ae44" name="acd586513f98cbf22148c67df8a94ae44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd586513f98cbf22148c67df8a94ae44">&#9670;&#160;</a></span>SendInertialDataMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +1015,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a52e4d76de5843caa6b5dfbe3744b37b8" name="a52e4d76de5843caa6b5dfbe3744b37b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e4d76de5843caa6b5dfbe3744b37b8">&#9670;&#160;</a></span>SendNavigationDataMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e4d76de5843caa6b5dfbe3744b37b8">&#9670;&#160;</a></span>SendNavigationDataMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendNavigationDataMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send a navigation data message. </p>
+
+</div>
+</div>
+<a id="a52e4d76de5843caa6b5dfbe3744b37b8" name="a52e4d76de5843caa6b5dfbe3744b37b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e4d76de5843caa6b5dfbe3744b37b8">&#9670;&#160;</a></span>SendNavigationDataMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +1053,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aca8e78f32d633a4b71e0fb72f98969d5" name="aca8e78f32d633a4b71e0fb72f98969d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca8e78f32d633a4b71e0fb72f98969d5">&#9670;&#160;</a></span>SendSoftwareVersionMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8e78f32d633a4b71e0fb72f98969d5">&#9670;&#160;</a></span>SendSoftwareVersionMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendSoftwareVersionMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send the software version message. </p>
+
+</div>
+</div>
+<a id="aca8e78f32d633a4b71e0fb72f98969d5" name="aca8e78f32d633a4b71e0fb72f98969d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8e78f32d633a4b71e0fb72f98969d5">&#9670;&#160;</a></span>SendSoftwareVersionMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,7 +1091,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="afc55767c4866ba442981ede2c3751512" name="afc55767c4866ba442981ede2c3751512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc55767c4866ba442981ede2c3751512">&#9670;&#160;</a></span>SendTimeOfInertialDataMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc55767c4866ba442981ede2c3751512">&#9670;&#160;</a></span>SendTimeOfInertialDataMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendTimeOfInertialDataMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send a "time of inertial data" message. </p>
+
+</div>
+</div>
+<a id="afc55767c4866ba442981ede2c3751512" name="afc55767c4866ba442981ede2c3751512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc55767c4866ba442981ede2c3751512">&#9670;&#160;</a></span>SendTimeOfInertialDataMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -666,7 +1129,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ad4396d96977d4f20e904d647bb7c60b2" name="ad4396d96977d4f20e904d647bb7c60b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4396d96977d4f20e904d647bb7c60b2">&#9670;&#160;</a></span>SendTimeOfLatestSyncPulseMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4396d96977d4f20e904d647bb7c60b2">&#9670;&#160;</a></span>SendTimeOfLatestSyncPulseMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendTimeOfLatestSyncPulseMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send the time of the latest pulse. </p>
+
+</div>
+</div>
+<a id="ad4396d96977d4f20e904d647bb7c60b2" name="ad4396d96977d4f20e904d647bb7c60b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4396d96977d4f20e904d647bb7c60b2">&#9670;&#160;</a></span>SendTimeOfLatestSyncPulseMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,7 +1167,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a113b155316c32d0cd21baa6342bd82f5" name="a113b155316c32d0cd21baa6342bd82f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a113b155316c32d0cd21baa6342bd82f5">&#9670;&#160;</a></span>SendTimeOfNavigationDataMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a113b155316c32d0cd21baa6342bd82f5">&#9670;&#160;</a></span>SendTimeOfNavigationDataMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::SendTimeOfNavigationDataMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compose and send a "time of navigation data" message. </p>
+
+</div>
+</div>
+<a id="a113b155316c32d0cd21baa6342bd82f5" name="a113b155316c32d0cd21baa6342bd82f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113b155316c32d0cd21baa6342bd82f5">&#9670;&#160;</a></span>SendTimeOfNavigationDataMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -704,7 +1205,38 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9bcde79d3b5988633cae04d93c990f2e" name="a9bcde79d3b5988633cae04d93c990f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bcde79d3b5988633cae04d93c990f2e">&#9670;&#160;</a></span>TransmitMessage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bcde79d3b5988633cae04d93c990f2e">&#9670;&#160;</a></span>TransmitMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRs232OutputHandler::TransmitMessage </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>upData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>uSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transmit data using DMA. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upData</td><td>Pointer to data. </td></tr>
+    <tr><td class="paramname">uSize</td><td>Number of bytes to be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet was allocated successfully. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9bcde79d3b5988633cae04d93c990f2e" name="a9bcde79d3b5988633cae04d93c990f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bcde79d3b5988633cae04d93c990f2e">&#9670;&#160;</a></span>TransmitMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -735,7 +1267,32 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abf9af6407bd05b6c454852388321659a" name="abf9af6407bd05b6c454852388321659a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf9af6407bd05b6c454852388321659a">&#9670;&#160;</a></span>UARTTxInterruptHandler()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9af6407bd05b6c454852388321659a">&#9670;&#160;</a></span>UARTTxInterruptHandler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRs232OutputHandler::UARTTxInterruptHandler </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>uSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA Transmission completed callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uSize</td><td>Number of bytes sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf9af6407bd05b6c454852388321659a" name="abf9af6407bd05b6c454852388321659a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9af6407bd05b6c454852388321659a">&#9670;&#160;</a></span>UARTTxInterruptHandler() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,8 +1340,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a2f987a667587f31c756a78fe2de8af05" name="a2f987a667587f31c756a78fe2de8af05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f987a667587f31c756a78fe2de8af05">&#9670;&#160;</a></span>auTxBuffer_</h2>
+<a id="a38d81af77d44f285e447edeaad7af7d9" name="a38d81af77d44f285e447edeaad7af7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d81af77d44f285e447edeaad7af7d9">&#9670;&#160;</a></span>auTxBuffer_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -793,7 +1350,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t CRs232OutputHandler::auTxBuffer_[<a class="el" href="#aa59d25204ce6e7ee4996ff006070a7df">skuBufferLength_</a>]</td>
+          <td class="memname">uint8_t CRs232OutputHandler::auTxBuffer_</td>
         </tr>
       </table>
   </td>
@@ -855,8 +1412,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa59d25204ce6e7ee4996ff006070a7df" name="aa59d25204ce6e7ee4996ff006070a7df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa59d25204ce6e7ee4996ff006070a7df">&#9670;&#160;</a></span>skuBufferLength_</h2>
+<a id="aa556826b9c4623ea0670794e787e43e4" name="aa556826b9c4623ea0670794e787e43e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa556826b9c4623ea0670794e787e43e4">&#9670;&#160;</a></span>skuBufferLength_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -865,7 +1422,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t CRs232OutputHandler::skuBufferLength_ { 512U }</td>
+          <td class="memname">constexpr uint32_t CRs232OutputHandler::skuBufferLength_ { 512U }</td>
         </tr>
       </table>
   </td>
@@ -976,8 +1533,10 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_c_rs232_output_handler_8h.html">CRs232OutputHandler.h</a></li>
-<li><a class="el" href="_c_rs232_output_handler_8cpp.html">CRs232OutputHandler.cpp</a></li>
+<li><a class="el" href="_target_app_2bsw_2rs232-output-handler_2inc_2_c_rs232_output_handler_8h.html">TargetApp/bsw/rs232-output-handler/inc/CRs232OutputHandler.h</a></li>
+<li><a class="el" href="shared_2bsw_2swc-rs232-output-handler_2inc_2_c_rs232_output_handler_8h.html">shared/bsw/swc-rs232-output-handler/inc/CRs232OutputHandler.h</a></li>
+<li><a class="el" href="_target_app_2bsw_2rs232-output-handler_2src_2_c_rs232_output_handler_8cpp.html">TargetApp/bsw/rs232-output-handler/src/CRs232OutputHandler.cpp</a></li>
+<li><a class="el" href="shared_2bsw_2swc-rs232-output-handler_2src_2_c_rs232_output_handler_8cpp.html">shared/bsw/swc-rs232-output-handler/src/CRs232OutputHandler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
